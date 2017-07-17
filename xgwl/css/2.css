@@ -1,0 +1,26 @@
+body{background:url("../img/2/ed.jpg") top center no-repeat #fff;}
+.part1{background:#fff;padding:70px 0 100px 0;}
+.part1 img,.part2 img{width:100%;}
+.part2{background:#f7f7f7;padding:70px 0 100px 0;}
+.cntit{font-size:30px;display:block;color:#ab8e55;}
+.entit{font-size:16px;display:block;color:#ab8e55;margin:5px 0 15px 0;}
+.abouttxt{line-height:200%;}
+.weblink{float:right;margin-top:10px;}
+.part3{background:url("../img/2/bg.jpg") center top;min-height:1005px;padding:70px 0 70px 0;}
+
+.titline{text-align:center;background:url("../img/2/titline.png") no-repeat center 45px;margin-top:50px;}
+.titline .stit{font-size:16px;color:#ab8e55;letter-spacing: 1.4px;}
+.titline .btit{font-size:30px;color:#ab8e55;}
+.four{margin-top:50px;}
+.four img{width:100%;}
+.four .titbor{border-radius:4px;color:#fff;background:#caad75;width: 220px;height: 40px;line-height: 40px;text-align:center;position:absolute;top: 65px;left:50%;margin-left: -110px;font-size: 18px;}
+.four .tith{width:100%;text-align:center;position:absolute;top:70px;left:0;color:#caad75;font-size:22px;}
+.four .titl{width:60px;border-bottom:2px solid #E1D2B6;position:absolute;top: 156px;left:50%;margin-left: -30px;display:block;height:3px;}
+.four .txt{width:100%;text-align:center;position:absolute;top:200px;left:5px;font-size:16px;line-height:200%;}
+.four1{}
+@media (max-width:768px){
+    .part3{background:#ebe5c9;}
+    .four .txt{top:230px;}
+    .four{margin-top:20px;}
+
+}

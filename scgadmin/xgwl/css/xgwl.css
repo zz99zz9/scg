@@ -1,0 +1,35 @@
+/* CSS Document */
+.xglab{font-weight:100;line-height:35px;}
+.mt50{margin-top:50px;}
+.mb50{margin-bottom:50px;}
+.pb50{padding-bottom:50px;}
+.mb20{margin-bottom:20px;}
+/*楼盘相册*/
+.piclist{margin-bottom:20px;position:relative;}
+.piclist .addpic{position:absolute;display:block;top:50%;left:50%;text-align:center;width:52px;height:52px;margin-left:-26px;margin-top:-26px;z-index:2;}
+.piclist .addpic i{font-size:3em;}
+.piclist .addpic span{display:block;}
+.piclist:hover .addpic{color:#fff;}
+.piclist .editer{display:none;}
+.piclist:hover .editer{position:absolute;top:50%;left:50%;z-index:2;width:120px;height:70px;margin-left:-60px;margin-top:-35px;color:#fff;display:block;}
+.piclist:hover .editer .editerbor{width:60px;height:70px;display:block;float:left;position:relative;}
+.piclist:hover .editer .editerbor input{width:30px;text-align:center;padding:5px;position:absolute;top:10px;left:12px;color:#666;}
+.piclist:hover .editer .editerbor .b_h{font-size:40px;position:absolute;top:5px;left:12px;color:#F30;}
+.piclist:hover .editer .editerbor .txt{position:absolute;bottom:0;left:0;text-align:center;width:100%;display:block;font-size:12px;}
+.piclist:hover .editer .editerbor .txt2{position:absolute;bottom:0;left:5%;text-align:center;width:80%;display:block;font-size:12px;}
+.piclist:hover .editer .editerbor.rbor{border-right:1px #CCCCCC solid;}
+.piclist .thumbnail img{  filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -moz-filter: brightness(100%);
+    -o-filter: brightness(100%);
+    -ms-filter: brightness(100%);
+}
+.piclist:hover .thumbnail img {
+filter: brightness(30%);
+    -webkit-filter: brightness(30%);
+    -moz-filter: brightness(30%);
+    -o-filter: brightness(30%);
+    -ms-filter: brightness(30%);
+}}
+.hide{display:none;}
+.b_h:hover{opacity:0.9;cursor:pointer;}

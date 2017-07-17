@@ -1,0 +1,4437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="贷小秘贷款计算器">
+    <meta name="keywords" content="贷小秘,贷款计算器">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>贷款计算器</title>
+<style type="text/css">
+    /*/
+/*
+/* Rank: 1 
+/* Standard：Google
+/*
+/*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  color:#333;
+  font-size: 13px;
+  font-family:Tahoma,Verdana,'Lucida Sans Unicode';
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+img {
+  border:0;
+}
+
+li,a{
+  overflow:hidden;
+}
+
+a{
+  color:black;
+  text-decoration:none;
+}
+
+/**,:hover{
+  -moz-transition:color 0.3s linear;
+  -o-transition:color 0.3s linear;
+  -ms-transition:color 0.3s linear;
+  -webkit-transition:color 0.3s linear;
+  transition:color 0.3s linear;
+}*/
+
+li{
+  list-style-type:none;
+  float:left;
+}
+
+i {
+  font-style:normal;
+}
+
+.rotate-lead {
+  float:left;
+}
+
+/* S button-Group */
+.btn-group {
+  position: relative;
+  display: inline-block;
+  font-size: 0px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active {
+    z-index: 2;
+}
+.btn-group > .btn {
+    font-size: 14px;
+}
+.btn-group > .btn:first-child {
+    margin-left: 0px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.btn-group > .btn:last-child {
+    margin-right: 0px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.btn-group > .btn {
+    position: relative;
+    border-radius: 0px 0px 0px 0px;
+}
+.btn:hover, .btn:focus {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn[disabled] {
+    color: rgb(51, 51, 51);
+    background-color: rgb(230, 230, 230);
+}
+/* button */
+input, button, select, textarea {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  *border-bottom: 0 none #b3b3b3;
+  display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  background-color: #f5f5f5;
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *-webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-left: 0em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  **border-left-style: none;
+  border-left-color: inherit;
+  border-left-width: 0;
+  border-right-style: none;
+  border-right-color: inherit;
+  border-right-width: 0;
+  border-top-style: none;
+  border-top-color: inherit;
+  border-top-width: 0;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+.btn:active,
+.btn.active {
+  background-color: #cccccc;
+}
+
+.btn:first-child {
+  *margin-left: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #333333;
+  text-decoration: none;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn.active,
+.btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.btn[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-large {
+  padding: 11px 19px;
+  font-size: 17.5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+
+.btn-small {
+  padding: 2px 10px;
+  font-size: 11.9px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+
+.btn-mini {
+  padding: 0 6px;
+  font-size: 10.5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-primary {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  border-left-color: #0044cc;
+  border-right-color: #0044cc;
+  border-top-color: #0044cc;
+  border-bottom-color: #002a80;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary[disabled] {
+  color: #FFF;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #003399;
+}
+
+.btn-warning {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  border-left-color: #f89406;
+  border-right-color: #f89406;
+  border-top-color: #f89406;
+  border-bottom-color: #ad6704;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning[disabled] {
+  color: #FFF;
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #c67605;
+}
+
+.btn-danger {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  border-left-color: #bd362f;
+  border-right-color: #bd362f;
+  border-top-color: #bd362f;
+  border-bottom-color: #802420;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger[disabled] {
+  color: #FFF;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #942a25;
+}
+
+.btn-success {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-image: linear-gradient(to bottom, #62c462, #51a351);
+  border-left-color: #51a351;
+  border-right-color: #51a351;
+  border-top-color: #51a351;
+  border-bottom-color: #387038;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success[disabled] {
+  color: #FFF;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140;
+}
+
+.btn-info {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  border-left-color: #2f96b4;
+  border-right-color: #2f96b4;
+  border-top-color: #2f96b4;
+  border-bottom-color: #1f6377;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.btn-info[disabled] {
+  color: #FFF;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+
+.btn-info:active,
+.btn-info.active {
+  background-color: #24748c;
+}
+
+.btn-inverse {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-image: linear-gradient(to bottom, #444444, #222222);
+  border-left-color: #222222;
+  border-right-color: #222222;
+  border-top-color: #222222;
+  border-bottom-color: #000000;
+}
+
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse[disabled] {
+  color: #FFF;
+  background-color: #222222;
+  *background-color: #151515;
+}
+
+.btn-inverse:active,
+.btn-inverse.active {
+  background-color: #080808;
+}
+
+button.btn,
+input[type="submit"].btn {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+button.btn.btn-large,
+input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+
+button.btn.btn-small,
+input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+
+button.btn.btn-mini,
+input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: #0088cc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: #005580;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: #333333;
+  text-decoration: none;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-ms-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.progress{overflow:hidden;height:20px;margin-bottom:20px;background-color:#f7f7f7;background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+}
+
+.progress .bar{width:0%;height:100%;color:#FFF;float:left;font-size:12px;text-align:center;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#0e90d2;background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: width 0.6s ease;
+  -moz-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+  background-image: linear-gradient(to bottom, #149bdf, #0480be);
+}
+
+.progress .bar+.bar{-webkit-box-shadow:inset 1px 0 0 rgba(0,0,0,.15), inset 0 -1px 0 rgba(0,0,0,.15);-moz-box-shadow:inset 1px 0 0 rgba(0,0,0,.15), inset 0 -1px 0 rgba(0,0,0,.15);box-shadow:inset 1px 0 0 rgba(0,0,0,.15), inset 0 -1px 0 rgba(0,0,0,.15);}
+.progress-striped .bar{background-color:#149bdf;background-image:-webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));background-image:-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:-moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:-o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);-webkit-background-size:40px 40px;-moz-background-size:40px 40px;-o-background-size:40px 40px;background-size:40px 40px;}
+.progress.active .bar{-webkit-animation:progress-bar-stripes 2s linear infinite;-moz-animation:progress-bar-stripes 2s linear infinite;-ms-animation:progress-bar-stripes 2s linear infinite;-o-animation:progress-bar-stripes 2s linear infinite;animation:progress-bar-stripes 2s linear infinite;}
+.progress-danger .bar,.progress .bar-danger{background-color:#dd514c;background-repeat: repeat-x;
+  background-image: linear-gradient(to bottom, #ee5f5b, #c43c35);
+}
+
+.progress-danger.progress-striped .bar, .progress-striped .bar-danger {
+  background-color: #ee5f5b;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-success .bar, .progress .bar-success {
+    background-color: #5eb95e;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to bottom, #bd362f, #57a957);
+}
+
+.progress-success.progress-striped .bar, .progress-striped .bar-success {
+    background-color: #bd362f;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-info .bar, .progress .bar-info {
+  background-color: #4bb1cf;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(to bottom, #5bc0de, #339bb9);
+}
+
+.progress-info.progress-striped .bar,.progress-striped .bar-info{background-color:#5bc0de;background-image:-webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));background-image:-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:-moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:-o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);}
+.progress-warning .bar,.progress .bar-warning{background-color:#faa732;background-repeat: repeat-x;
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+}
+
+.progress-warning.progress-striped .bar,.progress-striped .bar-warning{background-color:#fbb450;background-image:-webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));background-image:-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:-moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:-o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);}
+.bs-docs-example .table, .bs-docs-example .progress, .bs-docs-example .well, .bs-docs-example .alert, .bs-docs-example .hero-unit, .bs-docs-example .pagination, .bs-docs-example .navbar, .bs-docs-example > .nav, .bs-docs-example blockquote {
+  margin-bottom: 5px;
+}
+
+
+/* Custom */
+
+.btn-group .btn.login-btn {
+  width:121px;
+  height:53px;
+  color:#FFF;
+  font-size:14px;
+  font-weight:700;
+  background:#6D83A9;
+}
+
+.btn-group .btn.login-btn:nth-child(1) {
+  margin-right:1px;
+}
+
+.header .btn.btn-group {
+  float:right;
+}
+
+.btn-group .btn.login-btn:hover {
+  background:#819DC9;
+}
+
+.btn.dropdown-btn,.btn.search-btn {
+  min-width:115px;
+  height:35px;
+  border:1px solid #CCCCCC;
+  text-align:center;
+  padding-left:28px;
+  letter-spacing:1px;
+  border-radius:2px;
+  font-size:12px;
+  background:#FFF;
+  -webkit-box-shadow: 1px 0px 2px #FFF;
+  -moz-box-shadow:1px 0px 2px #FFF;
+  box-shadow: 0px 0px 1px #FFF;
+}
+
+.btn.dropdown-btn:hover {
+  background-color:#FFF;
+  background-color:rgba(252, 252, 250, 0.75);
+}
+
+.btn.dropdown-btn i {
+  width:7px;
+  height:9px;
+  display:inline-block;
+  margin-left:10px;
+  background:url(/static/image/homesite/cssimage/dropdownIcon.bmp) no-repeat left center;
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/dropdownIcon.png) 1x,url(/static/image/homesite/cssimage/retina/dropdownIcon-2x.png) 2x);
+}
+
+.btn.search-btn {
+  width:162px;
+  color:#FFF;
+  border-radius:2px !important;
+  border:0;
+  font-size:16px;
+  font-weight:700;
+  margin-left:14px;
+  font-family:微软雅黑;
+  background:#4e6c9c url(/static/image/homesite/cssimage/searchIcon.png) no-repeat scroll 50px center;
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/searchIcon.png) 1x,url(/static/image/homesite/cssimage/retina/searchIcon-2x.png) 2x);
+}
+
+.btn.search-btn:hover {
+  background-color:#F26522;
+  color:#F7F8F9;
+}
+
+.btn.wide-btn {
+  text-align:left;
+  padding-left:52px;
+  background-image:url(/static/image/homesite/cssimage/applybtn.png);
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/applybtn.png) 1x,url(/static/image/homesite/cssimage/retina/applybtn-2x.png) 2x);
+  background-position:19px center;
+}
+
+.btn.wide-btn,.btn.narrow-btn {
+  width:135px;
+  height:38px;
+  font-size:14px;
+  font-weight:700;
+  color:#FFF;
+  border:0;
+  background-color:#4A6693;
+  background-repeat:no-repeat;
+}
+
+.btn.wide-btn.disable {
+  color:#3E5D90;
+  background-color:#F4F4F3;
+  background-image:none;
+  padding-left:10px;
+  text-align:center;
+  cursor:default;
+  box-shadow:none;
+}
+
+.btn.wide-btn.disable:hover {
+  background-color:#F4F4F3 !important;
+}
+
+.btn.wide-btn.disable:active {
+  box-shadow:none;
+}
+
+.btn.narrow-btn {
+  width:100px;
+  color:#666;
+  font-size:12px;
+  background:#F2F2F2;
+}
+
+.btn.wide-btn:hover,
+.btn.prevPage-btn:hover,.btn.nextPage-btn:hover {
+  background-color:#F26522;
+}
+
+.btn.prevPage-btn,.btn.nextPage-btn {
+  width:67px;
+  height:38px;
+  line-height:38px;
+  text-align:left;
+  font-size:12px;
+  border:0;
+  color:#FFF;
+  padding:0;
+  padding-left:38px;
+  display:inline-block;
+  background-color:#4A6693;
+  background-position:28px 16px;
+  background-repeat:no-repeat;
+  background-image:url(/static/image/homesite/cssimage/prevPageIcon.png);
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/prevPageIcon.png) 1x,url(/static/image/homesite/cssimage/retina/prevPageIcon-2x.png) 2x);
+  background-attachment:scroll;
+}
+
+.btn.prevPage-btn a, .btn.nextPage-btn a {
+  color:#FFF;
+}
+
+.btn.nextPage-btn {
+  width:75px;
+  padding-left:30px;
+  background-position:70px center;
+  background-image:url(/static/image/homesite/cssimage/nextpageIcon.png);
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/nextpageIcon.png) 1x,url(/static/image/homesite/cssimage/retina/nextpageIcon-2x.png) 2x);
+}
+
+
+/* S header */
+
+.hang-header {
+  width:100%;
+  min-width:1034px;
+  height:42px;
+  background:#4A6693;
+}
+
+.header {
+  width:998px;
+  height:42px;
+  padding-top:0px;
+  margin:0 auto;
+}
+
+.header .logo {
+  width:96px;
+  height:31px;
+  float:left;
+  margin:6px 0 0 1px;
+  background:url(/static/image/homesite/cssimage/mainlogo.png) no-repeat 0 scroll;
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/mainlogo.png) 1x,url(/static/image/homesite/cssimage/retina/mainlogo-2x.png) 2x);
+  background-position:0 0px;
+}
+
+.header .city {
+  float:left;
+  font-weight:700;
+  color:#FFF;
+  letter-spacing:1px;
+  padding:0 8px 0 15px;
+  line-height:40px;
+  cursor:default;
+  /* city switch be annotated */
+  /*padding-right:38px;*/
+}
+
+.header .city span {
+  color:#FFF;
+  cursor:pointer;
+  font-size:12px;
+  margin-left:2px;
+}
+
+.header .city span:hover {
+  text-decoration:underline;
+}
+
+.header .city:hover {
+  color:#FFF;
+}
+
+.header .tabBlock {
+  height:42px;
+  float:left;
+  margin-left:2px;
+}
+
+.header .tabBlock .tab {
+  width:84px;
+  height:42px;
+  line-height:42px;
+  font-weight:700;
+  text-align:center;
+  color:#FFF;
+  float:left;
+}
+
+.header .tabBlock.right {
+  float:right;
+}
+
+.header .tabBlock.right.single .tab {
+  padding-left:16px;
+  padding-right:16px;
+}
+
+.header .tabBlock.right.single .tab:hover {
+  text-decoration:underline;
+  background:#4A6693;
+}
+
+.header .tabBlock.right .tab {
+  padding-left:8px;
+  padding-right:8px;
+}
+
+.header .tabBlock.right .tab:hover {
+  color:#FFF;
+  background-color:#3E557C;
+  text-decoration:none;
+}
+
+.header .tab.fix {
+  line-height:40px;
+  background:url(/static/image/homesite/cssimage/smalltabBkg.png) no-repeat center bottom scroll;
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/smalltabBkg.png) 1x,url(/static/image/homesite/cssimage/retina/smalltabBkg-2x.png) 2x);
+}
+
+.header .tabBlock .tab:hover {
+  color:#FFF;
+  background-color:#3E557C;
+}
+
+.header .tab.fix span{
+  display:block;
+  height:40px;
+  color:#FFF;
+  font-size:12px;
+  font-weight:normal;
+  line-height:40px;
+  margin-top:-28px;
+}
+
+.header .tabBlock span:hover {
+  color:#000000;
+}
+
+.header .btn-group {
+  margin-right:2px;
+  float:right;
+}
+
+.details {
+  width:998px;
+  margin:0 auto;
+  padding:0 18px;
+}
+
+/* S footer */
+
+.hang-footer {
+  width:100%;
+  min-width:1034px;
+  float:left;
+  padding-top:35px;
+  padding-bottom:26px;
+  border-top:1px solid #EEE;
+  background:#F7F8F9;
+  -moz-border-box:0 1px 1px #FFF inset;
+  -webkit-border-box:0 1px 1px #FFF inset;
+  box-shadow:0 1px 1px #FFF inset;
+}
+.hang-footer a:hover {
+  color:#000 !important;
+}
+.hang-footer .main-body {
+  width:998px;
+  margin:0 auto;
+}
+
+.hang-footer .block {
+  width:100%;
+  color:#666;
+  float:left;
+  padding-top:25px;
+  font-size:12px;
+  line-height:22px;
+  border-top:1px solid #FFF;
+  border-bottom:1px solid #DDD;
+}
+
+.hang-footer .block a {
+  color:#666;
+  margin-left:6px;
+}
+
+.hang-footer .paddingB {
+  padding-bottom:25px;
+}
+
+.hang-footer .no-border {
+  border:0;
+  padding-top:28px;
+  line-height:18px;
+}
+
+.hang-footer .block a:hover {
+  text-decoration:underline;
+}
+
+.hang-footer .team-bank {
+  width:100%;
+  height:100px;
+  float:left;
+  padding-bottom:25px;
+  border-bottom:1px solid #DDD;
+  background:url(/static/image/homesite/cssimage/891273981273123.png) no-repeat left 26px;
+}
+
+.hang-footer .team-bank .text {
+  color:#787878;
+  line-height:12px;
+  font-size:12px;
+}
+
+.hang-footer .team-bank ul {
+  display: inline-block;
+  width:100px;
+  height:80px;
+  margin-top:5px;
+  padding-right:40px;
+}
+
+.hang-footer .team-bank li {
+  display:inline-block;
+  float:none;
+  width:100%;
+  height:22px;
+  margin-top:18px;
+}
+
+.hang-footer .team-bank li a {
+  display:inline-block;
+  width:100%;
+  height:100%;
+}
+
+.hang-footer .team-bank img {
+  max-height:22px;
+}
+
+.hang-footer.thin .paddingB {
+  padding-top:0;
+  border-top:none;
+}
+
+.hang-footer.thin .no-border {
+  padding-top:18px;
+}
+
+.hang-footer.thin {
+  padding-top:25px;
+  padding-bottom:8px;
+}
+
+.hang-footer.thiner {
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  margin-bottom:-3px;
+  padding-top:32px;
+  padding-bottom:32px;
+  background:#F5F6F7 url(/static/image/homesite/cssimage/main-color.bmp) repeat 0 scroll;
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/main-color.bmp) 1x,url(/static/image/homesite/cssimage/retina/main-color-2x.png) 2x);
+  box-shadow: inset 0 1px 1px #FFF;
+}
+
+.hang-footer.thiner a {
+  font-size:12px;
+  margin-left:15px;
+}
+
+.hang-footer.thiner .sernum {
+  color:#666;
+  font-size:12px;
+  margin-top:2px;
+}
+
+.hang-footer.thin .sernum {
+  color:#666;
+  font-size:12px;
+  margin-top:4px;
+  margin-bottom:2px;
+}
+
+.hang-footer.thiner .no-border {
+  padding-top:0;
+}
+
+/* S page Number */
+
+.pageNum {
+  max-width:730px;
+  float:left;
+  margin-top:28px;
+  position:relative;
+  left:50%;
+  margin-left:-298px;
+}
+
+.pageNum .btn {
+  float:left;
+}
+
+.pageNum .btn.disable {
+  width:71px;
+  color:#375587;
+  font-family:'Microsoft YaHei';
+  padding-left:34px;
+  background-color:#EEE !important;
+  background-image:none;
+  box-shadow:none;
+  cursor:default;
+}
+
+.pageNum .btn.disable:active {
+  box-shadow:none;
+}
+
+.pageNum ul {
+  overflow:hidden;
+  max-height:40px;
+  margin:0 14px;
+  float:left;
+  -webkit-padding-left:0;
+}
+
+.pageNum a {
+  display:inline-block;
+  float:left;
+}
+
+.pageNum li {
+  height:38px;
+  padding:0 10px;
+  display:block;
+  text-align:center;
+  line-height:38px;
+  color:#4A6693;
+  font-size:18px;
+  margin:0 1px;
+  border-radius:3px;
+}
+
+.pageNum li:hover {
+  color:#FFF;
+  background-color:#F26522;
+}
+
+.pageNum li.fix,
+.pageNum li.fix:hover {
+  cursor:default;
+  background-color:#f2f2f2;
+  color:#375587;
+  box-shadow:none;
+}
+
+/*  head portrait */
+
+.por-head {
+  width:64px;
+  height:64px;
+  float:left;
+  border:1px solid #EFEFEF;
+  border-radius:1px;
+}
+
+.por-head img {
+  width:64px;
+  height:64px;
+}
+
+.por-head .hide-border {
+  display:none;
+  width:62px;
+  height:62px;
+  margin-left:-2px;
+  margin-top:-2px;
+  position:absolute;
+  border:3px solid #4A6693;
+}
+
+.por-head .hide-border a {
+  width:62px;
+  height:62px;
+  display:block;
+}
+
+.por-head.fix .hide-border {
+  display:block;
+}
+
+.g-close {
+  box-sizing:border-box;
+  width:20px;
+  height:20px;
+  color:#000;
+  line-height:19px;
+  text-align:center;
+  font-size:14px;
+  font-weight:700;
+  padding:0;
+  /*padding:2px 0px 4px;*/
+  padding-right:0.6px;
+  background:#FFF;
+  cursor:pointer;
+  border-radius:100%;
+  font-family:'Microsoft YaHei';
+}
+
+.hide_global {
+  display:none;
+}
+
+#conditionForm {
+  display:none;
+}
+
+.colorful {
+  color:#F26522 !important;
+}
+
+/* detail crumbs */
+
+.details .crumbs {
+  height:38px;
+  line-height:38px;
+  letter-spacing:0.5px;
+}
+
+.details .crumbs a {
+  color:#646464;
+  font-size:12px;
+  margin-left:3px;
+  padding-right:9px;
+  background:url(/static/image/homesite/cssimage/crumbs.png) no-repeat right center;
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/crumbs.png) 1x,url(/static/image/homesite/cssimage/retina/crumbs-2x.png) 2x);
+}
+
+.details .crumbs a:last-child {
+  background:none;
+}
+
+.details .crumbs a:hover {
+  text-decoration:underline;
+}
+
+.no-border {
+  border:0 !important;
+}
+
+.linkage-block {
+  display:none;
+  float:left;
+}
+
+/* common bottom */
+.common-bottom-handle {
+  display:none;
+  position:fixed;
+  bottom:0;
+  right:0;
+  padding-right:3px;
+  overflow:visible;
+  z-index:10001;
+}
+
+.common-bottom-handle .dxmHandle-bar {
+  width:278px;
+  height:31px;
+  float:left;
+  cursor:pointer;
+  padding-top:8px;
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-grace {
+  width:260px;
+  height:34px;
+  position:absolute;
+  line-height:32px;
+  padding-left:18px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  color:#FFF;
+  font-size:12px;
+  background:#F26522;
+  z-index:10002;
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-grace i {
+  margin-left:10px;
+  font-weight:700;
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-grace .sil-er {
+  height:34px;
+  font-size:12px;
+  color:#FFF;
+  float:right;
+  padding-left:15px;
+  padding-right:14px;
+  border-top-right-radius:5px;
+  background:#F5844E;
+}
+
+.common-bottom-handle .dxm-grace .sil-er:hover {
+  background:#FF905D;
+}
+
+.common-bottom-handle .dxm-grace .sil-er i {
+  display:inline-block;
+  width:5px;
+  height:8px;
+  margin-left:4px;
+  background:url(/static/image/homesite/cssimage/nextpageIcon.png) no-repeat scroll center;
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/nextpageIcon.png) 1x,url(/static/image/homesite/cssimage/retina/nextpageIcon-2x.png) 2x);
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-apart {
+  width:276px;
+  height:40px;
+  position:absolute;
+  margin-top:-3px;
+  border:1px solid #D6D6D6;
+  border-radius:3px;
+  background:#F2F2F2 url(/static/image/homesite/cssimage/asmallbarbkg.png) repeat scroll left top;
+  z-index:999;
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-apart i {
+  width:10px;
+  height:6px;
+  margin:3px auto;
+  background:url(/static/image/homesite/cssimage/T1aT0KFg4gXXXhuK.h-284-210.png) no-repeat scroll;
+  background-position:-274px -81px;
+}
+
+.common-bottom-handle .dxmHandle-bar input {
+  margin:3px 3px 3px 4px;
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-product {
+  width:278px;
+  position:absolute;
+  margin-top:-2px;
+  border-top:1px solid #E0E0E0;
+  background:#F5F5F5;
+  z-index:999;
+    -webkit-box-shadow:#DDD 0px 0px 2px;
+  -moz-box-shadow:#DDD 0px 0px 2px;
+  box-shadow:#DDD 0px 0px 2px;
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-product ul {
+  width:278px;
+  max-height:440px;
+  float:left;
+  cursor:default;
+  overflow-y:auto;
+  overflow-x:hidden;
+  overflow:overlay;
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-product li,
+.common-bottom-handle .dxm-product .control {
+  width:269px;
+  height:60px;
+  padding-left:7px;
+  padding-top:14px;
+  border-width:1px;
+  border-style:solid;
+  border-color:#DDD;
+  border-top-color:#FFF;
+  border-bottom:1px #C2C2C2 dashed;
+}
+
+.common-bottom-handle .dxm-product li .por-head ,
+.common-bottom-handle .dxm-product li .por-head img {
+  width:42px;
+  height:42px;
+}
+
+.common-bottom-handle .dxm-product li .por-head {
+  margin-left:5px;
+}
+
+.common-bottom-handle .dxm-product li .tool {
+  float:left;
+  margin-top:12px;
+}
+
+.common-bottom-handle .dxm-product li .info-block {
+  width:175px;
+  float:left;
+  padding-top:2px;
+  margin-left:8px;
+}
+
+.common-bottom-handle .dxm-product .info-block .title a {
+  display:inline-block;
+  max-width:175px;
+  height:18px;
+  margin-top:-1px;
+  margin-bottom:1px;
+  font-size:14px;
+  color:#375587;
+  font-family:'Microsoft YaHei';
+}
+
+.common-bottom-handle .dxm-product .info-block p {
+  font-size:12px;
+  margin-top:2px;
+}
+
+.common-bottom-handle .dxm-product .control {
+  height:36px;
+  padding-top:5px;
+  cursor:default;
+  background:#ECECEC;
+}
+
+.common-bottom-handle .dxm-product .control .tool {
+  margin-top:6px;
+  float:left;
+}
+
+.common-bottom-handle .dxm-product .control label {
+  font-size:12px;
+  line-height:12px;
+  padding-left:4px;
+  padding:6px 0 6px 4px;
+}
+
+.common-bottom-handle .dxm-product .control input {
+  float:left;
+}
+
+.common-bottom-handle .dxm-product .simple-btn {
+  width:85px;
+  height:30px;
+  font-size:12px;
+  padding:0;
+  color:#B4B4B4;
+  float:right;
+  margin-right:6px;
+  background:#FFF;
+  border:1px solid #E2E2E2;
+  border-bottom-color:#D3D3D3;
+  box-shadow:0 1px 1px #DDD;
+}
+
+.common-bottom-handle .dxm-product .simple-btn.fix {
+  color:#F26522;
+}
+
+.common-bottom-handle .dxm-product li.padding-bottom {
+  height:44px;
+}
+
+.common-bottom-handle .dxm-product .a-goods.fix {
+  background:#E5E5E5;
+}
+
+.dxm-product .a-goods .g-close {
+  display:none;
+  float:right;
+  margin-top:-28px;
+  margin-left:165px;
+  position:absolute;
+}
+
+.dxm-product .a-goods.fix .g-close {
+  display:block;
+}
+
+.dxm-product.scroll .a-goods.fix .g-close {
+  margin-top:-28px;
+  margin-left:154px;
+}
+
+.dxm-product .a-goods .load {
+  display:none;
+  width:20px;
+  height:20px;
+  position:absolute;
+  margin-top:-28px;
+  margin-left:165px;
+  background:url(/static/image/homesite/cssimage/loadingTime.gif) no-repeat center scroll;
+}
+
+/*.dxmHandle-bar .dxm-apart.nothing {
+  margin-top:-34px;
+}*/
+/* =========== - cut up line - ========== */
+.common-bottom-handle .dxmHandle-bar .dxm-apart {
+  display: block;
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-apart i {
+  display: none;
+}
+
+.common-bottom-handle .dxmHandle-bar:hover .dxm-apart i {
+  display:block;
+}
+
+.dxmHandle-bar .dxm-apart .remark {
+  display:none;
+  margin-top:5px;
+  padding-left:70px;
+}
+
+.dxmHandle-bar .dxm-apart.nothing .remark,
+.dxmHandle-bar .dxm-apart.nothing i {
+  display:block;
+}
+
+.common-bottom-handle .dxmHandle-bar .dxm-product {
+  display: none;
+}
+
+/* city window */
+
+.city .windows {
+  display:none;
+  min-width:68px;
+  padding:8px 20px 6px 20px;
+  position:absolute;
+  margin-top:-10px;
+  margin-left:28px;
+  font-weight:500;
+  font-family:'Microsoft YaHei';
+  letter-spacing:1px;
+  border-bottom:3px solid #4A6693;
+  border-radius:0px;
+  background:#FFF;
+  -webkit-box-shadow:#666 0 1px 4px;
+  -moz-box-shadow:#666 0 1px 6px;
+  box-shadow:#b9b9b9 1px 1px 4px;
+  z-index:999;
+  cursor:default;
+}
+
+.city .windows a:hover {
+  /*text-decoration:underline;*/
+}
+
+.city .windows p {
+  line-height:28px;
+}
+
+.city .windows .colorful {
+  margin-top:5px;
+  line-height:20px;
+}
+
+.city .windows .big-font {
+  color:#4A6693;
+}
+
+.city .windows .big-font:hover {
+  color:#F26522;
+}
+
+.city .windows .disable {
+  line-height:26px;
+}
+
+.city .windows .disable a {
+  color:#939393;
+  cursor:default;
+}
+
+.ns-iedebug .main-bkg  {
+  margin-top:141px;
+}
+
+.ns-iemain {
+  height:133px;
+  padding-top:8px;
+  padding-left:16px;
+  font-weight:700;
+  background:#F0F0F0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ns-iemain h2,
+.ns-iemain h4 {
+  font-size:18px;
+  line-height:26px;
+}
+
+.ns-iemain h4 {
+  line-height:66px;
+}
+
+.ns-iemain ul {
+  margin-top:-60px;
+  margin-left:354px;
+}
+
+.ns-iemain li {
+  margin-left:18px;
+}
+
+.ns-iemain li img {
+  width:58px;
+}
+
+.ns-iemain .g-close {
+  display:inline-block;
+  position:absolute;
+  background:none;
+  font-size:18px;
+  margin-left:188px;
+}
+
+.header .logo.for_cn {
+  background:url(/static/image/homesite/cssimage/for.cn/mainlogo.png) no-repeat 0 scroll;
+  background-image: -webkit-image-set(url(/static/image/homesite/cssimage/for.cn/mainlogo.png) 1x,url(/static/image/homesite/cssimage/for.cn/mainlogo-2x.png) 2x);
+  background-position:0 0px;
+}
+
+.banner .dots {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    padding-left:474px;
+}
+
+.banner .dots li {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  opacity: .4;
+  -webkit-transition: background .5s, opacity .5s;
+  -moz-transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;
+}
+
+.banner .dots li.active {
+  background: #fff;
+  opacity: 1;
+}
+
+.banner .arrows {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+}
+
+.banner .arrow {
+  display: inline;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+
+   
+/*/
+/*
+/* Rank: 5 
+/* calculator page css
+/* Standard：Google
+/*
+/*/
+
+/* details  */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.main-color {
+  width:100%;
+  min-height: 335px;
+}
+
+.details {
+  max-width:540px;
+  width: 100%;
+  padding:0;
+}
+
+.details .Stationery {
+  width:100%;
+  min-height:440px;
+  margin:0;
+  background:#eee;
+/*  border: 1px solid #ccc;*/
+}
+
+.Stationery .td-head {
+  width:100%;
+  padding-left:3px;
+  padding-bottom: 3px;
+  padding-top:2px;
+  background:#EEE;
+}
+
+
+.td-head .tab {
+  display:inline-block;
+  min-width:119px;
+  height:42px;
+  text-align:center;
+  line-height:42px;
+  font-size:12px;
+  font-weight:700;
+  color:#2C3E50;
+  letter-spacing:0.6px;
+  font-family:'Microsoft YaHei';
+  cursor:pointer;
+  background:#E7E7E7;
+  -ms-user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+}
+
+.td-head .hot-spot {
+  display:inline-block;
+  position:absolute;
+  width:142px;
+  height:29px;
+  margin-top:2px;
+  margin-left:10px;
+}
+
+.td-head .tab:hover {
+  background:#e9e9e9;
+}
+
+.td-head .tab.fix {
+  background:#fff;
+  cursor:default;
+}
+
+.td-head .tab > i {
+  display:none;
+}
+
+.td-head .tab.fix > i {
+  display:inline-block;
+}
+
+.scenic {
+  width:100%;
+  padding:0;
+  padding-bottom:5px;
+}
+
+h2 {
+  height:44px;
+  line-height:44px;
+  font-size:18px;
+  font-weight:700;
+  font-family:'Microsoft YaHei';
+  letter-spacing:0.8px;
+}
+
+h4 {
+  font-size:14px;
+  font-weight:700;
+  line-height:28px;
+}
+
+.commended {
+  margin-left:68px;
+}
+
+.commended:first-child {
+  margin-left:0;
+}
+
+h4 .colorful {
+  margin:0 4px;
+}
+
+h3 {
+  font-size:14px;
+  font-weight:700;
+  line-height:22px;
+  margin-top:12px;
+  margin-bottom:12px;
+}
+
+h5 {
+  line-height:24px;
+  font-size:12px;
+  color:#666;
+}
+
+.no-margin-top {
+  margin-top:0;
+}
+
+.indent {
+  text-indent:2ex;
+}
+
+.double-indent {
+  text-indent:6ex;
+}
+
+.imaline {
+  width:100%;
+  height:1px;
+  margin-bottom:7px;
+  border-bottom:1px solid #FFF;
+  border-top:1px solid #DDD;
+  background:#DDD;
+}
+
+.input {
+  display: inline-block;
+  width: 132px;
+  height: 28px;
+  padding:2px 4px;
+  margin-right:7px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 1px;
+  /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;*/
+}
+
+.input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);*/
+}
+
+.input:-moz-placeholder {
+  font-size:12px;
+  color: #999999;
+}
+
+.input::-moz-placeholder {
+  font-size:12px;
+  color: #999999;
+}
+
+.input:-ms-input-placeholder {
+  font-size:12px;
+  color: #999999;
+}
+
+.input::-webkit-input-placeholder {
+  font-size:12px;
+  color: #999999;
+}
+
+.input[disabled],
+.input[readonly] {
+  cursor:default;
+  background-color: #F6F6F6;
+}
+
+select.input {
+  width:200px;
+  margin-left:0;
+  margin-right:4px;
+  padding-left:2px;
+  padding-right:4px;
+  font-size:12px;
+}
+
+.FOO {
+  padding-top:12px;
+  padding-left:14px;
+  padding-bottom:6px;
+  border-bottom:1px solid #DDD;
+  background:#FFF;
+  -moz-box-shadow:#c4c4c4 0 0 1px;
+  -webkit-box-shadow:#c4c4c4 0 0 1px;
+  box-shadow:#c4c4c4 0 1px 1px;
+}
+
+.line {
+  padding:4px 0 3px;
+}
+
+.line span {
+  display: inline-block;
+  min-width: 88px;
+  text-align: left;
+  line-height:22px;
+  font-size:12px;
+}
+
+.line input[type="radio"] {
+  margin-right:4px;
+}
+
+.line label {
+  line-height:18px;
+}
+
+.line label input[type="radio"]:first-child {
+  margin-left:0;
+}
+
+.line label > i {
+  line-height:12px;
+}
+
+.line i.warning {
+  display:none;
+  color:#FF2929;
+  padding-left:20px;
+  margin-left:2px;
+  line-height:16px;
+}
+
+input.input.short {
+  width:40px;
+}
+
+select.input.short {
+  width:75px;
+}
+
+select.input.shorter {
+  width:68px;
+}
+
+.line.btn-g {
+  height:66px;
+  padding-top:10px;
+  border-top:1px solid #FFF;
+  padding-left:14px;
+  background:#ECF0F1;
+  border-bottom:1px solid #B7B7B7;
+  -moz-box-shadow:#c4c4c4 0 0 1px;
+  -webkit-box-shadow:#c4c4c4 0 0 1px;
+  box-shadow:#c4c4c4 0 0 1px;
+}
+
+.btn-g .btn {
+  width:198px;
+  height:42px;
+  color:#FFF;
+  float:left;
+  font-family:'Microsoft YaHei';
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:1.4px;
+  /*border:1px solid #318eaf;*/
+  border-radius:1px;
+  background:#c30000;
+  box-shadow:none;
+}
+    .btn-g .btn:hover{background:#E61010;}
+
+
+.btn-g .btn.common{
+  display:block;
+  width:64px;
+  line-height:34px;
+  float:right;
+  padding-left:22px;
+  margin-left:2px;
+  font-size:12px;
+  font-family:SimSun;
+  color:#333;
+  border:none;
+  background:#ECF0F1;
+  -ms-user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+}
+
+.btn-g .btn.colorful:hover {
+  background:#486FAD;
+}
+
+.result-data .line {
+  padding:0;
+}
+
+.result-data .line span {
+  display:inline-block;
+  width:92px;
+  min-width:0;
+  margin-right:0px;
+}
+
+
+.result-data .line input {
+  width:108px;
+  height:28px;
+  margin:0 7px;
+}
+
+.result-data .line label {
+  font-size:12px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.table {
+  display:inline-block;
+  width:100%;
+  height:320px;
+  text-align:left;
+  margin-top:48px;
+  margin-bottom:22px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  border-spacing:0;
+  border-collapse:collapse;
+}
+
+.table thead {
+  position:absolute;
+  margin-top:-37px;
+  border-bottom:2px solid #DDD;
+}
+
+.table tr {
+  display:table;
+  height:32px;
+}
+
+.table thead tr {
+  display:table;
+}
+
+.table thead th {
+    color:#AAA;
+    width: 100px;
+}
+
+.table thead th:first-child {
+  width:50px;
+  padding-left:2px;
+}
+
+.table td {
+  width:101px;
+  border-bottom:1px solid #DDD;
+}
+
+.table td:first-child {
+  width:46px;
+  padding-left:8px;
+}
+
+.table > tbody > tr:nth-child(2n) {
+  background: #F9F9F9;
+}
+
+.table > tbody > tr:nth-child(2n) td {
+  color:#299BD1;
+}
+
+.table > tbody > tr:nth-child(2n+1) td {
+  color:#E285AB;
+}
+
+.declare {
+  width:482px;
+  height:12px;
+  position:absolute;
+  margin-top:9px;
+}
+
+
+.ax-hide {
+  display:none;
+}
+
+#higher.result-data,
+#lower.result-data {
+  display:none;
+}
+
+.result {
+  display:none;
+  margin-top:10px;
+/*  border:1px solid #D3D3D3;*/
+  border-top:none;
+  border-radius:1px;
+}
+
+.result .res_tab {
+  width:100%;
+  height:62px;
+  border-bottom:2px solid #34495E;
+  background:#FFF;
+}
+
+.result .hole {
+  width:100%;
+  height:5px;
+  margin-bottom:6px;
+}
+
+.result .res_tab .tab {
+  display:inline-block;
+  width:32%;
+  height:60px;
+  padding-top:6px;
+  margin-right:1px;
+  background:#ECF0F1;
+  text-align:center;
+  cursor:pointer;
+}
+
+.result .res_tab .tab:hover {
+  background:#f0f3f3;
+}
+
+.result .res_tab .tab:last-child {
+  /*width:148px;*/
+  margin-right:0;
+}
+
+.result .res_tab .tab.fix {
+  color:#FFF;
+  background:#34495E;
+  cursor:default;
+}
+
+.result .res_tab .tab .years {
+  font-size:26px;
+  color:#2C3E50;
+  font-family:'Microsoft YaHei';
+  line-height:26px;
+}
+
+.result .res_tab .tab p:first-child {
+  color:#2C3E50;
+  font-weight:700;
+}
+
+.result .res_tab .tab p:last-child {
+  color:#828E98;
+  font-size:12px;
+  font-weight:700;
+}
+
+.result .res_tab .tab i.fund {
+  margin-left:3px;
+}
+
+.result .res_tab .tab.fix i,
+.result .res_tab .tab.fix p {
+  color:#FFF;
+}
+
+.result-data {
+  display:none;
+  padding:0 14px;
+  padding-top:6px;
+  border-bottom:1px solid #B7B7B7;
+  border-bottom-left-radius:1px;
+  border-bottom-right-radius:1px;
+  background:#FFF;
+}
+
+.cutover {
+  padding:0 14px;
+  background:#FFF;
+}
+
+.result-data .line span.span-acpt {
+  display:none;
+  width:62px;
+}
+
+.ax-control {
+  width:100%;
+  float:left;
+  cursor:pointer;
+  text-align:right;
+  padding-bottom:4px;
+  margin-top:-22px;
+  padding-right:4px;
+}
+
+.ax-control .more {
+  display:none;
+  color:#299BD1;
+}
+
+.ax-control .copy {
+  display:none;
+  color:#299BD1;
+  float:left;
+  margin-left:2px;
+}
+
+.ax-control .more:hover {
+  color:#E285AB;
+}
+
+.ax-control .copy:hover,
+.ax-control .copy.hover {
+  color:#F7941D;
+}
+
+#common {
+  display:block;
+}    
+</style>
+    
+    <script src="./calculator_files/jquery.min.js"></script>
+
+    <script type="text/javascript" id="pageModsIni">
+
+/*/
+/*
+/* Rank: 0
+/* main initial
+/* 
+/*/
+
+/* author:bingo */
+
+// basic Class Function：
+String.prototype.trim = function () {
+    return this.replace(/(^\s*)|(\s*$)/g, '');
+};
+// Mixin method
+Function.prototype.Mixin = function (givingClass) {
+    if (arguments[1]) {// only give certain methods
+        for (var i = 1, len = arguments.length; i < len; i++) {
+            if (givingClass[arguments[i]]) {  // if this givingClass's method not null
+                this.prototype[arguments[i]] = givingClass[arguments[i]];
+            }
+        }
+    } else { // Give all methods
+        for (var methodName in givingClass.prototype) {
+            if (!this.prototype[methodName]) {
+                this.prototype[methodName] = givingClass.prototype[methodName]
+            }
+        }
+    }
+};
+
+// return random of from 0 to Number-1 
+Number.prototype.GetRandom = function () {
+    return Math.floor(Math.random() * this)
+};
+
+
+
+/*/
+/*
+/* Rank: 1
+/* main initial
+/* rely jquery1.8.3 & mainjs
+/*
+/*/
+
+/* name space */
+    var pageForm = pf = window.pageForm || {};
+
+    // Form的显示器，即创建一个默认隐藏的表单
+    pf.FromDisplay = function (Form_Conf, submitData_conf) {
+        this.id = Form_Conf.id;
+        this.Form_Conf = Form_Conf;
+        this.submit_Conf = submitData_conf;
+        var _method = Form_Conf.method ? Form_Conf.method : 'get',
+            _isDisplay = 'none', _parent = 'body';
+
+        $(_parent).append('<form id="'
+            + Form_Conf.id + '" action="'
+            + Form_Conf.url + '" method="'
+            + _method + '" style="display:'
+            + _isDisplay + ';"></form>');
+    };
+    pf.FromDisplay.prototype.initial = function () {
+        for (var item in this.submit_Conf) {
+            $("#" + this.id).append('<input type="text" name="'
+                + item + '" value="" />');
+        }
+    };
+
+    pf.iniObject = function (formDisplay,fn) {
+        this.debug = false;
+        this.display = formDisplay;
+        this.form_conf = this.display.Form_Conf;
+        this.submit_conf = this.display.submit_Conf;
+        this.dataSelect_ClassN = "fix";
+        
+        this.fn = fn ? fn : function () { throw new Error("I am Form ini method , Error Code:0311945")};
+    };
+
+    // through closure
+    pf.iniObject.prototype = (function () {
+        
+        return {
+            // modify form data
+            redrawForm: function () {
+                this.modifi_Submit_Conf();
+                var submitConf = this.submit_conf;
+                var fC = this.form_conf;
+                $("#" + fC.id).find("input").each(function () {
+                    var key = $(this).attr("name");
+                    $(this).attr("value",submitConf[key]);
+                });
+            },
+
+            // bind dom event
+            attackEvent: function (break_method) {
+                var fC = this.form_conf;
+                var that = this;
+                var isSubmit = true;
+
+                for (var item in fC.submit_id) {
+                    $("#" + fC.submit_id[item]).click(function () {
+                        if (break_method)
+                            isSubmit = break_method();
+                        if (isSubmit) {
+                            that.redrawForm();
+                            $("#" + fC.id).submit();
+                        }
+                    })
+                }
+            },
+
+            // 初始化
+            initial: function () {
+                var fC = this.form_conf;
+                this.attackEvent(fC.break_method);
+                this.modifi_Submit_Conf = this.fn;
+            }
+        };
+    })();
+
+/* name space */
+    var Animation = window.Animation || {};
+    Animation.CofArray = [".left-section .block1", ".left-section .block2", ".right-section"];
+
+    // default animation method
+    // JqName : Jquery class name
+    // 顶级HTML元素渐显的对象
+    Animation.masterEle_FadeIn = function (ConfArray_JqName) {
+        this.EleArray = ConfArray_JqName;
+    };
+    // through closure
+    // chain of prototype
+    Animation.masterEle_FadeIn.prototype = (function () {
+        var pointer = null;
+        return {
+            // 渐显动画
+            fadein_animaition: function (EleJq) {
+                var that = this;
+                if (pointer === null) {
+                    return;
+                }
+
+                $(EleJq).fadeIn(400, "linear", function () {
+                    that.fade_Bridge();
+                });
+            },
+
+            // clear string 'px' and return a float
+            strFormat: function (str) {
+                return parseFloat(str.replace(/px/g, ''));
+            },
+
+            // 探测方法
+            probe: function () {
+                var arr = this.EleArray;
+                for (var item in arr) {
+                    var jqName = arr[item];
+                    var itemWidth = $(jqName).outerWidth();
+                    var itemHeight = $(jqName).outerHeight();
+                    var topMargin = this.strFormat($(jqName).css("margin-top"));
+                    var leftMargin = this.strFormat($(jqName).css("margin-left"));
+                    var rightMargin = this.strFormat($(jqName).css("margin-right"));
+                    var bottomMargin = this.strFormat($(jqName).css("margin-bottom"));
+                    itemHeight = itemHeight + topMargin + bottomMargin;
+                    itemWidth = itemWidth + rightMargin + leftMargin;
+
+                    $(jqName).closest(".rotate-lead ").width(itemWidth).height(itemHeight);
+                    $(jqName).hide();
+                }
+            },
+
+            // 推动队列方法
+            advanceQueue: function () {
+                var arr = this.EleArray;
+                if (arr.length == 0) {
+                    pointer = null;
+                    return;
+                }
+                pointer = arr.shift();
+            },
+
+            // 渐显的桥接方法
+            fade_Bridge: function () {
+                this.advanceQueue();
+                this.fadein_animaition(pointer);
+            },
+
+            // 主初始化方法
+            initial: function () {
+                var that = this;
+                this.probe();
+                setTimeout(function () { that.fade_Bridge() }, 300);
+            }
+        };
+    })();
+
+// jquery Fn
+    $.regexNum = function (str) {
+        return str.replace(/\D/g, "");
+    }
+    $.regexParseSpecial_Number = function (str) {
+        str = $.daixiaoMi.regexStr.double_byte_number.test(str)
+            ? $.replace_doubleByte_Number(str) : str;
+        str = str.replace(/[^\d\.]*/g, "")
+        var reg = /^\.\d+/g;
+        var reg2=/\./g;
+        if (reg.test(str)) {
+            return parseFloat(str.replace(/\./, "0."))
+        }
+        return parseFloat(str);
+        // return str;
+    }
+    $.replace_doubleByte_Number = function (str) {
+        var doubleByte_number_arr = arr = [['１', '1'],
+            ['２', '2'], ['３', '3'], ['４', '4'],
+            ['５', '5'], ['６', '6'], ['７', '7'],
+            ['８', '8'], ['９', '9'], ['０', '0']];
+        for (var k in doubleByte_number_arr) {
+            str = str.replace(arr[k][0], arr[k][1]);
+        }
+        return str;
+    }
+
+    // 监测整个页面的click事件，如果事件源是数组中的值，那么将不会执行fn方法
+    $.documentClick = function (arr, fn) {
+        $(document).mousedown(function (e) {
+            var target = e.target;
+            var end = false;
+            for (var i in arr) {
+                $(arr[i]).each(function () { if ($(this)[0] == target) { end = true; return false; } })
+                if (end) return;
+            }
+            if (fn) fn();
+        })
+    }
+
+// daixiaoMi namespace
+    $.daixiaoMi = $.daixiaoMi || {};
+
+//  attr
+    $.daixiaoMi.color = { green: "#00ff21", red: "#F33101", blue: "#89AADE" };
+    $.daixiaoMi.attr = { state: "state" }
+    $.daixiaoMi.state = { warning: "warning", normal: "normal" };
+    $.daixiaoMi.regexStr = {
+        phone: /^\d{11}$/,
+        strict_validation_phone: /^(1(([35][0-9])|(47)|[8][0126789]))\d{8}$/,
+        mail: /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/,
+        qq: /^\d{5,10}$/,
+        chinese_Unicode: /[\u2E80-\u9FFF]+/,
+        chinese_Name: /^[\u2E80-\u9FFF]{1,5}$/,
+        double_byte_number:/[１|２｜３｜４｜５｜６｜７｜８｜９｜０]/
+    }
+
+// daixiaoMi Method
+    $.daixiaoMi.common_Text_input_bind = function (no_box_shadow, enter_press_fn, val_rollback) {
+        var box_shadow = !no_box_shadow ? true : false;
+        $("input:text").each(function () {
+            var checkType = $(this).attr("data-input-check") ? $(this).attr("data-input-check").trim() : "";
+
+            $(this).keyCode_enter_bind(enter_press_fn);
+            if (checkType == "num") {
+                $(this).justNumber();
+            } else if (checkType == "dci") {
+                $(this).justNumber(true);
+            } else if (checkType == "text" || !checkType) {
+                $(this).input_text_focus(box_shadow).input_text_blur();
+            }
+            if (checkType == "dci" || checkType == "num") {
+                $(this).input_number_focus(box_shadow).input_number_blur(val_rollback);
+            }
+        })
+    }
+
+    $.fn.alone_Text_input_bind = function (no_box_shadow, enter_press_fn, val_rollback) {
+        var box_shadow = !no_box_shadow ? true : false;
+        $(this).each(function () {
+            var checkType = $(this).attr("data-input-check") ? $(this).attr("data-input-check").trim() : "";
+
+            $(this).keyCode_enter_bind(enter_press_fn);
+            if (checkType == "num") {
+                $(this).justNumber();
+            } else if (checkType == "dci") {
+                $(this).justNumber(true);
+            } else if (checkType == "text" || !checkType) {
+                $(this).input_text_focus(box_shadow).input_text_blur();
+            }
+            if (checkType == "dci" || checkType == "num") {
+                $(this).input_number_focus(box_shadow).input_number_blur(val_rollback);
+            }
+        })
+        return $(this);
+    }
+
+    $.daixiaoMi.Calculated_Amount = function (arr) {
+        // arr: 0:credit, 1:block time, 2:fee rate
+        if (!arr) return;
+        var credit = arr[0],
+            block_time = arr[1],
+            fee_rate = arr[2];
+
+        var temp1 = credit * fee_rate + credit / block_time;
+        var temp2 = credit * fee_rate * block_time;
+        return [temp1, temp2];
+    }
+
+    /* -- inner method -- */
+    $.daixiaoMi.change_border_color = function (ele, border_color, box_shadow) {
+        $(ele).css({ "border-color": border_color});
+        if (box_shadow)
+            $(ele).css({ "box-shadow": "0 0 6px " + border_color });
+    }
+
+    $.daixiaoMi._btn_event_bind = function () {
+        $(".btn").each(function () {
+            $(this).jumpPage_CommonEle();
+        });
+    }
+
+    // 复制传入的data，并将复制品返回
+    // ! deep copy
+    $.daixiaoMi.CopyData = function (param_data, isArray) {
+        if (!param_data) return;
+        var destination = isArray ? [] : {};
+        var getType = function (o) {
+            var _t;
+            return ((_t = typeof (o)) == "object" ? o == null && "null" || Object.prototype.toString.call(o).slice(8, -1) : _t).toLowerCase();
+        };
+        for (var p in param_data) {
+            if (getType(param_data[p]) == "array" || getType(param_data[p]) == "object") {
+                isArray = getType(param_data[p]) == "array" ? true : false;
+                destination[p] = arguments.callee(param_data[p], isArray);
+            }
+            else {
+                destination[p] = param_data[p];
+            }
+        }
+        return destination;
+    }
+
+    $.fn.jumpPage_CommonEle = function () {
+        var link = $(this).attr("data-href");
+        var target = $(this).attr("data-target");
+        if (link) {
+            $(this).click(function (e) {
+                if (target) window.open(link);
+                else window.location.href = link;
+                e.stopPropagation();
+            })
+        }
+        return $(this);
+    }
+
+    $.fn.keyCode_enter_bind = function (fn) {
+        $(this).keydown(function (e) {
+            var enter = 13,
+                numLockEnter = 108;
+            if (e.keyCode == enter || e.keyCode == numLockEnter) {
+                if (typeof fn == "function")
+                    fn();
+                $(this).blur();
+            }
+        })
+        return $(this);
+    }
+
+    $.daixiaoMi.keyCode_tab_G_bind = function (fn) {
+        $(window).keydown(function (e) {
+            var tab = 9;
+            if (e.keyCode == tab) {
+                if (typeof fn == "function")
+                    fn();
+            }
+        })
+        return $(this);
+    }
+
+    $.fn.input_text_autocomplete = function (turn_on) {
+        var auto = turn_on ? "on" : "off";
+        $(this).attr("autocomplete", auto);
+    }
+
+    // 使input元素只能输入数字
+    $.fn.justNumber = function (Decimal) {
+        $(this).keydown(function (e) {
+            var minNum = 48, maxNum = 57,
+                del = 46, back = 8,
+                tab = 9,
+                home = 36, end = 35,
+                min2 = 37, max2 = 40,
+                minNumLock = 96, maxNumLock = 105;
+            var key_a = 65,
+                key_v = 86,
+                key_c = 67;
+            if ((e.keyCode >= minNum && e.keyCode <= maxNum) ||
+                (e.keyCode >= minNumLock && e.keyCode <= maxNumLock) ||
+                e.keyCode == del || e.keyCode == back ||
+                e.keyCode == tab ||
+                e.keyCode == home || e.keyCode == end ||
+                (e.keyCode >= min2 && e.keyCode <= max2)) {
+                return true;
+            }
+            if (Decimal) {
+                if (e.keyCode == 190 || e.keyCode == 110) return true;
+            }
+            if ((e.keyCode == key_v || e.keyCode == key_c || e.keyCode == key_a) && e.ctrlKey)
+                return true;
+
+            return false;
+        })
+        return $(this);
+    }
+
+    $.fn.input_number_blur = function (val_rollback) {
+        var rollback = val_rollback != undefined ? val_rollback : true;
+        $(this).blur(function () {
+            var numZ = $.regexParseSpecial_Number($(this).val());
+            $(this).val(numZ);
+            if (!rollback) $.daixiaoMi.prevSum = "";
+            if (!numZ && numZ != 0) $(this).val($.daixiaoMi.prevSum);
+            if ($(this).attr($.daixiaoMi.attr.state) == $.daixiaoMi.state.normal) {
+                $(this).removeAttr("style");
+            }
+        })
+        return $(this);
+    }
+
+    $.fn.input_number_focus = function (box_shadow) {
+        box_shadow = box_shadow ? true : false;
+        $(this).focus(function () {
+            $.daixiaoMi.prevSum = $(this).val();
+            $(this).input_normal(box_shadow);
+        })
+        return $(this);
+    }
+
+    $.fn.input_text_focus = function (box_shadow) {
+        box_shadow = box_shadow ? true : false;
+        $(this).focus(function () {
+            $(this).input_normal(box_shadow);
+        })
+        return $(this);
+    }
+
+    $.fn.input_text_blur = function () {
+        $(this).blur(function () {
+            if ($(this).attr($.daixiaoMi.attr.state) == $.daixiaoMi.state.normal) {
+                $(this).removeAttr("style");
+            }
+        })
+        return $(this);
+    }
+
+    // input state change
+    $.fn.input_warning = function (box_shadow) {
+        $.daixiaoMi.change_border_color(this, $.daixiaoMi.color.red, box_shadow);
+        // set sign
+        $(this).attr($.daixiaoMi.attr.state, $.daixiaoMi.state.warning);
+        return $(this);
+    }
+
+    $.fn.input_normal = function (box_shadow) {
+        $.daixiaoMi.change_border_color(this, $.daixiaoMi.color.blue, box_shadow);
+        $(this).attr($.daixiaoMi.attr.state, $.daixiaoMi.state.normal);
+        return $(this);
+    }
+
+    $.fn.set_normal_state = function () {
+        $(this).attr($.daixiaoMi.attr.state, $.daixiaoMi.state.normal);
+        return $(this);
+    }
+    /* -- E -- */
+
+    // Join Concern Box
+    $.daixiaoMi.common_bottom_bar = function () { }
+    // The Ajax Api
+    $.daixiaoMi.common_bottom_bar.Api_ajax = (function () {
+        // 0:success  1:fail
+        var _Callback_forAddTo = function (data, info, fn) {
+            if (data.ret == 1)    // fail
+                return;
+            if (data.ret != 0)
+                return;
+            if (fn)
+                fn();
+            $.daixiaoMi.common_bottom_bar.Api_add_item(info);
+        }
+        var _Callback_forDelete = function (data, goods_id, fn) {
+            if (data.ret == 1)    // fail
+                return;
+            if (data.ret != 0)
+                return;
+            if (fn)
+                fn();
+            $.daixiaoMi.common_bottom_bar.Api_ajax.after_deleteSucess(goods_id);
+        }
+
+        return {
+            // Ajax Basic Data will be sent
+            basic_Data_forDelete: {},
+            basic_Data_forAddTo: {},
+            // definition url etc
+            conf: {
+                type: "json",
+                addTo_url: "",
+                delete_url: ""
+            },
+            // 类型为：删除产品的ajax成功后将被作为方法调用
+            after_deleteSucess:0,
+            // private method/外界不应主动调用此方法
+            _sendAjax_delete_Goods: function (key, value, suc_Fn) {
+                var basicData = this.basic_Data_forDelete,
+                    _data = {};
+                for (var i in basicData)
+                    _data[i] = basicData[i];
+                if ((key && value) ||
+                    (key && value == 0))
+                    _data[key] = value;
+                else if (!_data)
+                    throw new Error("An undefined Ajax Data,main custom js, ErrorCode:00201630");
+
+                $.post(this.conf.delete_url, _data, (function (goods_id, fn) {
+                    return function (data) {
+                        _Callback_forDelete(data, goods_id, fn);
+                    }
+                })(value, suc_Fn), this.conf.type);
+            },
+
+            // info:{title/img/sum/rate/url/name/value}; key——goods name; value——goods code
+            sendAjax_add_Goods: function (key, value, info, suc_Fn) {
+                var basicData = this.basic_Data_forAddTo,
+                    _data = {};
+                for (var i in basicData)
+                    _data[i] = basicData[i];
+                if ((key && value) ||
+                    (key && value == 0))
+                    _data[key] = value;
+                else if (!_data)
+                    throw new Error("An undefined Ajax Data,main custom js, ErrorCode:00201176");
+
+                $.post(this.conf.addTo_url, _data, (function (info, fn) {
+                    return function (data) {
+                        _Callback_forAddTo(data, info, fn);
+                    }
+                })(info, suc_Fn), this.conf.type);
+            }
+        };
+    })()
+
+    // Join Concern Box prototype chain
+    $.daixiaoMi.common_bottom_bar.prototype = (function () {
+        var max_goods_num = 5;
+        var conf = {
+            cart_trigger: {
+                className: ".dxmHandle-bar .dxm-apart",
+                state: {}
+            },
+            cart_list: {
+                className: ".dxmHandle-bar .dxm-product",
+                state: {}
+            },
+            list_item: {
+                className: ".dxm-product .a-goods"
+            },
+            common: {}
+        }
+
+        // 购物车的触发器
+        var _cct = conf.cart_trigger,
+            _ccl = conf.cart_list,
+            _cci = conf.list_item;
+
+        _cct.state["normal_S"] = { "margin-top": "-3px" };
+        _cct.state["hover_S"] = { "margin-top": "-12px" };
+        _cct.state["nothing_S"] = { "margin-top": "-34px" };
+
+        // 产品的列表
+        _ccl.state["normal_S"] = { "margin-top": "-2px" };
+        _ccl.state["openUp_F_S"] = function () {
+            var item_Height = 76;
+            var max = max_goods_num;
+            var amount = $(conf.list_item.className).length;
+            if (amount > max)
+                $(".dxm-product").addClass("scroll");
+            else
+                $(".dxm-product").removeClass("scroll");
+            amount = amount < max ? amount : max;
+            if (!amount)
+                return 0;
+            return -((amount + 1) * item_Height - 22);
+        }
+
+        // 购物车的动画
+        conf.cart_trigger.hover = function () {
+            $(conf.cart_trigger.className).animate(conf.cart_trigger.state.hover_S, 100).find("i").css("display", "block");
+        }
+        conf.cart_trigger.normal = function () {
+            $(conf.cart_trigger.className).animate(conf.cart_trigger.state.normal_S, 100).find("i").hide();
+        }
+        conf.cart_list.hide_2_openUp = function (endHeight) {
+            endHeight = endHeight + "px";
+            $(conf.cart_trigger.className).hide().css(conf.cart_trigger.state.normal_S);
+            $(conf.cart_list.className).show().stop().animate({ "margin-top": endHeight }, 230);
+        }
+        conf.cart_list.openUp_2_hide = function () {
+            $(conf.cart_list.className).stop().animate(conf.cart_list.state.normal_S, 200, "linear", function () {
+                $(this).hide();
+            });
+            $(conf.cart_trigger.className).show();
+        }
+        conf.cart_list.hasNothing = function () {
+            $(conf.cart_trigger.className).addClass("nothing").animate(conf.cart_trigger.state.nothing_S, 150).show().find("i").show();
+            $(conf.cart_list.className).hide().css(conf.cart_list.state.normal_S);
+        }
+        conf.cart_trigger.nothing_2_normal = function (if_delay) {
+            var _time = if_delay ? 150 : 0;
+            $(conf.cart_trigger.className).delay(_time)
+                .animate(conf.cart_trigger.state.normal_S, 100, function () {
+                    $(this).removeClass("nothing").find("i").hide();
+                });
+        }
+
+        // change button state
+        conf.common.change_smallBtn_state = function () {
+            if (!$(conf.list_item.className).find("input:checked").length)
+                $(".dxm-product .simple-btn").removeClass("fix");
+            else
+                $(".dxm-product .simple-btn").addClass("fix");
+        }
+        // change goods total
+        conf.common.change_total_Num = function () {
+            var len = $(conf.list_item.className).length;
+            var i = len ? len : 0;
+            $(".dxmHandle-bar .dxm-grace>i").text(i);
+        }
+        conf.common.change_mainPart_state = function (hover) {
+            var len = $(conf.list_item.className).length;
+            var i = len || 0;
+            var time = hover ? 950 : 0;
+            if (i)
+                $(".common-bottom-handle").show();
+            else
+                $(".common-bottom-handle").stop(true).delay(time).animate({ width: 0 }, 100, function () {
+                    $(this).hide().removeAttr("style");
+                    conf.cart_trigger.nothing_2_normal();
+                });
+        }
+
+
+        // 传人delete ajax的方法
+        var deleteFn = function ($this) {
+            $this.parents(conf.list_item.className).remove();
+            var result = conf.cart_list.state.openUp_F_S();
+            if (result)
+                conf.cart_list.hide_2_openUp(result);
+            else
+                conf.cart_list.hasNothing();
+            conf.common.change_total_Num();
+            conf.common.change_smallBtn_state();
+            conf.common.change_mainPart_state(true);
+
+        }
+
+        // 每个产品bind event
+        conf.list_item.E_bind = function ($Jq) {
+            $Jq.mouseenter(function () {
+                $(this).addClass("fix");
+            }).mouseleave(function () {
+                $(this).removeClass("fix");
+            }).click(function () {
+                $(this).find("input:checkbox").click();
+            }).find(".g-close").click(function (e) {
+                $(this).hide().siblings(".load").show();
+                var key = "id",
+                    value = $(this).parents(conf.list_item.className).find("input:checkbox").attr("value");
+                $.daixiaoMi.common_bottom_bar.Api_ajax._sendAjax_delete_Goods(key, value, (function ($this) {
+                    return function () {
+                        deleteFn($this);
+                    }
+                })($(this)));
+                e.stopPropagation();
+            })
+
+            $Jq.find("input:checkbox").change(function () {
+                conf.common.change_smallBtn_state();
+            }).click(function (e) {
+                e.stopPropagation();
+            })
+
+            if ($(".dxm-product .control input:checked").length)
+                $Jq.find("input:checkbox").attr("checked", "checked");
+            else
+                $Jq.find("input:checkbox").removeAttr("checked");
+
+            $Jq.find("a").click(function (e) {
+                e.stopPropagation();
+            })
+        }
+
+        var E_bind_common_event = function () {
+            conf.list_item.E_bind($(conf.list_item.className));
+            // 
+            // selected all
+            $(".dxm-product .control").find("input:checkbox").click(function () {
+                if ($(this).is(":checked")) {
+                    $(conf.list_item.className).find("input:checkbox").attr("checked", "checked");
+                } else {
+                    $(conf.list_item.className).find("input:checkbox").removeAttr("checked");
+                }
+                conf.common.change_smallBtn_state();
+            })
+                .attr("checked", "checked");
+            $(conf.list_item.className).find("input:checkbox").attr("checked", "checked");
+            conf.common.change_smallBtn_state();
+
+            // Apply 2 all
+            $(".dxm-product .simple-btn").click(function () {
+                var url = $(this).attr("data-href-special") + "?";
+                var selected = $(conf.list_item.className).find("input:checkbox:checked").each(function (i) {
+                    var value = $(this).val();
+                    var name = $(this).attr("name");
+                    if (i)
+                        url += "&" + name + "=" + value;
+                    else
+                        url += name + "=" + value;
+                }).length;
+                if (selected)
+                    window.location.href = url;
+            })
+            // profile link
+            $(".dxm-grace .sil-er").jumpPage_CommonEle().mousedown(function (e) {
+                e.stopPropagation();
+            });
+            // init num
+            conf.common.change_total_Num();
+            conf.common.change_mainPart_state();
+        }
+
+        var E_bind_cart_tigger = function () {
+            $(".common-bottom-handle .dxmHandle-bar")
+                .mouseenter(conf.cart_trigger.hover)
+                .mouseleave(function () {
+                    if ($(conf.cart_trigger.className).hasClass("nothing"))
+                        conf.cart_trigger.nothing_2_normal(true);
+                    else
+                        conf.cart_trigger.normal();
+                })
+                .click(function () {
+                    var result = conf.cart_list.state.openUp_F_S();
+                    if (!result) {
+                        conf.cart_list.hasNothing();
+                        return;
+                    }
+                    if ($(conf.cart_trigger.className).is(":visible")) {
+                        conf.cart_list.hide_2_openUp(result);
+                    }
+                })
+
+            $(".common-bottom-handle .dxm-grace").click(function (e) {
+                if (!$(conf.cart_trigger.className).is(":visible") &&
+                    !$(conf.cart_trigger.className).hasClass("nothing")) {
+                    conf.cart_list.openUp_2_hide();
+                    e.stopPropagation();
+                }
+                    // 清单无商品
+                else if ($(conf.cart_trigger.className).hasClass("nothing")) {
+                    conf.cart_trigger.nothing_2_normal();
+                    e.stopPropagation();
+                }
+            })
+        }
+
+        var waste_documentClick = function () {
+            var arr = [
+                ".common-bottom-handle .dxmHandle-bar",
+                ".common-bottom-handle input",
+                ".common-bottom-handle .dxmHandle-bar .dxm-grace",
+                ".dxmHandle-bar .dxm-grace i",
+                ".dxmHandle-bar .dxm-apart",
+                ".dxmHandle-bar .dxm-apart i",
+                ".dxmHandle-bar .dxm-product",
+                ".dxmHandle-bar .dxm-product ul",
+                ".dxmHandle-bar .dxm-product i",
+                ".dxmHandle-bar .dxm-product img",
+                ".dxmHandle-bar .dxm-product a",
+                ".dxmHandle-bar .dxm-product label",
+                ".dxmHandle-bar .dxm-product li",
+                ".dxmHandle-bar .dxm-product div",
+                ".dxmHandle-bar .dxm-product p",
+                ".dxmHandle-bar .dxm-product .btn",
+                ".mainList .info-block4 i"
+            ];
+            $.documentClick(arr, function () {
+                if (!$(conf.cart_trigger.className).is(":visible") &&
+                    !$(conf.cart_trigger.className).hasClass("nothing")) {
+                    conf.cart_list.openUp_2_hide();
+                }
+                // 清单无商品
+                else if ($(conf.cart_trigger.className).hasClass("nothing"))
+                    conf.cart_trigger.nothing_2_normal();
+            });
+        }
+
+        // static method
+        $.daixiaoMi.common_bottom_bar.Api_add_item = function (info) {
+            if (!info)
+                throw new Error("goods parameter undefined ,main custom js, ErrorCode:03800912");
+            var title    = info.title || "",
+                img      = info.img || "",
+                sum      = info.sum || "0",
+                rate     = info.rate || "0",
+                item_url = info.url || "",
+                name     = info.name || "id",
+                value    = info.value || "";
+            var result;
+
+            var casepoint = sum != 0 ? '<p><i class="colorful">月供' + sum + '元</i> · 月费率' + rate + '%</p>' : '<p>月费率面议</p>';
+
+            var $itemStr = $('<li class="a-goods">' +
+                    '<div class="tool">' +
+                        '<input type="checkbox" name="' + name + '" value="' + value + '"/>' +
+                    '</div>' +
+                    '<div class="por-head">' +
+                        '<a href="' + item_url + '"><img src="' + img + '"/></a>' +
+                    '</div>' +
+                    '<div class="info-block">' +
+                        '<div class="title"><a target="_blank" href="' + item_url + '">' + title + '</a></div>' +
+                         casepoint +
+                        '<div class="g-close">×</div>' +
+                        '<div class="load"></div>' +
+                    '</div></li>');
+
+            conf.list_item.E_bind($itemStr);
+            $(".common-bottom-handle .dxm-product > ul").prepend($itemStr);
+            conf.common.change_smallBtn_state();
+            conf.common.change_total_Num();
+            conf.common.change_mainPart_state();
+
+            result = conf.cart_list.state.openUp_F_S();
+            if ($(conf.cart_list.className).is(":visible") && result) conf.cart_list.hide_2_openUp(result);
+        }
+        return {
+            attckEvent: function () {
+                E_bind_cart_tigger();
+                E_bind_common_event();
+                waste_documentClick();
+            },
+
+            initial: function () {
+                this.attckEvent();
+            }
+        }
+    })();
+
+    $.daixiaoMi._city_window = function () {
+        (function () {
+            var $trigger = $(".header .city span"),
+                $windows = $(".city .windows");
+
+            if (!$windows.length) return;
+            var show_hander,
+                hide_hander;
+            $trigger.mouseenter(function () {
+                clearTimeout(hide_hander);
+                show_hander = setTimeout(function () {
+                    $windows.show();
+                }, 120);
+            }).mouseleave(function () {
+                clearTimeout(show_hander);
+                hide_hander = setTimeout(function () {
+                    $windows.hide();
+                }, 400);
+            });
+            $windows.mouseenter(function () {
+                clearTimeout(hide_hander);
+            }).mouseleave(function () {
+                hide_hander = setTimeout(function () {
+                    $windows.hide();
+                }, 200);
+            }).find(".disable a").click(function () {
+                return false;
+            })
+        })();
+    }
+
+    $.daixiaoMi.input_cursor_automation = function () {
+        (function () {
+            var m = false;
+            $("input:text").focusin(function () {
+                if (!m)
+                    $(this).select();
+                else {
+                    var _val = $(this).val();
+                    $(this).val("").val(_val)
+                }
+                m = true;
+            }).focusout(function () {
+                var _val = $(this).val();
+                $(this).val("").val(_val);
+            })
+        })()
+    }
+
+    // prevent error click
+    $.daixiaoMi.prevent_Error_Click = function ($this, time) {
+        if ($this.hasClass("js-wait"))
+            return true;
+        else {
+            $this.addClass("js-wait");
+            setTimeout((function ($this) {
+                return function () {
+                    $this.removeClass("js-wait");
+                }
+            })($this), time || 600);
+            return false;
+        }
+    }
+
+    $.daixiaoMi.navigator = function () { };
+    $.daixiaoMi.navigator.isIE8 = (function () {
+        var appname = navigator.appName,
+            reg = /Microsoft/;
+        var version = parseInt(navigator.appVersion);
+        if (reg.test(appname))
+            if (version < 5)
+                return true;
+        return false;
+    })();
+
+    // is IE6
+    $.daixiaoMi.navigator.isIE_low_version = (function () {
+        var appname = navigator.appName,
+            reg = /Microsoft/,
+            reg_kernel = /Trident/;
+        var version = parseInt(navigator.appVersion),
+            appVersion = navigator.appVersion;
+
+        if (reg.test(appname))
+            if (version < 5 && !reg_kernel.test(appVersion))
+                return true;
+        return false;
+    })();
+
+    // is IE
+    $.daixiaoMi.navigator.is_IE = (function () {
+        var version = navigator.appVersion,
+            reg = /Trident/;
+        if (reg.test(version))
+            return true;
+        return false;
+    })();
+
+    $.daixiaoMi.navigator.IE_css = function (url) {
+        var url = url;
+        if ($.daixiaoMi.navigator.is_IE)
+            document.write('<link href="' + url + '" rel="stylesheet' + '" />');
+    }
+
+    $.daixiaoMi.navigator.IE8_css = function (url) {
+        var url = url;
+        if ($.daixiaoMi.navigator.isIE8)
+            document.write('<link href="' + url + '" rel="stylesheet' + '" />');
+    }
+
+    $.daixiaoMi.navigator.IE8_fn = function (fn) {
+        if ($.daixiaoMi.navigator.isIE8 && fn)
+            $(function () {
+                fn();
+            });
+    }
+
+    $.daixiaoMi.navigator.IE6_css = function (url) {
+        var url = url;
+        if ($.daixiaoMi.navigator.isIE_low_version)
+            document.write('<link href="' + url + '" rel="stylesheet' + '" />');
+    }
+
+    $.daixiaoMi.navigator.IE6_fn = function (fn) {
+        if ($.daixiaoMi.navigator.isIE_low_version && fn)
+            $(function () {
+                fn();
+            });
+    }
+
+    $.daixiaoMi.navigator.IE_low_version_Support = function (hide_this) {
+        if (hide_this) {
+            $(".ns-iemain").hide();
+        } else if ($.daixiaoMi.navigator.isIE_low_version)
+            (function () {
+                var $node = $('<div class="ns-iemain">' +
+                    '<h2>您的浏览器版本非常的低，这对您的数据安全，网络传输，网站功能的使用将造成极大地影响。</h2>' +
+                    '<h2>贷小秘网站会涉及到您的个人隐私。为了安全，我们已经停止了对低版本浏览器的适配。</h2>' +
+                    '<h4>您可以使用但不仅限于以下浏览器访问我们：</h4>' +
+                    '<ul>' +
+                        '<li><a href="http://www.firefox.com.cn"><img src="/static/image/homesite/cssimage/ns-firefox.png" /></a></li>' +
+                        '<li><a href="http://http://ie.sogou.com"><img src="/static/image/homesite/cssimage/ns-sougou.png" /></a></li>' +
+                        '<li><a href="http://www.google.cn/intl/zh-CN/chrome/browser/"><img src="/static/image/homesite/cssimage/ns-chrome.png" /></a></li>' +
+                    '</ul>' +
+                    '<div class="g-close" title="关闭">×</div>' + '</div>');
+                $node.find(".g-close").click(function () {
+                    $("body").removeClass("ns-iedebug"); $node.hide();
+                });
+                if ($.daixiaoMi.navigator.isIE_low_version)
+                    $("body").addClass("ns-iedebug").prepend($node);
+            })();
+    }
+
+    $.daixiaoMi.googleAnalytics_Ini = function () {
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    }
+
+    // main initial
+    $(function () {
+        $.daixiaoMi.navigator.IE_low_version_Support();
+        $.daixiaoMi._btn_event_bind();
+        // global google initialization
+        //$.daixiaoMi.googleAnalytics_Ini();
+
+        // $.daixiaoMi._city_window();
+        // ga('create', 'UA-46277144-1', 'auto', { 'allowLinker': true });
+        // ga('require', 'linker');
+        // ga('linker:autoLink', ['daixiaomi.com', 'daixiaomi.cn', 'daixiaomi.net']);
+        // ga('send', 'pageview');
+    });
+
+
+        var page = window.page || {};
+        $.daixiaoMi.navigator.IE_css("/static/css/homesite/ax-calculator/ie.css");
+        page.MethodObj = function () { };
+        page.MethodObj.prototype = (function () {
+            var I = {
+                dict: {
+                    business: {
+                        short6: {
+                            "10-10-20": 0.051, "10-12-26": 0.0535, "11-02-09": 0.056, "11-04-06": 0.0585, "11-07-07": 0.061, "12-06-08": 0.0585, "12-07-06": 0.056, "14-11-22": 0.056, "15-03-01": 0.0535, "15-05-10": 0.051, "15-06-28": 0.0485
+                        },
+                        short12: {
+                            "10-10-20": 0.0556, "10-12-26": 0.0581, "11-02-09": 0.0606, "11-04-06": 0.0631, "11-07-07": 0.0656, "12-06-08": 0.0631, "12-07-06": 0.06, "14-11-22": 0.056, "15-03-01": 0.0535, "15-05-10": 0.051, "15-06-28": 0.0485
+                        },
+                        short36: {
+                            "10-10-20": 0.056, "10-12-26": 0.0585, "11-02-09": 0.061, "11-04-06": 0.064, "11-07-07": 0.0665, "12-06-08": 0.064, "12-07-06": 0.0615, "14-11-22": 0.06, "15-03-01": 0.0575, "15-05-10": 0.055, "15-06-28": 0.0525
+                        },
+                        short60: {
+                            "10-10-20": 0.0596, "10-12-26": 0.0622, "11-02-09": 0.0645, "11-04-06": 0.0665, "11-07-07": 0.069, "12-06-08": 0.0665, "12-07-06": 0.064, "14-11-22": 0.06, "15-03-01": 0.0575, "15-05-10": 0.055, "15-06-28": 0.0525
+                        },
+                        long: {
+                            "10-10-20": 0.0614, "10-12-26": 0.064, "11-02-09": 0.066, "11-04-06": 0.068, "11-07-07": 0.0705, "12-06-08": 0.068, "12-07-06": 0.0655, "14-11-22": 0.0615, "15-03-01": 0.0590, "15-05-10": 0.0565, "15-06-28": 0.054
+                        }
+                    },
+                    PAF: {
+                        short60: {
+                            "10-10-20": 0.035, "10-12-26": 0.0375, "11-02-09": 0.04, "11-04-06": 0.042, "11-07-07": 0.0445, "12-06-08": 0.042, "12-07-06": 0.04, "15-03-01": 0.035, "15-05-10": 0.0325, "15-06-28": 0.03
+                        },
+                        long: {
+                            "10-10-20": 0.0405, "10-12-26": 0.043, "11-02-09": 0.045, "11-04-06": 0.047, "11-07-07": 0.049, "12-06-08": 0.047, "12-07-06": 0.045, "15-03-01": 0.04, "15-05-10": 0.0375, "15-06-28": 0.035
+                        }
+                    }
+                },
+                Ajax_McDonald: {
+                    url: "#",
+                    basic_data: {
+                    }
+                }
+            }
+
+            var waste_758023 = function () {
+                (function () {
+                    var $fn_business = $("#ax-business"),
+                        $fn_PAF = $("#ax-PAF"),
+                        $fn_mix = $("#ax-mix");
+                    var $ACPIT = $("#pay-radio1"),
+                        $ACPT = $("#pay-radio2");
+                    var $btn_count = $("#ax-count"),
+                        $btn_cancel = $("#ax-cancel");
+                    var $input_business_sum = $("#business-sum"),
+                        $input_business_rate = $("#business-rate"),
+                        $input_PAF_sum = $("#PAF-sum"),
+                        $input_PAF_rate = $("#PAF-rate");
+                    var $select_period = $("#period-select"),
+                        $select_business = $("#business-select"),
+                        $select_PAF = $("#PAF-select"),
+                        $select_business_dis = $("#business-discount"),
+                        $select_PAF_dis = $("#PAF-discount");
+                    var _Educt = {
+                        common: {
+                            years: 0,
+                            period: 0,
+                            show: true
+                        },
+                        lower: {
+                            years: 0,
+                            period: 0,
+                            show: false
+                        },
+                        higher: {
+                            years: 0,
+                            period: 0,
+                            show: false
+                        }
+                    }
+                    var $result = {
+                        res_g: $(".mix-G"),
+                        be_clear: $(".ax-i1,.ax-i2,.ax-i3,.ax-i4,.ax-i5,.ax-i6"),
+                        fn: {
+                            lower: $(".res_tab .tab#fn-lower"),
+                            common: $(".res_tab .tab#fn-common"),
+                            higher: $(".res_tab .tab#fn-higher"),
+                        },
+                        lower: {
+                            body: $("#lower"),
+                            business: $("#lower .ax-i1"),
+                            PAF: $("#lower .ax-i2"),
+                            interest: $("#lower .ax-i3"),
+                            capital: $("#lower .ax-i4"),
+                            monthly: $("#lower .ax-i5"),
+                            salary: $("#lower .ax-i6"),
+                            table_result: $("#lower .result-table tbody"),
+                            more: $("#lower .more"),
+                            interest_val: 0,
+                            buffer: 0
+                        },
+                        common: {
+                            body: $("#common"),
+                            business: $("#common .ax-i1"),
+                            PAF: $("#common .ax-i2"),
+                            interest: $("#common .ax-i3"),
+                            capital: $("#common .ax-i4"),
+                            monthly: $("#common .ax-i5"),
+                            salary: $("#common .ax-i6"),
+                            table_result: $("#common .result-table tbody"),
+                            more: $("#common .more"),
+                            interest_val: 0,
+                            buffer: 0
+                        },
+                        higher: {
+                            body: $("#higher"),
+                            business: $("#higher .ax-i1"),
+                            PAF: $("#higher .ax-i2"),
+                            interest: $("#higher .ax-i3"),
+                            capital: $("#higher .ax-i4"),
+                            monthly: $("#higher .ax-i5"),
+                            salary: $("#higher .ax-i6"),
+                            table_result: $("#higher .result-table tbody"),
+                            more: $("#higher .more"),
+                            interest_val: 0,
+                            buffer: 0
+                        }
+                    }
+
+                    $fn_business.click(function () {
+                        $input_PAF_sum.parents(".line").hide();
+                        $input_PAF_rate.parents(".line").hide();
+                        $input_business_sum.parents(".line").show();
+                        $input_business_rate.parents(".line").show();
+                        $result.res_g.hide();
+                    }).click();
+
+                    $fn_PAF.click(function () {
+                        $input_business_sum.parents(".line").hide();
+                        $input_business_rate.parents(".line").hide();
+                        $input_PAF_sum.parents(".line").show();
+                        $input_PAF_rate.parents(".line").show();
+                        $result.res_g.hide();
+                    });
+
+                    $fn_mix.click(function () {
+                        $input_PAF_sum.parents(".line").show();
+                        $input_PAF_rate.parents(".line").show();
+                        $input_business_sum.parents(".line").show();
+                        $input_business_rate.parents(".line").show();
+                        $result.res_g.show();
+                    });
+
+                    $result.fn.lower.click(function () {
+                        $result.common.body.hide();
+                        $result.lower.body.show();
+                        $result.higher.body.hide();
+                    });
+
+                    $result.fn.common.click(function () {
+                        $result.common.body.show();
+                        $result.lower.body.hide();
+                        $result.higher.body.hide();
+                    });
+
+                    $result.fn.higher.click(function () {
+                        $result.common.body.hide();
+                        $result.lower.body.hide();
+                        $result.higher.body.show();
+                    });
+
+                    var inner_3395202 = (function () {
+                        return;                 // there can be removed
+                        var $btn_common = $("#common .copy"),
+                            $btn_lower = $("#lower .copy"),
+                            $btn_higher = $("#higher .copy"),
+                            type = "json";
+                        $btn_common.click(function () {
+                            if ($.daixiaoMi.prevent_Error_Click($(this))) return;
+                            send($result.common);
+                        });
+                        $btn_lower.click(function () {
+                            if ($.daixiaoMi.prevent_Error_Click($(this))) return;
+                            send($result.lower);
+                        });
+                        $btn_higher.click(function () {
+                            if ($.daixiaoMi.prevent_Error_Click($(this))) return;
+                            send($result.higher);
+                        });
+                        var send = function ($body) {
+                            var _data = $.daixiaoMi.CopyData(I.Ajax_McDonald.basic_data),
+                                url = I.Ajax_McDonald.url;
+                            _data.details = $body.buffer;
+                            $.post(url, _data, function (data) {
+                                if (data.ret == 0)
+                                    open(data.redirect);
+                                else if (data.ret == -1)
+                                    throw new Error("An Unknow Error ,Error Code Is 12998320488");
+                            }, type);
+                        }
+                    })()
+
+                    var display = {
+                        array: [],
+                        clear: function ($body) {
+                            if ($body) $body.table_result.find("tr").remove();
+                            else {
+                                $result.common.table_result.find("tr").remove();
+                                $result.lower.table_result.find("tr").remove();
+                                $result.higher.table_result.find("tr").remove();
+                            }
+                            this.array = [];
+                        },
+                        create_row: function (NO, details) {
+                            var num = NO;
+                            var str = "<tr>" + "<td>" + num + "</td>";
+                            for (var key in details)
+                                str += "<td>" + details[key].toFixed(2) + "</td>";
+                            str += "</tr>";
+                            this.array.push(str);
+                        },
+                        append: function ($table) {
+                            var str = this.array.join("");
+                            $table.append(str);
+                        }
+                    }
+
+                    var data_care = function () {
+                        this.basic_obj = {
+                                infomation: {
+                                    type: {
+                                            en: "",       // business/ PAF/ mix
+                                            ch: ""         // 商业贷款/ 公积金贷款 /组合贷款
+                                    },
+                                    sum: {
+                                        business: -1,
+                                        PAF: -1
+                                    },
+                                    period: {
+                                        years: -1,
+                                        months: -1
+                                    },
+                                    rate: {
+                                        business: -1,
+                                        PAF: -1
+                                    },
+                                    pattern: ""    // 等额本金/ 等额本息
+                                },
+                            result: {
+                                total: {
+                                        interest: -1,
+                                        capital_interest: -1,
+                                        business_interest: -1,
+                                        PAF_interest: -1,
+                                        salary: -1,
+                                        monthly_capital_interest: -1,
+                                        },
+                                table: {
+                                    sequence: {
+                                        "a": "monthly",
+                                        "b": "monthly_capital_interest",
+                                        "c": "monthly_interest",
+                                        "d": "monthly_capital",
+                                        "e": "remaining_capital"
+                                    },
+                                    row: []
+                                }
+                            }
+                        },
+                        this.basic_row = {
+                            monthly: 0,
+                            monthly_capital_interest: 0,
+                            monthly_capital: 0,
+                            monthly_interest: 0,
+                            remaining_capital: 0
+                        }
+                    }
+
+                    var data_factory = {
+                        trusteeship:-1,
+                        buffer:-1,
+                        clear: function () {
+                            this.buffer = -1;
+                        },
+                        initial: function (period) {
+                            var care = this.trusteeship = new data_care();
+                            var buffer = this.buffer = care.basic_obj,
+                            _info = buffer.infomation;
+                            var en, ch;
+
+                            if ($fn_business.hasClass("fix")) { en = "business"; ch = "商业贷款"; }
+                            else if ($fn_PAF.hasClass("fix")) { en = "PAF"; ch = "公积金贷款"; }
+                            else { en = "mix"; ch = "组合贷款"; }
+
+                            if (en == "business") {_info.sum.business = $input_business_sum.val();_info.rate.business = $input_business_rate.val();}
+                            else if (en == "PAF") { _info.sum.PAF = $input_PAF_sum.val(); _info.rate.PAF = $input_PAF_rate.val(); }
+                            else {
+                                _info.sum.business = $input_business_sum.val(); _info.rate.business = $input_business_rate.val();
+                                _info.sum.PAF = $input_PAF_sum.val(); _info.rate.PAF = $input_PAF_rate.val();
+                            }
+                            if ($ACPIT.is(":checked")) _info.pattern = "等额本息";
+                            else _info.pattern = "等额本金";
+
+                            _info.type.ch = ch, _info.type.en = en;
+                            _info.period.months = period;
+                            _info.period.years = fn.get_years(period);
+                        },
+                        create_row: function (NO, arr) {
+                            var _row = $.daixiaoMi.CopyData(this.trusteeship.basic_row);
+                            _row.monthly = NO;
+                            _row.monthly_capital_interest = arr[0];
+                            _row.monthly_interest = arr[1];
+                            _row.monthly_capital = arr[2];
+                            _row.remaining_capital = arr[3];
+                            this.buffer.result.table.row.push(_row);
+                        },
+                        Ending: function (total) {           // ending method
+                            var _total = total,
+                                basic = this.buffer.result.total;
+                            basic.business_interest = _total.business_interest || -1;
+                            basic.capital_interest = _total.capital_interest || -1;
+                            basic.interest = _total.interest || -1;
+                            basic.monthly_capital_interest = _total.monthly_capital_interest || -1;
+                            basic.PAF_interest = _total.PAF_interest || -1;
+                            basic.salary = _total.salary || -1;
+                            return;                 // there can be removed
+                            return this.buffer;
+                        }
+                    }
+
+                    var calculator = {
+                        // {capital,rate,periods,month,repayment_capital}
+                        // average capital plus interest
+                        ACPIT: {
+                            I: {
+                                capital: 0,
+                                rate: 0,
+                                periods: 0,
+                                variable: {
+                                    month: 1,
+                                    repayment_capital: 0
+                                },
+                                clear: function () {
+                                    this.capital =
+                                    this.periods =
+                                    this.rate = 0;
+                                    this.variable.month = 1; this.variable.repayment_capital = 0;
+                                },
+                                setVal: function (capital, rate, periods) {
+                                    this.capital = capital; this.periods = periods; this.rate = rate;
+                                }
+                            },
+                            monthly_capital_interest: function () {
+                                var info = this.I;
+                                var formula = (info.capital * info.rate * Math.pow((1 + info.rate), info.periods)) /
+                                                (Math.pow((1 + info.rate), info.periods) - 1);
+                                return formula;
+                            },
+                            monthly_capital: function () {
+                                var info = this.I;
+                                var formula = (info.capital * info.rate * Math.pow((1 + info.rate), (info.variable.month - 1))) /
+                                                (Math.pow((1 + info.rate), info.periods) - 1);
+                                return formula;
+                            },
+                            monthly_interest: function (monthly_capital_interest, monthly_capital) {
+                                return monthly_capital_interest - monthly_capital;
+                            },
+                            remaining_capital: function () {
+                                var info = this.I;
+                                return info.capital - info.variable.repayment_capital;
+                            },
+                            main: function (month, repayment_capital) {
+                                var info = this.I,
+                                    res = {};
+                                info.variable.month = month || 1;
+                                info.variable.repayment_capital = repayment_capital || 0;
+
+                                res.monthly_capital_interest = this.monthly_capital_interest();
+                                res.monthly_capital = this.monthly_capital();
+                                res.monthly_interest = this.monthly_interest(res.monthly_capital_interest, res.monthly_capital);
+
+                                info.variable.repayment_capital += res.monthly_capital;
+                                res.remaining_capital = this.remaining_capital();
+
+                                return res;
+                            }
+                        },
+                        // average capital
+                        ACPT: {
+                            I: {
+                                capital: 0,
+                                rate: 0,
+                                periods: 0,
+                                variable: {
+                                    month: 1,
+                                    repayment_capital: 0
+                                },
+                                clear: function () {
+                                    this.capital =
+                                    this.periods =
+                                    this.rate = 0;
+                                    this.variable.month = 1; this.variable.repayment_capital = 0;
+                                },
+                                setVal: function (capital, rate, periods) {
+                                    this.capital = capital; this.periods = periods; this.rate = rate;
+                                }
+                            },
+                            monthly_capital_interest: function () {
+                                var info = this.I;
+                                var formula = (info.capital / info.periods) +
+                                                (info.capital * info.rate * (1 - (info.variable.month - 1) / info.periods));
+                                return formula;
+                            },
+                            monthly_capital: function () {
+                                var info = this.I;
+                                var formula = info.capital / info.periods;
+                                return formula;
+                            },
+                            monthly_interest: function (monthly_capital_interest, monthly_capital) {
+                                var info = this.I;
+                                var formula = info.capital * info.rate * (1 - (info.variable.month - 1) / info.periods);
+                                return formula;
+                            },
+                            remaining_capital: function () {
+                                var info = this.I;
+                                return info.capital - info.variable.repayment_capital;
+                            },
+                            main: function (month, repayment_capital) {
+                                var info = this.I,
+                                    res = {};
+                                info.variable.month = month || 1;
+                                info.variable.repayment_capital = repayment_capital || 0;
+
+                                res.monthly_capital_interest = this.monthly_capital_interest();
+                                res.monthly_capital = this.monthly_capital();
+                                res.monthly_interest = this.monthly_interest(res.monthly_capital_interest, res.monthly_capital);
+
+                                info.variable.repayment_capital += res.monthly_capital;
+                                res.remaining_capital = this.remaining_capital();
+                                return res;
+                            }
+                        },
+                        MIX_mode: {
+                            ACPIT: {
+                                I: {
+                                    capital: {
+                                        business: 0, PAF: 0
+                                    },
+                                    rate: {
+                                        business: 0, PAF: 0
+                                    },
+                                    periods: 0,
+                                    variable: {
+                                        month: 1,
+                                        repayment_capital: {
+                                            business: 0, PAF: 0
+                                        }
+                                    },
+                                    clear: function () {
+                                        this.periods = 0;
+                                        this.capital = { business: 0, PAF: 0 };
+                                        this.rate = { business: 0, PAF: 0 };
+                                        this.variable.month = 1; this.variable.repayment_capital = 0;
+                                    },
+                                    setVal: function (capital, rate, periods) {
+                                        this.capital = capital; this.rate = rate; this.periods = periods;
+                                    }
+                                },
+                                main: function (month, repayment_capital) {
+                                    var BODY = calculator.ACPIT;
+                                    var info = this.I;
+                                    var res = { mix_data: "yes" };
+                                    BODY.I.setVal(info.capital.business, info.rate.business, info.periods);
+                                    res.business = BODY.main(month, repayment_capital.business);
+                                    BODY.I.setVal(info.capital.PAF, info.rate.PAF, info.periods);
+                                    res.PAF = BODY.main(month, repayment_capital.PAF);
+
+                                    res.MIX_mode = {};
+                                    res.MIX_mode.monthly_capital_interest = res.business.monthly_capital_interest + res.PAF.monthly_capital_interest;
+                                    res.MIX_mode.monthly_capital = res.business.monthly_capital + res.PAF.monthly_capital;
+                                    res.MIX_mode.monthly_interest = res.business.monthly_interest + res.PAF.monthly_interest;
+                                    res.MIX_mode.remaining_capital = res.business.remaining_capital + res.PAF.remaining_capital;
+                                    return res;
+                                }
+                            },
+                            ACPT: {
+                                I: {
+                                    capital: {
+                                        business: 0, PAF: 0
+                                    },
+                                    rate: {
+                                        business: 0, PAF: 0
+                                    },
+                                    periods: 0,
+                                    variable: {
+                                        month: 1,
+                                        repayment_capital: {
+                                            business: 0, PAF: 0
+                                        }
+                                    },
+                                    clear: function () {
+                                        this.periods = 0;
+                                        this.capital = { business: 0, PAF: 0 };
+                                        this.rate = { business: 0, PAF: 0 };
+                                        this.variable.month = 1; this.variable.repayment_capital = 0;
+                                    },
+                                    setVal: function (capital, rate, periods) {
+                                        this.capital = capital; this.rate = rate; this.periods = periods;
+                                    }
+                                },
+                                main: function (month, repayment_capital) {
+                                    var BODY = calculator.ACPT;
+                                    var info = this.I;
+                                    var res = { mix_data: "yes" };
+                                    BODY.I.setVal(info.capital.business, info.rate.business, info.periods);
+                                    res.business = BODY.main(month, repayment_capital.business);
+                                    BODY.I.setVal(info.capital.PAF, info.rate.PAF, info.periods);
+                                    res.PAF = BODY.main(month, repayment_capital.PAF);
+
+                                    res.MIX_mode = {};
+                                    res.MIX_mode.monthly_capital_interest = res.business.monthly_capital_interest + res.PAF.monthly_capital_interest;
+                                    res.MIX_mode.monthly_capital = res.business.monthly_capital + res.PAF.monthly_capital;
+                                    res.MIX_mode.monthly_interest = res.business.monthly_interest + res.PAF.monthly_interest;
+                                    res.MIX_mode.remaining_capital = res.business.remaining_capital + res.PAF.remaining_capital;
+                                    return res;
+                                }
+                            }
+                        }
+                    }
+
+                    var E = {
+                        res_clear: function () {
+                            var $common = $result.fn.common,
+                                $lower = $result.fn.lower,
+                                $higher = $result.fn.higher;
+                            $common.find(".fund").text(0);
+                            $lower.find(".fund").text(0);
+                            $higher.find(".fund").text(0);
+                            $result.be_clear.val("");
+                            $(".more").hide();
+                            display.clear();
+                            waste_4436198();
+                        },
+                        cancel: function () {
+                            $(".result").hide();
+                            $input_business_sum.val("");
+                            $input_PAF_sum.val("");
+                            E.res_clear();
+                        },
+                        detail_copy: function () {
+
+                        },
+                        calculator: function (Preview, $body, periods) {
+                            fn.Educt_handle();
+                            if ($body)
+                                this._calculator_entity($body, periods, Preview);
+                            else {
+                                this._calculator_entity($result.common, _Educt.common.period, Preview);
+                                this._calculator_entity($result.lower, _Educt.lower.period, Preview);
+                                this._calculator_entity($result.higher, _Educt.higher.period, Preview);
+                                fn.initial();
+                            }
+                        },
+                        _calculator_entity: function ($body, periods, Preview) {
+                            display.clear($body);
+                            var capital = {
+                                business: $input_business_sum.val() * 10000,
+                                PAF: $input_PAF_sum.val() * 10000
+                            },
+                               rate = {
+                                   business: $input_business_rate.val() / 1200,
+                                   PAF: $input_PAF_rate.val() / 1200
+                               };
+                            var periods = periods,
+                                month = 0,
+                                res;
+                            var _total = {
+                                interest: 0,
+                                capital_interest: 0,
+                                business_interest: 0,
+                                PAF_interest: 0,
+                                salary: 0,
+                                monthly_capital_interest: 0,
+                            };
+                            data_factory.initial(periods);
+                            if ($fn_mix.hasClass("fix")) {
+                                var _Count = $ACPIT.is(":checked") ? calculator.MIX_mode.ACPIT : calculator.MIX_mode.ACPT;
+                                var _capital = capital,
+                                    _rate = rate;
+                                var repayment_capital = {
+                                    business: 0, PAF: 0
+                                };
+                                _Count.I.setVal(_capital, _rate, periods);
+                                for (var i = 0; i < periods; i++) {
+                                    month = i + 1;
+                                    res = fn.res_serialization(_Count.main(month, repayment_capital));
+                                    if (i == periods - 1 && res.MIX_mode.remaining_capital) res.MIX_mode.remaining_capital = 0;
+                                    repayment_capital.business += res.business.monthly_capital;
+                                    repayment_capital.PAF += res.PAF.monthly_capital;
+                                    _total.business_interest += res.business.monthly_interest;
+                                    _total.PAF_interest += res.PAF.monthly_interest;
+
+                                    var arr = [res.MIX_mode.monthly_capital_interest, res.MIX_mode.monthly_interest,
+                                               res.MIX_mode.monthly_capital, res.MIX_mode.remaining_capital];
+                                    data_factory.create_row(month, arr);
+
+                                    if (Preview && i >= 10) {
+                                        if (_capital.business || _capital.PAF) $body.more.show();
+                                        else $body.more.hide();
+                                        continue;
+                                    } else $body.more.hide();
+                                    if (month == 1) _total.salary = res.MIX_mode.monthly_capital_interest;
+                                    display.create_row(month, arr);
+                                }
+                                _Count.I.clear();
+                                _total.interest = _total.business_interest + _total.PAF_interest;
+                                _total.capital_interest = _capital.business + _capital.PAF + _total.interest;
+
+                                $body.business.val((_total.business_interest || 0).toFixed(2));
+                                $body.PAF.val((_total.PAF_interest || 0).toFixed(2));
+
+                            } else {
+                                var _Count = $ACPIT.is(":checked") ? calculator.ACPIT : calculator.ACPT;
+                                var _capital = $fn_business.hasClass("fix") ? capital.business : capital.PAF,
+                                    _rate = $fn_business.hasClass("fix") ? rate.business : rate.PAF;
+                                var repayment_capital = 0;
+                                _Count.I.setVal(_capital, _rate, periods);
+
+                                for (var i = 0; i < periods; i++) {
+                                    month = i + 1;
+                                    res = fn.res_serialization(_Count.main(month, repayment_capital));
+                                    if (i == periods - 1 && res.remaining_capital) res.remaining_capital = 0;
+                                    repayment_capital += res.monthly_capital;
+                                    _total.interest += res.monthly_interest;
+
+                                    var arr = [res.monthly_capital_interest, res.monthly_interest,
+                                               res.monthly_capital, res.remaining_capital];
+                                    data_factory.create_row(month, arr);
+
+                                    if (Preview && i >= 10) {
+                                        if (_capital) $body.more.show();
+                                        else $body.more.hide();
+                                        continue;
+                                    } else $body.more.hide();
+                                    if (month == 1) _total.salary = res.monthly_capital_interest;
+                                    display.create_row(month, arr);
+                                }
+                                _Count.I.clear();
+                                _total.capital_interest = _capital + _total.interest;
+                            }
+                            $body.interest_val = _total.interest;
+                            $body.monthly.val((_total.salary || 0).toFixed(2));
+                            $body.interest.val((_total.interest || 0).toFixed(2));
+                            $body.capital.val((_total.capital_interest || 0).toFixed(2));
+                            $body.salary.val(fn.parse_salary(_total.salary * 2) || 0);
+                            display.append($body.table_result);
+
+                            $body.buffer = data_factory.Ending(_total);
+                            data_factory.clear();
+                        },
+                        change_business_rate: function () {
+                            var rate, key, discount,
+                                val = $select_business.val(),
+                                dis_val = $select_business_dis.val();
+                            if (val == 0)
+                                $input_business_rate.val(0);
+                            else {
+                                // traversal
+                                $select_business.find("option").each(function () {
+                                    if ($(this).val() == val) {
+                                        key = $(this).attr("data-key");
+                                        return false;
+                                    }
+                                })
+                                $select_business_dis.find("option").each(function () {
+                                    if ($(this).val() == dis_val) {
+                                        discount = $(this).attr("data-discount");
+                                        return false;
+                                    }
+                                })
+                                rate = fn.get_business_rate(key, discount);
+                                $input_business_rate.val(fn.parsePercent(rate));
+                            }
+                        },
+                        change_PAF_rate: function () {
+                            var rate, key,
+                                val = $select_PAF.val();
+                            if (val == 0)
+                                $input_PAF_rate.val(0);
+                            else {
+                                // traversal
+                                $select_PAF.find("option").each(function () {
+                                    if ($(this).val() == val) {
+                                        key = $(this).attr("data-key");
+                                        return false;
+                                    }
+                                })
+                                rate = fn.get_PAF_rate(key);
+                                $input_PAF_rate.val(fn.parsePercent(rate));
+                            }
+                        },
+                        initial: function () {
+                            this.change_business_rate();
+                            this.change_PAF_rate();
+                        }
+                    }
+                    // private fn
+                    var fn = {
+                        initial: function () {
+                            $(".result").show();
+                            waste_4436198()
+                            var $common = $result.fn.common,
+                                $lower = $result.fn.lower,
+                                $higher = $result.fn.higher;
+                            var txt = {
+                                common: "总利息",
+                                lower: "节省利息",
+                                higher: "多出利息",
+                                unitO: "元",
+                                unitT: "万元",
+                            };
+                            var fund = {
+                                common: 0,
+                                lower: 0,
+                                higher: 0,
+                            };
+                            var $node = $(".result-data .line span.monthly");
+
+                            $common.find(".years").text(_Educt.common.years);
+                            $lower.find(".years").text(_Educt.lower.years);
+                            $higher.find(".years").text(_Educt.higher.years);
+                            if (_Educt.common.show) {
+                                $common.find(".green").text(txt.common);
+                                $lower.find(".green").text(txt.lower);
+                                $higher.find(".green").text(txt.higher);
+                                fund.common = $result.common.interest_val;
+                                fund.lower = $result.common.interest_val - $result.lower.interest_val;
+                                fund.higher = $result.higher.interest_val - $result.common.interest_val;
+                                $common.click();
+                            } else if (_Educt.lower.show) {
+                                $common.find(".green").text(txt.higher);
+                                $lower.find(".green").text(txt.common);
+                                $higher.find(".green").text(txt.higher);
+                                fund.lower = $result.lower.interest_val;
+                                fund.common = $result.common.interest_val - $result.lower.interest_val;
+                                fund.higher = $result.higher.interest_val - $result.lower.interest_val;
+                                $lower.click();
+                            } else if (_Educt.higher.show) {
+                                $common.find(".green").text(txt.lower);
+                                $lower.find(".green").text(txt.lower);
+                                $higher.find(".green").text(txt.common);
+                                fund.higher = $result.higher.interest_val;
+                                fund.common = $result.higher.interest_val - $result.common.interest_val;
+                                fund.lower = $result.higher.interest_val - $result.lower.interest_val;
+                                $higher.click();
+                            }
+                            if (fund.common < 2000) $common.find(".unit").text(txt.unitO);
+                            else $common.find(".unit").text(txt.unitT);
+                            if (fund.lower < 2000) $lower.find(".unit").text(txt.unitO);
+                            else $lower.find(".unit").text(txt.unitT);
+                            if (fund.higher < 2000) $higher.find(".unit").text(txt.unitO);
+                            else $higher.find(".unit").text(txt.unitT);
+
+                            $common.find(".fund").text(this.parse_tab_num(fund.common));
+                            $lower.find(".fund").text(this.parse_tab_num(fund.lower));
+                            $higher.find(".fund").text(this.parse_tab_num(fund.higher));
+                            
+                            if ($ACPIT.is(":checked")) $node.text("每月月供");
+                            else $node.text("最高月供");
+
+                        },
+                        parseFloat: function (num) {
+                            return parseFloat(num.toFixed(4));
+                        },
+                        parsePercent: function (num) {
+                            num = num * 100;
+                            return parseFloat(num.toFixed(2));
+                        },
+                        parse_tab_num: function (num) {
+                            if (num < 2000)
+                                return parseInt(num);
+                            return parseFloat((parseInt(num / 1000) / 10).toFixed(1));
+                        },
+                        parse_salary: function (num) {
+                            if (num < 1000)
+                                return parseInt(num);
+                            if (num < 10000)
+                                return parseInt(num / 10) * 10;
+                            return parseInt((num / 1000)) * 1000;
+                        },
+                        Educt_handle: function () {
+                            var sequence = [1, 5, 10, 15, 20, 25, 30],
+                                years = fn.convert_years();
+                            var _e = _Educt;
+                            var seq_end = sequence.slice(-3);
+                            if (years == sequence[0]) {
+                                _e.lower.years = years, _e.lower.period = this.get_period(), _e.lower.show = true;
+                                _e.common.years = sequence[1], _e.common.period = this.get_period(sequence[1]), _e.common.show = false;
+                                _e.higher.years = sequence[2], _e.higher.period = this.get_period(sequence[2]), _e.higher.show = false;
+                            } else if (years == 0.5) {
+                                _e.lower.years = "半", _e.lower.period = this.get_period(), _e.lower.show = true;
+                                _e.common.years = sequence[0], _e.common.period = this.get_period(sequence[0]), _e.common.show = false;
+                                _e.higher.years = sequence[1], _e.higher.period = this.get_period(sequence[1]), _e.higher.show = false;
+                            } else if (years == seq_end[2]) {
+                                _e.higher.years = years, _e.higher.period = this.get_period(), _e.higher.show = true;
+                                _e.common.years = seq_end[1], _e.common.period = this.get_period(seq_end[1]), _e.common.show = false;
+                                _e.lower.years = seq_end[0], _e.lower.period = this.get_period(seq_end[0]), _e.lower.show = false;
+                            } else {
+                                var lower_i = 0,
+                                    higher_i = 1;
+                                for (var key in sequence) {
+                                    if (years == sequence[lower_i]) {
+                                        lower_i--;
+                                        _e.common.years = years, _e.common.period = this.get_period(), _e.common.show = true;
+                                        _e.lower.years = sequence[lower_i], _e.lower.period = this.get_period(sequence[lower_i]), _e.lower.show = false;
+                                        _e.higher.years = sequence[higher_i], _e.higher.period = this.get_period(sequence[higher_i]), _e.higher.show = false;
+                                        break;
+                                    }
+                                    else if (years > sequence[lower_i] && years < sequence[higher_i]) {
+                                        _e.common.years = years, _e.common.period = this.get_period(), _e.common.show = true;
+                                        _e.lower.years = sequence[lower_i], _e.lower.period = this.get_period(sequence[lower_i]), _e.lower.show = false;
+                                        _e.higher.years = sequence[higher_i], _e.higher.period = this.get_period(sequence[higher_i]), _e.higher.show = false;
+                                        break;
+                                    }
+                                    lower_i++; higher_i++;
+                                }
+                            }
+                        },
+                        res_mixdata_serialization: function (res) {
+                            this.res_serialization(res.business);
+                            this.res_serialization(res.PAF);
+                            this.res_serialization(res.MIX_mode);
+                        },
+                        res_serialization: function (res) {
+                            if (res.mix_data == "yes")
+                                this.res_mixdata_serialization(res);
+                            else
+                                for (var key in res)
+                                    res[key] = parseFloat(res[key]);
+                            //res[key] = parseFloat(res[key].toFixed(2));
+                            return res;
+                        },
+                        get_years: function (period) {
+                            var _periods = period,
+                                formula = period / 12;
+                            return formula == 0.5 ? "半" : formula;
+                        },
+                        get_period: function (years) {
+                            var _years = years || $select_period.val(),
+                                formula = (parseInt(_years)) * 12;
+                            return formula != 0 ? formula : 6;
+                        },
+                        convert_years: function () {
+                            var current = this.get_period();
+                            if (current < 12) return parseFloat(current / 12);
+                            else return parseInt(current / 12);
+                        },
+                        get_business_rate: function (key, discount) {
+                            var period = this.get_period();
+                            var _dict,
+                                _key = key,
+                                _discount = discount ? discount : 1,
+                                rate = 0;
+                            if (period <= 6) _dict = I.dict.business.short6;
+                            else if (period <= 12) _dict = I.dict.business.short12;
+                            else if (period <= 36) _dict = I.dict.business.short36;
+                            else if (period <= 60) _dict = I.dict.business.short60;
+                            else if (period > 60) _dict = I.dict.business.long;
+                            else throw new Error("An Unknow Error ,Error Code Is 992039582");
+
+                            rate = parseFloat(_dict[_key]) * _discount;
+                            return rate;
+                        },
+                        get_PAF_rate: function (key) {
+                            var period = this.get_period();
+                            var _dict,
+                                _key = key,
+                                rate = 0;
+                            if (period <= 60) _dict = I.dict.PAF.short60;
+                            else if (period > 60) _dict = I.dict.PAF.long;
+                            else throw new Error("An Unknow Error ,Error Code Is 309927861");
+
+                            rate = parseFloat(_dict[_key]);
+                            return rate;
+                        }
+                    }
+
+                    // event bind
+                    $(".td-head .tab").click(function () {
+                        if (!$(this).hasClass("fix")) { $(this).addClass("fix").siblings().removeClass("fix"); E.res_clear(); };
+                    })
+
+                    $(".result .res_tab .tab").click(function () {
+                        if (!$(this).hasClass("fix")) $(this).addClass("fix").siblings().removeClass("fix");
+                    })
+
+                    $select_business.change(E.change_business_rate);
+                    $select_business_dis.change(E.change_business_rate);
+                    $select_PAF.change(E.change_PAF_rate);
+                    $select_PAF_dis.change(E.change_PAF_rate);
+                    $select_period.change(function () { E.change_business_rate(); E.change_PAF_rate(); })
+                    $btn_cancel.click(E.cancel);
+                    $btn_count.click(function () {
+                        if ($input_business_sum.val().trim() == "") $input_business_sum.parents("label").find(".warning").show();
+                        else $input_business_sum.parents("label").find(".warning").hide();
+                        if ($input_PAF_sum.val().trim() == "") $input_PAF_sum.parents("label").find(".warning").show();
+                        else $input_PAF_sum.parents("label").find(".warning").hide();
+                        if (!$(".warning").is(":visible"))
+                            E.calculator(true);
+                    });
+                    $result.common.more.click(function () { $(this).hide(); E.calculator(false, $result.common, _Educt.common.period); $("#common .result-table").scrollTop(384); });
+                    $result.lower.more.click(function () { $(this).hide(); E.calculator(false, $result.lower, _Educt.lower.period); $("#lower .result-table").scrollTop(384); });
+                    $result.higher.more.click(function () { $(this).hide(); E.calculator(false, $result.higher, _Educt.higher.period); $("#higher .result-table").scrollTop(384); });
+                    E.initial();
+                })()
+            }
+
+            var waste_4436198 = function () {
+                var mode = {
+                    business: 888,
+                    MAX: 990,
+                    min: { business: 328, MAX: 398 }
+                }
+                // if ($(".result").is(":visible")) {
+                //     if ($("#ax-business").hasClass("fix") || $("#ax-PAF").hasClass("fix")) baidu.app.setHeight(mode.business);
+                //     else baidu.app.setHeight(mode.MAX);
+                // } else {
+                //     if ($("#ax-business").hasClass("fix") || $("#ax-PAF").hasClass("fix")) baidu.app.setHeight(mode.min.business);
+                //     else baidu.app.setHeight(mode.min.MAX);
+                // }
+            }
+
+            return {
+                attackEvent: function () {
+                    waste_758023();
+                    waste_4436198();
+                },
+                initial: function () {
+                    this.attackEvent();
+                }
+            };
+        })();
+
+        page.iniMethod_Bridge = function () {
+            var o = new page.MethodObj();
+            o.initial();
+        }
+
+        $(function () {
+            page.iniMethod_Bridge();
+        })
+    </script>
+</head>
+<body>
+    <div class="main-color">
+        <div class="details">
+            <div class="Stationery">
+                <div class="td-head">
+                    <i id="ax-business" class="tab">商业贷款<i>计算</i></i>
+                    <i id="ax-PAF" class="tab">公积金贷款<i>计算</i></i>
+                    <i id="ax-mix" class="tab fix">组合贷款<i>计算</i></i>
+                </div>
+                <div class="scenic">
+                    <div class="FOO">
+                        <div class="line">
+                            <span>商业贷款金额</span>
+                            <label>
+                                <input id="business-sum" class="input" type="text" value="100" placeholder="金额" autocomplete="off"><i>万元</i>
+                                <i class="warning">请填写金额</i>
+                            </label>
+                        </div>
+                        <div class="line" style="display: block;">
+                            <span>公积金贷款金额</span>
+                            <label>
+                                <input id="PAF-sum" class="input" type="text" value="100" placeholder="金额" autocomplete="off"><i>万元</i>
+                                <i class="warning">请填写金额</i>
+                            </label>
+                        </div>
+                        <div class="line">
+                            <span>贷款期限</span>
+                            <select id="period-select" class="input short">
+                                <option value="0">半年（6期）</option>
+                                <option value="1">1年（12期）</option>
+                                <option value="2">2年（24期）</option>
+                                <option value="3">3年（36期）</option>
+                                <option value="4">4年（48期）</option>
+                                <option value="5">5年（60期）</option>
+                                <option value="6">6年（72期）</option>
+                                <option value="7">7年（84期）</option>
+                                <option value="8">8年（96期）</option>
+                                <option value="9">9年（108期）</option>
+                                <option value="10">10年（120期）</option>
+                                <option value="11">11年（132期）</option>
+                                <option value="12">12年（144期）</option>
+                                <option value="13">13年（156期）</option>
+                                <option value="14">14年（168期）</option>
+                                <option value="15">15年（180期）</option>
+                                <option value="16">16年（192期）</option>
+                                <option value="17">17年（204期）</option>
+                                <option value="18">18年（216期）</option>
+                                <option value="19">19年（228期）</option>
+                                <option value="20" selected="selected">20年（240期）</option>
+                                <option value="21">21年（252期）</option>
+                                <option value="22">22年（264期）</option>
+                                <option value="23">23年（276期）</option>
+                                <option value="24">24年（288期）</option>
+                                <option value="25">25年（300期）</option>
+                                <option value="26">26年（312期）</option>
+                                <option value="27">27年（324期）</option>
+                                <option value="28">28年（336期）</option>
+                                <option value="29">29年（348期）</option>
+                                <option value="30">30年（360期）</option>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <span>商业贷款利率</span>
+                            <select id="business-select" class="short input">
+                                <option value="0">手动输入</option>
+                                <option value="11" selected="selected" data-key="15-06-28">最新基准利率</option>
+                                <option value="10" data-key="15-05-10">15-05-10基准利率</option>
+                                <option value="9" data-key="15-03-01">15-03-01基准利率</option>
+                                <option value="8" data-key="14-11-22">14-11-22基准利率</option>
+                                <option value="7" data-key="12-07-06">12-07-06基准利率</option>
+                                <option value="6" data-key="12-06-08">12-06-08基准利率</option>
+                                <option value="5" data-key="11-07-07">11-07-07基准利率</option>
+                                <option value="4" data-key="11-04-06">11-04-06基准利率</option>
+                                <option value="3" data-key="11-02-09">11-02-09基准利率</option>
+                                <option value="2" data-key="10-12-26">10-12-26基准利率</option>
+                                <option value="1" data-key="10-10-20">10-10-20基准利率</option>
+                            </select>
+                            <select id="business-discount" class="shorter input">
+                                <option value="0">无折扣</option>
+                                <option value="6" data-discount="1.2">1.2倍</option>
+                                <option value="5" data-discount="1.1">1.1倍</option>
+                                <option value="4" data-discount="0.9">9折</option>
+                                <option value="3" data-discount="0.85">85折</option>
+                                <option value="2" data-discount="0.8">8折</option>
+                                <option value="1" data-discount="0.7">7折</option>
+                            </select>
+                            <b class="separator">=</b>
+                            <label>
+                                <input id="business-rate" class="input short" type="text" placeholder="利率" value="0" autocomplete="off"><i>%</i>
+                            </label>
+                        </div>
+                        <div class="line" style="display: block;">
+                            <span>公积金贷款利率</span>
+                            <select id="PAF-select" class="input short">
+                                <option value="0">手动输入</option>
+                                <option value="10" selected="selected" data-key="15-06-28">最新基准利率</option>
+                                <option value="9" data-key="15-05-10">15-05-10基准利率</option>
+                                <option value="8" data-key="15-03-01">15-03-01基准利率</option>
+                                <option value="7" data-key="12-07-06">12-07-06基准利率</option>
+                                <option value="6" data-key="12-06-08">12-06-08基准利率</option>
+                                <option value="5" data-key="11-07-07">11-07-07基准利率</option>
+                                <option value="4" data-key="11-04-06">11-04-06基准利率</option>
+                                <option value="3" data-key="11-02-09">11-02-09基准利率</option>
+                                <option value="2" data-key="10-12-26">10-12-26基准利率</option>
+                                <option value="1" data-key="10-10-20">10-10-20基准利率</option>
+                            </select>
+                            <label>
+                                <input id="PAF-rate" class="input short" type="text" placeholder="利率" value="0" autocomplete="off"><i>%</i>
+                            </label>
+                        </div>
+                        <div class="line">
+                            <span>还款方式</span>
+                            <label><input id="pay-radio1" type="radio" name="ax-pattern" checked="checked"><i>等额本息</i></label>
+                            <label><input id="pay-radio2" type="radio" name="ax-pattern"><i>等额本金</i></label>
+                        </div>
+                    </div>
+                    <div class="line btn-g">
+                        <button id="ax-count" class="btn">立即计算</button>
+                        <a id="ax-cancel" class="btn common">清空</a>
+                    </div>
+                    <div class="result">
+                        <div class="cutover">
+                            <div class="hole"></div>
+                            <div class="res_tab">
+                                <div id="fn-lower" class="tab">
+                                    <p><i class="years">15</i>年</p>
+                                    <p><i class="green">节省利息</i><i class="fund">0</i><i class="unit">万</i></p>
+                                </div>
+                                <div id="fn-common" class="tab fix">
+                                    <p><i class="years">20</i>年</p>
+                                    <p><i class="green">总利息</i><i class="fund">0</i><i class="unit">万</i></p>
+                                </div>
+                                <div id="fn-higher" class="tab">
+                                    <p><i class="years">25</i>年</p>
+                                    <p><i class="green">多出利息</i><i class="fund">0</i><i class="unit">万</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="common" class="result-data">
+                            <p class="line mix-G" style="display: block;">
+                                <label><span>商贷利息</span><input class="input ax-i1" type="text" value="" readonly autocomplete="off">元</label>
+                                <label><span>公积金利息</span><input class="input ax-i2" type="text" value="" readonly autocomplete="off">元</label>
+                            </p>
+                            <p class="line">
+                                <label><span>利息总额</span><input class="input ax-i3" type="text" value="" readonly autocomplete="off">元</label>
+                                <label><span>累计还款总额</span><input class="input ax-i4" type="text" value="" readonly autocomplete="off">元</label>
+                            </p>
+                            <p class="line">
+                                <label><span class="monthly">每月月供</span><input class="input ax-i5" type="text" value="" readonly autocomplete="off">元</label>
+                                <label><span>月薪需大于</span><input class="input ax-i6" type="text" value="" readonly autocomplete="off">元</label>
+                            </p>
+                            <table class="table result-table">
+                                <thead>
+                                    <tr>
+                                        <th>期次</th>
+                                        <th>本息</th>
+                                        <th>利息</th>
+                                        <th>本金</th>
+                                        <th>剩余</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!--<tr><td>15</td><td>41938.62</td><td>22734.17</td><td>19204.45</td><td>6990795.55</td></tr>-->                                
+                                </tbody>
+                            </table>
+                            <div class="ax-control">
+                                <a class="more" style="padding: 5px; display: none;">查看更多....</a>
+                            </div>
+                        </div>
+                        <div id="lower" class="result-data">
+                            <p class="line mix-G" style="display: block;">
+                                <label><span>商贷利息</span><input class="input ax-i1" type="text" value="" readonly autocomplete="off">元</label>
+                                <label><span>公积金利息</span><input class="input ax-i2" type="text" value="" readonly autocomplete="off">元</label>
+                            </p>
+                            <p class="line">
+                                <label><span>利息总额</span><input class="input ax-i3" type="text" value="" readonly autocomplete="off">元</label>
+                                <label><span>累计还款总额</span><input class="input ax-i4" type="text" value="" readonly autocomplete="off">元</label>
+                            </p>
+                            <p class="line">
+                                <label><span class="span-acpit">每月月供</span><span class="span-acpt">最高月供</span><input class="input ax-i5" type="text" value="" readonly autocomplete="off">元</label>
+                                <label><span>月薪需大于</span><input class="input ax-i6" type="text" value="" readonly autocomplete="off">元</label>
+                            </p>
+                            <table class="table result-table">
+                                <thead>
+                                    <tr>
+                                        <th>期次</th>
+                                        <th>本息</th>
+                                        <th>利息</th>
+                                        <th>本金</th>
+                                        <th>剩余</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <div class="ax-control">
+                                <a class="more" style="display: none;">查看更多....</a>
+                            </div>
+                        </div>
+                        <div id="higher" class="result-data">
+                            <p class="line mix-G" style="display: block;">
+                                <label><span>商贷利息</span><input class="input ax-i1" type="text" value="" readonly autocomplete="off">元</label>
+                                <label><span>公积金利息</span><input class="input ax-i2" type="text" value="" readonly autocomplete="off">元</label>
+                            </p>
+                            <p class="line">
+                                <label><span>利息总额</span><input class="input ax-i3" type="text" value="" readonly autocomplete="off">元</label>
+                                <label><span>累计还款总额</span><input class="input ax-i4" type="text" value="" readonly autocomplete="off">元</label>
+                            </p>
+                            <p class="line">
+                                <label><span class="span-acpit">每月月供</span><span class="span-acpt">最高月供</span><input class="input ax-i5" type="text" value="" readonly autocomplete="off">元</label>
+                                <label><span>月薪需大于</span><input class="input ax-i6" type="text" value="" readonly autocomplete="off">元</label>
+                            </p>
+                            <table class="table result-table">
+                                <thead>
+                                    <tr>
+                                        <th>期次</th>
+                                        <th>本息</th>
+                                        <th>利息</th>
+                                        <th>本金</th>
+                                        <th>剩余</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <div class="ax-control">
+                                <a class="more" style="display: none;">查看更多....</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        jQuery('#ax-mix').click();
+    });
+    </script>
+
+
+</body></html>

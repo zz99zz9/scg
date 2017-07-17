@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /%#Data$%Ba#se%%/  
+Disallow: /scgadmin/      
+Disallow: /inc/
+Sitemap: http://www.scgoverseas.com/sitemap.xml  

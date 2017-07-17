@@ -1,0 +1,43 @@
+body{background:url("../img/5/ed.jpg") top center no-repeat #fff;}
+/*新闻topbar*/
+.newsbar{height:60px;background:#F7F7F7;padding:20px;width:100%;display:block;margin-top:40px;}
+.newsbar .newsclass{float:left;}
+.newsbar .form-control{margin-top:-6px;}
+.newsbar .view{float:right;}
+.newsbar .view a{background:url("../img/4/view.png");height:17px;display:block;margin-left:25px;float:left;}
+.newsbar .view a.view1{width:17px;background-position:40px 17px;}
+.newsbar .view a.view1.on{width:17px;background-position:40px 35px;}
+.newsbar .view a.view2{width:22px;background-position:22px 17px;}
+.newsbar .view a.view2.on{width:22px;background-position:22px 35px;}
+/**/
+.ntit{padding-top:70px;font-size:30px;}
+.ntime{color:#9a9a9a;font-size:12px;line-height:35px;font-family:"Times New Roman"}
+.ninfo{padding: 30px 40px;line-height: 200%;background-color:#f8f8f8;border-left:6px solid #bf0000;margin-top: 35px;margin-bottom:15px;}
+.ntxt{line-height:200% !important;}
+.ntxt p{line-height:200% !important;margin-bottom:10px;}
+.ntxt span{line-height:200% !important;}
+.ntxt img{max-width:100%;margin:0 auto;}
+.p{float:left;}
+.n{float:right;}
+.p,.n{color:#999;}
+.pn{line-height:80px;border-bottom:1px solid #ccc;height:80px;}
+.p a,.n a{color:#bf0000;}
+.p a:hover,.n a:hover{color:#fb0000;}
+.nbottom{height:80px;}
+.nbottom .p,.nbottom .n{display:block;margin-top:20px;}
+.nbottom .p .bshare-custom{float:left;}
+.nbottom .p .pint{float:left;display:block;margin-left:15px;padding-left:15px;border-left:1px #e7e7e7 solid;height:24px;color:#666;}
+.nbottom .p .pint:hover{color:#fb0000;}
+.pint .pico-pint{margin:3px 8px 0 0;}
+.nzz{font-size:12px;color:#9a9a9a;}
+.newstime{font-family:"Times New Roman";}
+.tips{color:#999;}
+.tipsinfo{border:#e7e7e7 1px solid;background-color:#f8f8f8;padding:6px 12px;color:#bf0000;margin-right:10px;}
+.tipsinfo:hover{color:#fb0000;}
+@media (max-width:768px){
+    .part1{background:#fff;}
+    .ntit{padding-top:30px;font-size:20px;}
+    .ninfo{padding:20px;}
+    .newsbar{display:none !important;}
+    ul.list-news{margin-top:0;padding-left:15px;padding-right:15px;}
+}

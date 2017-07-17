@@ -1,0 +1,40 @@
+body{background:url("../img/4/ed.jpg") top center no-repeat #fff;}
+ul.servicesnav{margin-bottom:50px;}
+ul.servicesnav li{margin-top:50px;}
+ul.servicesnav li .text{background:#f7f7f7;text-align:center;padding:55px 0 0 0;height:245px;position:relative;}
+ul.servicesnav li .tit{font-size:20px;color:#bf0000;text-align:center;}
+ul.servicesnav li .txt{font-size:15px;color:#333;line-height:200%;text-align:center;}
+ul.servicesnav li .xgbtn2{background:#bf0000;border:0;}
+ul.servicesnav li .serline{display:block;width:24px;height:33px;border-bottom:1px solid #9a9a9a;position:absolute;top:0;left:50%;margin-left:-12px;}
+ul.servicesnav li:hover .text{background:#f1f1f1;}
+/*问答*/
+ul.qa{margin-top:20px;}
+ul.qa li{background:#fff;padding:20px 30px;border-bottom:1px solid #f3f3f3;}
+ul.qa li.on{background:#f8f8f8;}
+ul.qa li.on .q{color:#bf0000;}
+ul.qa li.b{background:#f8f8f8;}
+ul.qa li .q{display:block;background:url("../img/4/q.png") no-repeat 0 0;padding-left:30px;font-size:20px;line-height:20px;}
+ul.qa li .a{background:url("../img/4/a.png") no-repeat 0 5px;padding-left:30px;line-height:200%;font-size:15px;display:none;margin-top:20px;position:relative;padding-bottom:20px;}
+ul.qa li .a .qaclose{position:absolute;bottom:-20px;left:50%;height:30px;line-height:30px;width:100px;background:#bf0000;text-align:center;color:#fff;margin-left:-50px;}
+ul.qa li .a .qaclose:hover{background:#fb0000;}
+ul.qa li .q:hover{color:#bf0000;}
+ul.qa li p{margin:0;}
+
+@media (max-width:768px) {
+    ul.list-news2 li .txt {
+        display: none !important;
+    }
+    ul.qa li .q{font-size:16px;}
+    ul.list-news2 li .text {
+        height:30px !important;
+
+    }
+    ul.list-news2 li{       padding-bottom:15px;
+        margin-bottom:25px;}
+
+    ul.list-news2 li .xgbtn2 {
+        display: none;
+    }
+    ul.list-news2 li .tit{font-size:18px;}
+  /*  ul.list-news2{display:none;}*/
+}
