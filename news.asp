@@ -62,7 +62,7 @@ elseif  cid=17 then
                             end if%>
 <div class="part1">
 <div class="container">
-<div class="newsbar"><span class="newsclass"><%=xlname%></span><span class="col-md-2"><!--<select onchange="window.location=this.value;" class="form-control "><option value="news.asp" >全部新闻</option><option value="news.asp?c=16" <%if cid=16 then%>selected = "selected"<%end if%>>活动信息</option><option value="news.asp?c=17" <%if cid=17 then%>selected = "selected"<%end if%>>投资要闻</option><option value="news.asp?c=18" <%if cid=18 then%>selected = "selected"<%end if%>>政策消息</option><option value="news.asp?c=19" <%if cid=19 then%>selected = "selected"<%end if%>>行业资料</option></select>--></span><ul class="view"><a href="news.asp?c=<%=cid%>" class="view1 on"></a><a href="news2.asp?c=<%=cid%>" class="view2 b_h"></a></ul></div>
+<div class="newsbar"><span class="newsclass"><%=xlname%></span><span class="col-md-2"><!--<select onchange="window.location=this.value;" class="form-control "><option value="news.asp" >全部新闻</option><option value="news.asp?c=16" <%if cid=16 then%>selected = "selected"<%end if%>>活动信息</option><option value="news.asp?c=17" <%if cid=17 then%>selected = "selected"<%end if%>>投资要闻</option><option value="news.asp?c=18" <%if cid=18 then%>selected = "selected"<%end if%>>政策消息</option><option value="news.asp?c=19" <%if cid=19 then%>selected = "selected"<%end if%>>行业资料</option></select>--></span><ul class="view"><!--<a href="news.asp?c=<%=cid%>" class="view1 on"></a><a href="news2.asp?c=<%=cid%>" class="view2 b_h"></a>--></ul></div>
  <ul class="list-news row">
   <%
         if rsnew.bof and rsnew.eof then
