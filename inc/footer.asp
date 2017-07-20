@@ -3,7 +3,7 @@
         <div class="container">
         <div class="row">
             <div class="footer-l col-md-7">
-                <div class='footereq hidden-xs'><img src='xgwl/img/qr.gif'><br>扫一扫，获取更多地产资讯</div>
+                <div class='footereq hidden-xs'><img src='xgwl/img/qr3.gif'></div>
             <p class="viptel">上海建工海外地产中心VIP电话：</p>
             <a class="pico pico-tel2 " href="tel:400-901-6788"></a>
             <div class="clearfix"></div>
