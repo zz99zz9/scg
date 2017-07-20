@@ -67,7 +67,7 @@ do while not i=4%>
         <div class="col-md-6 col-lg-6">
         <span class="fname ml40"><%=rrs("entitle")%></span>
         <div class="fline ml40"><span><i class="ico-c ico-c<%=rrs("clbid")%>b"></i><%=rrs("clbname")%></span><span ><i class="pico pico-addressb"></i><%=rrs("bigclassname")%>，<%=rrs("smallclassname")%></span></div>
-        <div class="finfo ml40"><span class="b">详细地址：</span><%x1=split(rrs("qt"),"|")%><%=x1(0)%><br><%=x1(1)%><br>
+        <div class="finfo ml40"><span class="b">详细地址：</span><%if Instr(rrs("qt"), "|") then%><%x1=split(rrs("qt"),"|")%><%=x1(0)%><br><%=x1(1)%><%else%><%=rrs("qt")%><%end if%><br>
                      <%if rrs("syq")<>"" then%> <span class="b">产权说明：</span><%=rrs("syq")%><br><%end if%>
                      <%if rrs("hx")<>"" then%>  <span class="b">推荐房型：</span><%=rrs("hx")%><br><%end if%>
                      <span class="linfo"><%=rrs("Product_Id")%></span></div>
