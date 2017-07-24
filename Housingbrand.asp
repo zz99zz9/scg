@@ -25,7 +25,7 @@ tdkid=6
 <!--引导条-->
 <div class="ubar">
 <div class="container">
-<a href="#" class="fc-red">SCG</a> <em class="more-arr">&gt;</em> <a href="aboutscg.asp">项目介绍</a> <em class="more-arr">&gt;</em> <a href="aboutscg.asp">代表项目</a>
+<a href="#" class="fc-red">SCG</a> <em class="more-arr">&gt;</em> <a href="aboutscg.asp">代表项目</a>
 <ul class="menu"><a href="housing.asp?<%call seaurl(bc,sc,fj,"11",lb,order,page)%>">在售项目</a><a href="housing.asp?<%call seaurl(bc,sc,fj,"7",lb,order,page)%>">待售项目</a><a href="housingbrand.asp" class="on">代表项目</a></ul>
 </div>
 </div>
