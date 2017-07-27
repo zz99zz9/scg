@@ -8,6 +8,9 @@ set rsnew=Server.CreateObject("ADODB.Recordset")
 sql="select * from [prod] where prod_id="&pro_id
 
 rsnew.Open sql,conn,1,1
+Counter=rsnew("Counter")+1
+update="UPDATE [prod] SET [counter]="&Counter&" WHERE prod_id="&pro_id
+conn.execute update
 title=rsnew("prod_name")
 if rsnew("keywords")<>"" then siteKey=rsnew("keywords")
 if rsnew("description")<>"" then SiteCont=rsnew("description")%>
