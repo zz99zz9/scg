@@ -97,7 +97,7 @@ tdkid=18
 
 </li>
 
-    <li class="col-md-6"><div class="sinfo">
+   <!-- <li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p9.jpg"></div>
    <div class="text col-md-7">
     <p class="tit">王婷 <span class="fftimes">Annie Wang</span></p>
@@ -108,7 +108,7 @@ tdkid=18
     <a href="javascript:feedback()" class="xgbtn4"><i class="pico pico-user"></i>立即咨询</a>
 </div></div>
 
-</li>
+</li>-->
     <li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p6.jpg"></div>
    <div class="text col-md-7">
