@@ -200,7 +200,9 @@ div.tit .more:hover{color:#f00;}
 	.parttj{background:#fff;}
 	.slidebar{bottom:40px;right:15px;}
 }
-
+.hotword{font-size:12px;text-align:center;background-color:#171717;line-height:30px;height:30px;}
+.hotword a{font-size:12px !important;color:#9a9a9a;margin:0 8px;}
+.hotword a:hover{color:#fff;}
 @media (min-width:768px){
 	.container{width:1230px}
 
