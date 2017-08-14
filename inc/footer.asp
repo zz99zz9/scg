@@ -11,13 +11,16 @@
             <!--推广审核--><a class="pico pico-fsns-wx mr30 b_h" href="#"> <span class="sbr-qr tra"><img src="xgwl/img/qr.gif"></span></a><a class="pico pico-fsns-sina mr30 b_h" href="http://weibo.com/u/5964312962?from=myfollow_all&is_all=1" target="_blank"></a><a class="pico pico-fsns-c mr30 b_h" href="https://www.instagram.com/manhattanviewatmima/" target="_blank"></a><a class="pico b_h pico-fsns-f" href="https://www.facebook.com/manhattanviewatmima/" target="_blank"></a>
             <div class="clearfix"></div>
             </div>
+<<<<<<< HEAD
             <div class="flinks hidden-xs">友情链接：<a href="http://www.sina.com.cn" class="s_link2" target="_blank" rel="nofollow">新浪</a><a href="http://www.163.com" class="s_link2" target="_blank" rel="nofollow">网易</a><a href="http://www.ifeng.com/" class="s_link2" target="_blank" rel="nofollow">凤凰网</a><a href="http://www.hexun.com/" class="s_link2" target="_blank" rel="nofollow">和讯</a><a href="http://www.jllresidential.cn/" target="_blank" class="s_link2" rel="nofollow">仲量联行</a><a href="http://www.lizihang.com/sh/xiaoshou?utm_source=baidu&utm_medium=ppc&utm_term=丽兹行&utm_content=丽兹行&utm_campaign=上海-品牌词" class="s_link2" target="_blank" rel="nofollow">丽兹行</a><a href="https://vacations.ceair.com/" class="s_link2" target="_blank" rel="nofollow">东航旅游度假频道</a><a href="http://www.sohu.com" class="s_link2" target="_blank" rel="nofollow">搜狐</a>
             <br>热门关键词：<a href="http://www.scgoverseas.com/news.asp?c=18" target="_blank" class="s_link2">美国留学买房</a><a href="http://www.scgoverseas.com/zygl.html" target="_blank" class="s_link2">美国置业攻略</a><a href="http://www.scgoverseas.com/tzmf.html" target="_blank" class="s_link2">美国投资买房</a><a href="http://www.scgoverseas.com/zycs.html" target="_blank" class="s_link2">美国置业热门城市</a>
 			<a href="http://www.scgoverseas.com/rhmf.html" target="_blank" class="s_link2">如何在美国买房</a><a href="http://www.scgoverseas.com/news.asp?c=17" target="_blank" class="s_link2">美国置业</a><a href="http://www.scgoverseas.com/news.asp?c=19" target="_blank" class="s_link2">海外置业</a><a href="http://www.scgoverseas.com/news.asp?c=19" target="_blank" class="s_link2">海外房产投资</a><a href="http://www.scgoverseas.com/housingbrand.asp" target="_blank" class="s_link2">美国房产</a><a href="http://www.scgoverseas.com/" target="_blank" class="s_link2">美国房地产</a><a href="http://www.scgoverseas.com/mghz.html" target="_blank" class="s_link2">美国豪宅</a><a href="http://www.scgoverseas.com/nyfc.html" target="_blank" class="s_link2">纽约房产</a><a href="http://www.scgoverseas.com/lsjfc.html" target="_blank" class="s_link2">洛杉矶房产</a>
+=======
+            <div class="flinks hidden-xs">友情链接：<br><a href="http://www.sina.com.cn" class="s_link2" target="_blank" rel="nofollow">新浪</a><a href="http://www.163.com" class="s_link2" target="_blank" rel="nofollow">网易</a><a href="http://www.ifeng.com/" class="s_link2" target="_blank" rel="nofollow">凤凰网</a><a href="http://www.hexun.com/" class="s_link2" target="_blank" rel="nofollow">和讯</a><a href="http://www.jllresidential.cn/" target="_blank" class="s_link2" rel="nofollow">仲量联行</a><a href="http://www.lizihang.com/sh/xiaoshou?utm_source=baidu&utm_medium=ppc&utm_term=丽兹行&utm_content=丽兹行&utm_campaign=上海-品牌词" class="s_link2" target="_blank" rel="nofollow">丽兹行</a><a href="https://vacations.ceair.com/" class="s_link2" target="_blank" rel="nofollow">东航旅游度假频道</a><a href="http://www.sohu.com" class="s_link2" target="_blank" rel="nofollow">搜狐</a>
+           
+>>>>>>> 59d4af1a07fd417f4977864342b0865a2c833f06
             </div>
            <!---->
-
-
 </div>
             <div class="footer-r col-md-5 ">
                 <ul class="faddress TAB_CLICK" id=".fadd"><li class="li3 hand on">上海建工海外地产中心</li><li class="li2 hand">上海建工美洲公司</li><li class="li1 hand">上海建工集团</li></ul>
@@ -31,11 +34,11 @@
                     <div class="fadd fadd1">上海市虹口区东大名路666号  <a href="javascript:map(2)" class="hidden-xs">[地图]</a><br>
                        电话：+86-21-5588 5959<br>
  <a href="http://www.scg.com.cn/" target="_blank">进一步了解 &gt;</a></div>
-
 </div>
             </div>
         </div>
       </div>
+     <div class='hotword hidden-xs'><div class="container"><a href="http://www.scgoverseas.com/news.asp?c=18" target="_blank" >美国留学买房</a><a href="http://www.scgoverseas.com/services2.asp" target="_blank" >美国置业攻略</a><a href="http://www.scgoverseas.com/news.asp?c=17" target="_blank" >美国投资买房</a><a href="http://www.scgoverseas.com/newsview.asp?id=570" target="_blank" >美国置业热门城市</a><a href="http://www.scgoverseas.com/news.asp?c=17" target="_blank" >美国置业</a><a href="http://www.scgoverseas.com/news.asp?c=19" target="_blank" >海外置业</a><a href="http://www.scgoverseas.com/news.asp?c=19" target="_blank" >海外房产投资</a><a href="http://www.scgoverseas.com/housingbrand.asp" target="_blank" >美国房产</a><a href="http://www.scgoverseas.com/" target="_blank" >美国房地产</a></div></div>
       <div style="background:#000;width:100%;display:none;"><div class="container" style="font-size:10px;color:#666;line-height:160%;padding:0 20px 15px 20px;">忠睿（上海）文化传播有限公司，专业服务于大型高端涉外客户，为客户提供最佳的美国地产投资解决方案。多年来，忠睿（上海）文化传播有限公司始终秉持“和谐为本，追求卓越”的服务宗旨，逐步发展形成了多元化的一站式服务体系。忠睿（上海）文化传播有限公司协助并服务于美国房产项目的宣传推广。</div></div>
       <div class="footer2">
       <ul class="fnav hidden-xs"><a href="aboutscg.asp" class="s_link2">关于公司</a><a href="housing.asp" class="s_link2">项目介绍</a><a href="services.asp" class="s_link2">服务咨询</a><a href="news.asp" class="s_link2">新闻资讯</a><a href="visit.asp" class="s_link2">联系我们</a><a href="#" class="s_link2">加入我们</a><a href="privacy.asp" class="s_link2">隐私政策</a><a href="#" class="s_link2">技术支持<div class="jszc">忠睿（上海）文化传播有限公司，专业服务于大型高端涉外客户，为客户提供最佳的美国地产投资解决方案。多年来，忠睿（上海）文化传播有限公司始终秉持“和谐为本，追求卓越”的服务宗旨，逐步发展形成了多元化的一站式服务体系。忠睿（上海）文化传播有限公司协助并服务于美国房产项目的宣传推广。</div></a><a href="sitemap.asp" class="s_link2">网站地图</a></ul>
