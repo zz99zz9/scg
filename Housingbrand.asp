@@ -1,4 +1,4 @@
-<!--#include file="inc/conn.asp"-->
+﻿<!--#include file="inc/conn.asp"-->
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
@@ -228,7 +228,4 @@ tdkid=6
 <!--#include file="inc/footer.asp"-->
 </body>
 </html>
-!--#include file="inc/recommended.asp"-->
-<!--#include file="inc/footer.asp"-->
-</body>
-</html>
+

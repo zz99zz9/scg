@@ -65,7 +65,7 @@ tdkid=18
    <div class="pic col-md-5"><img src="xgwl/img/6/p7.jpg"></div>
    <div class="text col-md-7">
     <p class="tit">王梓凡 <span class="fftimes">Rachel Wang</span></p>
-    <p class="tit2">高级投资顾问 <br><span class="fftimes">Senior Investment Adviser</span></p>
+    <p class="tit2">投资总监 <br><span class="fftimes">Investment Director</span></p>
     <p class="txt"><!--手机：<span class="fftimes fc-gold2">+86 13918482430</span> <br>--> 座机：<span class="fftimes">+86 21 6073 7686</span><br>
 邮箱：<a href="mailto:rachel.wang@scgamerica.com" class="fftimes"> rachel.wang@scgamerica.com</a>
                   </p>
@@ -109,20 +109,6 @@ tdkid=18
 </div></div>
 
 </li>-->
-    <li class="col-md-6"><div class="sinfo">
-   <div class="pic col-md-5"><img src="xgwl/img/6/p6.jpg"></div>
-   <div class="text col-md-7">
-    <p class="tit">王骅 <span class="fftimes">Roi Wang</span></p>
-    <p class="tit2">售后服务部经理 <br><span class="fftimes">Customer Service Director</span></p>
-    <p class="txt">手机：<span class="fftimes fc-gold2">+86 13918482430</span> <br> 座机：<span class="fftimes">+86 21 6073 7686</span><br>
-邮箱：<a href="mailto:roi.wang@scgamerica.com" class="fftimes"> roi.wang@scgamerica.com</a></p>
-    <a href="javascript:feedback()" class="xgbtn4"><i class="pico pico-user"></i>立即咨询</a>
-</div></div>
-
-</li>
-<!-- -->
-
-
  <li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p8.jpg"></div>
    <div class="text col-md-7">
@@ -135,6 +121,18 @@ tdkid=18
 </div></div>
 
 </li>
+    <li class="col-md-6"><div class="sinfo">
+   <div class="pic col-md-5"><img src="xgwl/img/6/p6.jpg"></div>
+   <div class="text col-md-7">
+    <p class="tit">王骅 <span class="fftimes">Roi Wang</span></p>
+    <p class="tit2">售后服务部经理 <br><span class="fftimes">Customer Service Director</span></p>
+    <p class="txt">手机：<span class="fftimes fc-gold2">+86 13918482430</span> <br> 座机：<span class="fftimes">+86 21 6073 7686</span><br>
+邮箱：<a href="mailto:roi.wang@scgamerica.com" class="fftimes"> roi.wang@scgamerica.com</a></p>
+    <a href="javascript:feedback()" class="xgbtn4"><i class="pico pico-user"></i>立即咨询</a>
+</div></div>
+
+</li>
+<!-- -->
  <li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p5.jpg"></div>
    <div class="text col-md-7">

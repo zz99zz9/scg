@@ -1,4 +1,4 @@
-<!--#include file="inc/conn.asp"-->
+﻿<!--#include file="inc/conn.asp"-->
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
@@ -14,14 +14,13 @@ tdkid=1
 	<!-------->
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators hidden-xs">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
             <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+
 
         </ol>
 
@@ -30,7 +29,7 @@ tdkid=1
         <div class="carousel-inner" role="listbox">
 
                     <%Set prs= Server.CreateObject("ADODB.Recordset")
-        psql="select top 7 * From [links] where wid=1 order by oid desc,ID desc"
+        psql="select top 5 * From [links] where wid=1 order by oid desc,ID desc"
         prs.open psql,conn,1,1
         i=0%>
         <%do while not prs.eof%>
@@ -39,7 +38,7 @@ tdkid=1
                                     <img src="<%=prs("file")%>"  alt="...">
                                    <h1><%=prs("stit")%></h1>
                                       <p class="tra"><%=prs("stxt")%></p>
-                                  <a href="<%=prs("url")%>" class="tra a"><span>查看详情</span><em class="more-arr">&gt;</em></a>
+                                  <a href="<%=prs("url")%>" class="tra a hidden-xs"><span>查看详情</span><em class="more-arr">&gt;</em></a>
                                    <em class="bgmask tra"></em>
                                 </div>
          <%
@@ -76,8 +75,8 @@ tdkid=1
 
     <img src="<%=prs("file")%>"/>
     <h1><%=prs("stit")%></h1>
-        <p class="tra"><%=prs("stxt")%></p>
-<a href="<%=prs("url")%>" class="tra a"><span>查看详情</span><em class="more-arr">&gt;</em></a>
+        <p class="tra hidden-xs"><%=prs("stxt")%></p>
+<a href="<%=prs("url")%>" class="tra a hidden-xs"><span>查看详情</span><em class="more-arr">&gt;</em></a>
 
 <em class="bgmask tra"></em>
 </div>
@@ -89,17 +88,27 @@ tdkid=1
         prs.close
         set prs=nothing
         %>
-    <div class="ed2">
+    <div class="ed2" style='z-index:1;'>
     <!---->
 <script src='//player.polyv.net/script/polyvplayer.min.js'></script>
-<div id='plv_4c056f31eeb7bbfc95cf0fffd96abc98_4'></div>
+<div id='plv_4c056f31eeb7bbfc95cf0fffd96abc98_4' style='z-index:1;'></div>
 <script>
+        if(screen.width<700){
 var player = polyvObject('#plv_4c056f31eeb7bbfc95cf0fffd96abc98_4').videoPlayer({
-    'width':'457',
+    'width':'100%',
+  'height':'190',
+    'vid' : '4c056f31eeb7bbfc95cf0fffd96abc98_4'
+});
+}else{
+    var player = polyvObject('#plv_4c056f31eeb7bbfc95cf0fffd96abc98_4').videoPlayer({
+    'width':'100%',
   'height':'257',
     'vid' : '4c056f31eeb7bbfc95cf0fffd96abc98_4'
 });
+}
+
 </script>
+
     <!--<img src="xgwl/img/index/ed3.jpg"/>-->
     </div>
 </div>
@@ -168,11 +177,11 @@ i=0
     <div class="container">
  	<div class="tit"><!--<i class="pico pico-tit"></i>服务咨询<span class="en">/Service & Inquiries</span>--><img src="xgwl/img/tit/3.png"><a class="more hidden-xs" href="services.asp">更多 <em class="more-arr">&gt;</em></a></div>
  	<ul class="list-ser">
-<!-- 	<a href="services2.asp" class=" wow fadeInUp"><span class="pic"><img src="xgwl/img/index/s1.jpg"><em class="tra bgmask"><b class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></b></em></span><p> <i class="arrow-up tra"></i><span class="serline"></span><span class="cname">购置流程</span><span class="ename">Purchase process</span></p></a>-->
- 	<a href="services6.asp" class=" wow fadeInUp"><span class="pic"><img src="xgwl/img/index/s2.jpg"><em class="tra bgmask"><b class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></b></em></span><p> <i class="arrow-up tra"></i><span class="serline"></span><span class="cname">留学置业</span><span class="ename">Studying abroad</span></p></a>
- 	<a href="services4.asp" class=" wow fadeInUp" ><span class="pic"><img src="xgwl/img/index/s3.jpg"><em class="tra bgmask"><b class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></b></em></span><p> <i class="arrow-up tra"></i><span class="serline"></span><span class="cname">贷款咨询</span><span class="ename">Bank Mortgage</span></p></a>
+<!-- 	<a href="services6.asp" class=" wow fadeInUp"><span class="pic"><img src="xgwl/img/index/s1.jpg"><em class="tra bgmask"><b class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></b></em></span><p> <i class="arrow-up tra"></i><span class="serline"></span><span class="cname">购置流程</span><span class="ename">Purchase process</span></p></a>-->
+ 	<a href="news.asp?c=18" class=" wow fadeInUp"><span class="pic"><img src="xgwl/img/index/s2.jpg"><em class="tra bgmask"><b class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></b></em></span><p> <i class="arrow-up tra"></i><span class="serline"></span><span class="cname">留学置业</span><span class="ename">Studying abroad</span></p></a>
+ 	<a href="news.asp?c=17" class=" wow fadeInUp" ><span class="pic"><img src="xgwl/img/index/s3.jpg"><em class="tra bgmask"><b class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></b></em></span><p> <i class="arrow-up tra"></i><span class="serline"></span><span class="cname">投资要闻</span><span class="ename">Bank Mortgage</span></p></a>
  	<a href="services5.asp" class=" wow fadeInUp" ><span class="pic"><img src="xgwl/img/index/s4.jpg"><em class="tra bgmask"><b class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></b></em></span><p> <i class="arrow-up tra"></i><span class="serline"></span><span class="cname">移民知识</span><span class="ename">EB-5 Information</span></p></a>
- 	<a href="services2.asp" class=" wow fadeInUp" ><span class="pic"><img src="xgwl/img/index/s5.jpg"><em class="tra bgmask"><b class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></b></em></span><p> <i class="arrow-up tra"></i><span class="serline"></span><span class="cname">购置流程</span><span class="ename">Process</span></p></a>
+ 	<a href="services6.asp" class=" wow fadeInUp" ><span class="pic"><img src="xgwl/img/index/s5.jpg"><em class="tra bgmask"><b class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></b></em></span><p> <i class="arrow-up tra"></i><span class="serline"></span><span class="cname">购置流程</span><span class="ename">Process</span></p></a>
 </ul>
 
  	</div>

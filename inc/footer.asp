@@ -1,4 +1,4 @@
- 	 <!--footer-->
+﻿ 	 <!--footer-->
      <div class="footer">
         <div class="container">
         <div class="row">
@@ -32,7 +32,7 @@
             </div>
         </div>
       </div>
-     <div class='hotword hidden-xs'><div class="container"><a href="http://www.scgoverseas.com/news.asp?c=18" target="_blank" >美国留学买房</a><a href="http://www.scgoverseas.com/services2.asp" target="_blank" >美国置业攻略</a><a href="http://www.scgoverseas.com/news.asp?c=17" target="_blank" >美国投资买房</a><a href="http://www.scgoverseas.com/newsview.asp?id=570" target="_blank" >美国置业热门城市</a><a href="http://www.scgoverseas.com/news.asp?c=17" target="_blank" >美国置业</a><a href="http://www.scgoverseas.com/news.asp?c=19" target="_blank" >海外置业</a><a href="http://www.scgoverseas.com/news.asp?c=19" target="_blank" >海外房产投资</a><a href="http://www.scgoverseas.com/housingbrand.asp" target="_blank" >美国房产</a><a href="http://www.scgoverseas.com/" target="_blank" >美国房地产</a></div></div>
+     <div class='hotword hidden-xs'><div class="container"><a href="http://www.scgoverseas.com/news.asp?c=18" target="_blank" >美国留学买房</a><a href="http://www.scgoverseas.com/services6.asp" target="_blank" >美国置业攻略</a><a href="http://www.scgoverseas.com/news.asp?c=17" target="_blank" >美国投资买房</a><a href="http://www.scgoverseas.com/news.asp?c=17" target="_blank" >美国置业热门城市</a><a href="http://www.scgoverseas.com/news.asp?c=19" target="_blank" >海外置业</a><a href="http://www.scgoverseas.com/news.asp?c=19" target="_blank" >海外房产投资</a><a href="http://www.scgoverseas.com/housingbrand.asp" target="_blank" >美国房产</a><a href="http://www.scgoverseas.com/" target="_blank" >美国房地产</a><a href="http://www.scgoverseas.com/housing.asp" target="_blank" >纽约房产</a><a href="http://www.scgoverseas.com/housing.asp" target="_blank" >洛杉矶房产</a><a href="http://www.scgoverseas.com/housingbrand.asp" target="_blank" >美国豪宅</a></div></div>
       <div style="background:#000;width:100%;display:none;"><div class="container" style="font-size:10px;color:#666;line-height:160%;padding:0 20px 15px 20px;">忠睿（上海）文化传播有限公司，专业服务于大型高端涉外客户，为客户提供最佳的美国地产投资解决方案。多年来，忠睿（上海）文化传播有限公司始终秉持“和谐为本，追求卓越”的服务宗旨，逐步发展形成了多元化的一站式服务体系。忠睿（上海）文化传播有限公司协助并服务于美国房产项目的宣传推广。</div></div>
       <div class="footer2">
       <ul class="fnav hidden-xs"><a href="aboutscg.asp" class="s_link2">关于公司</a><a href="housing.asp" class="s_link2">项目介绍</a><a href="services.asp" class="s_link2">服务咨询</a><a href="news.asp" class="s_link2">新闻资讯</a><a href="visit.asp" class="s_link2">联系我们</a><a href="#" class="s_link2">加入我们</a><a href="privacy.asp" class="s_link2">隐私政策</a><a href="#" class="s_link2">技术支持<div class="jszc">忠睿（上海）文化传播有限公司，专业服务于大型高端涉外客户，为客户提供最佳的美国地产投资解决方案。多年来，忠睿（上海）文化传播有限公司始终秉持“和谐为本，追求卓越”的服务宗旨，逐步发展形成了多元化的一站式服务体系。忠睿（上海）文化传播有限公司协助并服务于美国房产项目的宣传推广。</div></a><a href="sitemap.asp" class="s_link2">网站地图</a></ul>
@@ -40,7 +40,7 @@
       <div class="fcopyright">Copyright © 2014-2017 SCG Overseas. All Rights Reserved. 上海建工海外地产中心版权所有  沪ICP备：16048257号-2</div></div>
       	 <!--悬浮客服-->
 
-      	 <ul class="slidebar">
+      	 <ul class="slidebar hidden-xs">
       	 <!--推广审核--><li class="pico pico-rbar1 hand">
       	 <span class="sbr-qr tra"><i class="r-arr-w"></i><img src="xgwl/img/qr.gif"></span>
 </li>
@@ -48,6 +48,8 @@
       	 <li onclick="feedback()" class="pico pico-rbar3 b_h"></li>
       	<!--推广审核--> <li class="pico pico-rbar4 b_h" onclick="window.open('http://weibo.com/u/5964312962')"></li>
 </ul>
+           <!--移动端悬浮客服-->
+           <ul class="bslidebar hidden-lg hidden-md hidden-sm"><a href="tel:4009016788">400 901 6788</a><a href="javascript:feedback()">在线客服</a></ul>
       	 <!--在线咨询弹窗-->
       	 <div class="fbpop"><span class="popclose pico b_h pclose"></span>
       	 <form>

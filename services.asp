@@ -1,4 +1,4 @@
-<!--#include file="inc/conn.asp"-->
+﻿<!--#include file="inc/conn.asp"-->
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
@@ -17,7 +17,7 @@ tdkid=7
 <div class="ubar">
 <div class="container">
 <a href="#" class="fc-red">SCG</a> <em class="more-arr">&gt;</em> <a href="services.asp">服务咨询</a>
-<ul class="menu"><a href="services1.asp">尚鉴尊享会</a><a href="services2.asp">购置流程</a><a href="services3.asp">财税问答</a><a href="services4.asp">贷款咨询</a><a href="services5.asp">移民知识</a><a href="javascript:feedback()">在线提问</a></ul>
+<ul class="menu"><a href="services1.asp">尚鉴尊享会</a><a href="services6.asp">购置流程</a><a href="services3.asp">财税问答</a><a href="services4.asp">贷款咨询</a><a href="services5.asp">移民知识</a><a href="services2.asp">政策消息</a></ul>
 </div>
 </div>
 <!--公司介绍1-->
