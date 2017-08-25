@@ -166,6 +166,11 @@ ul.news2 li .pic:hover .bgmask{filter:Alpha(opacity=100);opacity:1;}
 .xgbtn4:hover{color:#fff;background:#fb0000;}
 .xgbtn4:hover .more-arr{margin-left:5px;}
 
+@media (max-width:768px){
+    ul.list1.row{margin-left:0px;margin-right:0px;}
+    ul.list1 li.col-md-4{padding-left:0px;padding-right:0px;}
+    ul.list1 li.col-md-3{padding-left:0px;padding-right:0px;}
+}
 @media (min-width:768px){
     ul.list-news a .pic{position:relative;height:185px;}
     ul.list-news a .pic img{height:100%;width:100%;}
