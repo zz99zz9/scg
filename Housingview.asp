@@ -286,8 +286,6 @@ set prs=nothing
 <div class="jgline">每月还款：<span class="jsjgz myhk outmyhk">$ 5,000</span></div>
 </div>
 </div>
-
-
                                                 </div>
                                                 </div>
                                                 </div>

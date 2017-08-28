@@ -20,8 +20,6 @@ tdkid=1
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
             <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-
-
         </ol>
 
         <!-- Wrapper for slides -->
@@ -37,7 +35,7 @@ tdkid=1
                     <div class="item <%if i=0 then%>active<%end if%>" onclick="window.location.href='<%=prs("url")%>';">
                                     <img src="<%=prs("file")%>"  alt="...">
                                    <h1><%=prs("stit")%></h1>
-                                      <p class="tra"><%=prs("stxt")%></p>
+                                      <p class="tra hidden-xs"><%=prs("stxt")%></p>
                                   <a href="<%=prs("url")%>" class="tra a hidden-xs"><span>查看详情</span><em class="more-arr">&gt;</em></a>
                                    <em class="bgmask tra"></em>
                                 </div>

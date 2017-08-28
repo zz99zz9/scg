@@ -118,7 +118,9 @@ ul.fplist li.last{margin-right:0;}
     .txt p img{width:100%;}
     .fc-red em{display:block !important;}
     .fjgmj{height:130px;}
-    .col-md-6,.col-md-4{padding-left:30px;padding-right:30px;}
+    .col-md-4{padding-left:30px;padding-right:30px;}
+    .col-md-6{padding-left:30px;padding-right:30px;}
     .fdjsq .jsqform .jsqbtn{margin-left:150px;}
+    .fdjsq .jsqform,.fdjsq .jsjg{width:100%;}
 
 }
