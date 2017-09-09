@@ -44,7 +44,7 @@ if rsnew("description")<>"" then SiteCont=rsnew("description")%>
 <div class="ntxt"><%=replace(rsnew("prod_detail"),"[立即报名]","<a href='javascript:feedback("&pro_id&")' class='bmbtn'>立即报名活动</a>")%>
 
 </div>
-<div class="tips" style="font-size:14px;">
+<div class="tips" style="font-size:14px;line-height:300%;">
 
 <%
 if rsnew("tips")<>"" then
@@ -79,5 +79,11 @@ end if  %>
     <!--相关推荐-->
     <!--#include file="inc/recommended.asp"-->
 <!--#include file="inc/footer.asp"-->
+<script>
+  $(document).ready(function(){
+$("img").removeAttr("height");
+$("p").css("text-indent","0");
+})
+</script>
 </body>
 </html>
