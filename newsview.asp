@@ -43,7 +43,7 @@ if rsnew("description")<>"" then SiteCont=rsnew("description")%>
 
 <div class="ninfo"><%=RemoveHTML(rsnew("prod_detailen"))%></div>
 <div class="peq peq2">
-  <div class="feq "><img src="xgwl/img/qr2.gif"><br>扫一扫，获取更多地产资讯</div>
+  <div class="feq "><img src="/scgadmin/kindeditor-4.1.7/attached/image/20170824/20170824105162586258.gif"><br>扫一扫，获取更多地产资讯</div>
   </div>
 <div class="ntxt"><%=replace(rsnew("prod_detail"),"[立即报名]","<a href='javascript:feedback("&pro_id&")' class='bmbtn'>立即报名活动</a>")%>
 
@@ -78,7 +78,7 @@ end if  %>
   <!--底部二维码-->
 
   <div class="peq">
-<div class="feq"><img src="xgwl/img/qr2.gif"><br>扫一扫，获取更多地产资讯</div>
+<div class="feq"><img src="/scgadmin/kindeditor-4.1.7/attached/image/20170824/20170824105162586258.gif"><br>扫一扫，获取更多地产资讯</div><!--xgwl/img/qr2.gif-->
 </div>
     <!--相关推荐-->
     <!--#include file="inc/recommended.asp"-->
