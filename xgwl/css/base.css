@@ -162,7 +162,7 @@ div.tit .more:hover{color:#f00;}
 /*通用eq*/
 .peq{background:#f8f8f8;height:350px;position:relative;clear:both;}
 .peq2{background:#fff;height:250px;position:relative;clear:both;}
-.peq2 .feq{top:0 !important;color:#E53333;}
+.peq2 .feq{top:0 !important;color:#E53333;font-size:13px !important;}
 .peq .feq{width:200px;height:230px;background:#fff;margin-left:-100px;font-size:12px;line-height:170%;text-align:center;position:relative;top:50px;left:50%;}
 .peq .feq2{width:200px;height:180px;margin-left:-100px;font-size:12px;line-height:170%;text-align:center;position:relative;top:50px;left:50%;color:#ff0000;}
 .peq .feq img{margin-top:20px;margin-bottom:10px;width:170px;}
