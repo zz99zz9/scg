@@ -134,6 +134,7 @@ var player = polyvObject('#plv_4c056f31eeb7bbfc95cf0fffd96abc98_4').videoPlayer(
                 <span class="cls fc-gold2"><i class="ico-c ico-c<%=rsnew("clbid")%>g"></i><%=showNamef("class_lb",rsnew("clbid"),"cid","cname")%></span>
                 <div class="pic"><img src="<%=rsnew("prod_pic")%>" /><a class="bgmask2 tra" href="<%=linkss%>"><p class="xgbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></p></a></div>
                 <a class="ellipsis tit" href="<%=linkss%>"><%=rsnew("prod_name")%></a>
+                <span class="address"><i class="pico pico-addressb"></i><%=rsnew("bigclass")%>，<%=rsnew("smallclass")%></span>
                 <span class="ellipsis2 txt"><%=left(RemoveHTML(rsnew("prod_detail")),260)%></span>
             </li>
 <%rsnew.movenext
