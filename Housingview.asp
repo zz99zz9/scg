@@ -40,7 +40,7 @@ SiteCont=rrs("Description")
 </div>
 </div>
 <!--列表图和基本信息-->
-<div class="part2" name="f1" id="f1">
+<div class="part2" name="f1" id="f1" >
     <div class="container ">
     <div class="row">
         <div class="col-md-6 col-lg-6">
