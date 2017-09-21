@@ -11,8 +11,7 @@ dim i
 dim sql,rs
 classid=request.QueryString("Prod_Type")
 sql="select * From [tdk] "
-sql=sql & " order by oid desc"
-
+sql=sql & " order by id"
 Set rs= Server.CreateObject("ADODB.Recordset")
 rs.open sql,conn,1,1
 %>
@@ -23,7 +22,6 @@ rs.open sql,conn,1,1
                                   </button>
                                   <strong>操作成功！</strong> <span>栏目内容修改成功。</span>
                               </div>
- 
                           <!----> 
               <div class="row">
                   <div class="col-lg-12">
@@ -31,7 +29,6 @@ rs.open sql,conn,1,1
                           <header class="panel-heading">
                               TDK列表 <a href="tdk_add.asp" class="btn btn-danger btn-xs">增加新栏目</a>
                           </header>
-                          
 <!--列表开始-->
 
 <!--以后补一个类别切换-->
@@ -41,11 +38,9 @@ rs.open sql,conn,1,1
           <tr > 
           
             <th width="40" class="hidden-phone"><strong>ID</strong></td>
-
             <th width="200" ><strong>栏目标题</strong></td>
             <th width="50" class="hidden-phone"><strong>更新时间</strong></td>
             <th width="40" class="hidden-phone"><strong>排序id</strong></td>
-
             <th width="48" ><strong>操作</strong></td>
           </tr></thead>
           <tbody>

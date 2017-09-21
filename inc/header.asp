@@ -4,14 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
-
 <script>
 var url=location.href;
 //http://scgoverseas.com/
 if(url=='http://scgoverseas.com/'){
 location.href='http://www.scgoverseas.com/';
 }
-
 </script>
 <%dim skey
 skey=request.QueryString("key")
@@ -42,7 +40,6 @@ t=nk&"-"&t
 d=nk&"-"&d
 k=nk&"-"&k
 end if
-
     if (lx<>"" and lx<>0) or (lb<>"" and lb<>0) or (fj<>"" and fj<>0) or key<>"" or lx<>0 then
 a=showNamef("class_fj",fj,"CID","Cname")
 b=showNamef("class_lx",lx,"CID","Cname")
