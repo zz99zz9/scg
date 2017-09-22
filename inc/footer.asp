@@ -11,8 +11,23 @@
             <!--推广审核--><a class="pico pico-fsns-wx mr30 b_h" href="#"> <span class="sbr-qr tra"><img src="xgwl/img/qr.gif"></span></a><a class="pico pico-fsns-sina mr30 b_h" href="http://weibo.com/u/5964312962?from=myfollow_all&is_all=1" target="_blank"></a><a class="pico pico-fsns-c mr30 b_h" href="https://www.instagram.com/manhattanviewatmima/" target="_blank"></a><a class="pico b_h pico-fsns-f" href="https://www.facebook.com/manhattanviewatmima/" target="_blank"></a>
             <div class="clearfix"></div>
             </div>
-            <div class="flinks hidden-xs">友情链接：<br><a href="http://www.sina.com.cn" class="s_link2" target="_blank" rel="nofollow">新浪</a><a href="http://www.163.com" class="s_link2" target="_blank" rel="nofollow">网易</a><a href="http://www.ifeng.com/" class="s_link2" target="_blank" rel="nofollow">凤凰网</a><a href="http://www.hexun.com/" class="s_link2" target="_blank" rel="nofollow">和讯</a><a href="http://www.jllresidential.cn/" target="_blank" class="s_link2" rel="nofollow">仲量联行</a><a href="http://www.lizihang.com/sh/xiaoshou?utm_source=baidu&utm_medium=ppc&utm_term=丽兹行&utm_content=丽兹行&utm_campaign=上海-品牌词" class="s_link2" target="_blank" rel="nofollow">丽兹行</a><a href="https://vacations.ceair.com/" class="s_link2" target="_blank" rel="nofollow">东航旅游度假频道</a><a href="http://www.sohu.com" class="s_link2" target="_blank" rel="nofollow">搜狐</a>
-           
+            <div class="flinks hidden-xs">友情链接：<br>
+            <%Set prs= Server.CreateObject("ADODB.Recordset")
+        psql="select top 5 * From [links] where wid=4 order by oid desc,ID desc"
+        prs.open psql,conn,1,1
+        i=0%>
+        <%do while not prs.eof%>
+
+             <a href="<%=prs("url")%>" class="s_link2" target="_blank" rel="nofollow"><%=prs("stit")%></a>
+         <%
+        	i=i+1
+
+        	     prs.movenext
+        	loop
+        prs.close
+        set prs=nothing
+        %>
+      
             </div>
            <!---->
 </div>
