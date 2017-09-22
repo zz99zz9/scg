@@ -13,7 +13,7 @@
             </div>
             <div class="flinks hidden-xs">友情链接：<br>
             <%Set prs= Server.CreateObject("ADODB.Recordset")
-        psql="select top 5 * From [links] where wid=4 order by oid desc,ID desc"
+        psql="select * From [links] where wid=4 order by oid desc,ID desc"
         prs.open psql,conn,1,1
         i=0%>
         <%do while not prs.eof%>
