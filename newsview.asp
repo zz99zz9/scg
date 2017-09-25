@@ -35,7 +35,7 @@ if rsnew("description")<>"" then SiteCont=rsnew("description")%>
 <!--公司介绍1-->
 <div class="part1">
 <div class="container">
-<div class="ntit"><%=rsnew("prod_name")%></div>
+<div class="ntit"><%=rsnew("prod_name")%><div class="titbtn"><a href="tel:400 901 6788">400 901 6788</a><a href="javascript:feedback();">在线客服</a></div></div>
 <div class="ntime"><%=formatdatetime(rsnew("prod_date"),2)%>    |    <%=rsnew("classname")%></div>
 <!-- sharebar button begin -->
 <div class="bshare-custom icon-medium"><div class="bsPromo bsPromo2"></div><a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a><a title="分享到新浪微博" class="bshare-sinaminiblog" href="javascript:void(0);"></a><a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);"></a><a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);"></a><a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count" style="float: none;">51.7K</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>

@@ -11,6 +11,9 @@ body{background:url("../img/5/ed.jpg") top center no-repeat #fff;}
 .newsbar .view a.view2.on{width:22px;background-position:22px 35px;}
 /**/
 .ntit{padding-top:70px;font-size:30px;}
+.ntit .titbtn{float:right;}
+.ntit .titbtn a{padding:5px 12px;border-radius:5px;background:#bf0000;color:#fff;margin-left:10px;font-size:18px;}
+.ntit .titbtn a:hover{background:#fb0000;}
 .ntime{color:#9a9a9a;font-size:12px;line-height:35px;font-family:"Times New Roman"}
 .ninfo{padding: 30px 40px;line-height: 200%;background-color:#f8f8f8;border-left:6px solid #bf0000;margin-top: 35px;margin-bottom:15px;}
 .ntxt{line-height:200% !important;}
