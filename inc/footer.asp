@@ -21,7 +21,6 @@
              <a href="<%=prs("url")%>" class="s_link2" target="_blank" rel="nofollow"><%=prs("stit")%></a>
          <%
         	i=i+1
-
         	     prs.movenext
         	loop
         prs.close
