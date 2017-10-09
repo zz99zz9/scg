@@ -21,7 +21,7 @@ tdkid=2
 </div>
 </div>
 <!--公司介绍1-->
-<div class="part1 hidden" id="f1">
+<div class="part1" id="f1">
     <div class="container ">
     <div class="row">
     <div class="col-md-6 text">
