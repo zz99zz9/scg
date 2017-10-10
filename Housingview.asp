@@ -170,14 +170,7 @@ if i<2 then ii=6 else ii=4%>
                         </div>
                         </div>
                         <%end if%>
-                                            <!--项目图片-->
-                                            <div class="part7" id="f6">
-                                                <div class="container ">
-                                                <div class="row">
-
-                                        <div class="tit"><!--<i class="pico pico-tit"></i>项目图片<span class="en">/Photo Gallery</span>--><img src="xgwl/img/tit/14.png"></div>
-                                        <div class="txt">
-                                        <!--平面图-->
+                        <!--平面图-->
     <% if rrs("content")<>"" then%>
     <div class="part3" name="f2" id="f2">
         <div class="container ">
@@ -205,6 +198,14 @@ do while not i=4%>
         </div>
         </div>
         <%end if%>
+                                            <!--项目图片-->
+                                            <div class="part7" id="f6">
+                                                <div class="container ">
+                                                <div class="row">
+
+                                        <div class="tit"><!--<i class="pico pico-tit"></i>项目图片<span class="en">/Photo Gallery</span>--><img src="xgwl/img/tit/14.png"></div>
+                                        <div class="txt">
+                                        
  <!--轮播开始-->
     <div id="sildes" >
       <div class="control">
