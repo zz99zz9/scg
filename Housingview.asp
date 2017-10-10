@@ -170,34 +170,7 @@ if i<2 then ii=6 else ii=4%>
                         </div>
                         </div>
                         <%end if%>
-                        <!--平面图-->
-    <% if rrs("content")<>"" then%>
-    <div class="part3" name="f2" id="f2">
-        <div class="container ">
-        <div class="row">
-<div class="tit"><!--<i class="pico pico-tit"></i>平面图<span class="en">/Floor Plan</span>--><img src="xgwl/img/tit/10.png"></div>
-<div class="txt"><%=rrs("content")%></div>
-<div class="row">
-            <%Set prs= Server.CreateObject("ADODB.Recordset")
-psql="select * From [f_hxt] where fid="&rrs("ArticleID")&" order by oid desc,ID desc"
-prs.open psql,conn,1,1%>
-<%if not(prs.eof and prs.bof) then%>
-<%i=0
-do while not i=4%>
-<div class="col-md-6 hxt"><img src="<%=prs("file")%>" class="hxt-pic"><p class="hxt-tit"><%=prs("tit")%></p><p class="hxt-txt"><span class="hxt-jg"><%=prs("jg")%></span><%=prs("txt")%></p><br><br></div>
-
- <%
-	i=i+1
-	     prs.movenext
-	loop
-	end if
-%>
-
-</div>
-        </div>
-        </div>
-        </div>
-        <%end if%>
+                        
                                             <!--项目图片-->
                                             <div class="part7" id="f6">
                                                 <div class="container ">
@@ -239,6 +212,34 @@ set prs=nothing
                                                 </div>
                                                 </div>
                                                 </div>
+                                            <!--平面图-->
+    <% if rrs("content")<>"" then%>
+    <div class="part3" name="f2" id="f2">
+        <div class="container ">
+        <div class="row">
+<div class="tit"><!--<i class="pico pico-tit"></i>平面图<span class="en">/Floor Plan</span>--><img src="xgwl/img/tit/10.png"></div>
+<div class="txt"><%=rrs("content")%></div>
+<div class="row">
+            <%Set prs= Server.CreateObject("ADODB.Recordset")
+psql="select * From [f_hxt] where fid="&rrs("ArticleID")&" order by oid desc,ID desc"
+prs.open psql,conn,1,1%>
+<%if not(prs.eof and prs.bof) then%>
+<%i=0
+do while not i=4%>
+<div class="col-md-6 hxt"><img src="<%=prs("file")%>" class="hxt-pic"><p class="hxt-tit"><%=prs("tit")%></p><p class="hxt-txt"><span class="hxt-jg"><%=prs("jg")%></span><%=prs("txt")%></p><br><br></div>
+
+ <%
+	i=i+1
+	     prs.movenext
+	loop
+	end if
+%>
+
+</div>
+        </div>
+        </div>
+        </div>
+        <%end if%>
                                             <!--房贷计算器-->
                                             <div class="part8" id="f7" <%if rrs("clbid")=8 then%>style="display:none;"<%end if%>>
                                                 <div class="container ">
