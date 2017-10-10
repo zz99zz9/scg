@@ -53,7 +53,7 @@ ul.fplist li.last{margin-right:0;}
 .part10 .fbbtn{margin-left:390px;}
 .fbeq{width:200px;height:230px;background:#fff;margin-left: -100px;left: 50%;position: relative;margin-top:50px;font-size:12px;line-height:170%;}
 .fbeq img{margin-top:20px;margin-bottom:10px;}
-.txt{padding-top:30px;position:relative;}
+.txt{padding-top:30px;position:relative;line-height:180%;}
 /**房贷计算器**/
 .fdjsql{}
 .fdjsq .titline{font-size:30px;text-align:center;padding-top:40px;margin-bottom:20px;}
