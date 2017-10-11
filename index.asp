@@ -41,17 +41,12 @@ tdkid=1
                                 </div>
          <%
         	i=i+1
-
         	     prs.movenext
         	loop
         prs.close
         set prs=nothing
         %>
-
-
-
         </div>
-
         <!-- Controls
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
