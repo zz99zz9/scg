@@ -28,7 +28,6 @@
 
          </li>
      <!------------>
-
     <%
     rstj.movenext
     i=i+1
@@ -36,8 +35,6 @@
     end if
     	rstj.close
     	set rstj=nothing%>
-
-
         </ul>
     </div>
     </div>
