@@ -68,8 +68,8 @@
       	 <!--在线咨询弹窗-->
       	 <div class="fbpop"><span class="popclose pico b_h pclose"></span>
       	 <form>
-      	 <span class="tit">在线提问</span>
-      	 <span class="txt">资深的行业专家第一时间为您解答。<br><br></span>
+      	 <span class="tit">来访预约</span>
+      	 <span class="txt">来访预约，在线提问，资深的行业专家第一时间为您解答。<br><br></span>
       	 <span class="hidden-xs">姓名：</span><input class="int vname" placeholder="Your name">
 <span class="err"></span>
       	<span class="hidden-xs">电话：</span><input class="int vtel" placeholder="Your phone number">
