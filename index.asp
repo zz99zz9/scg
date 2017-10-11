@@ -114,7 +114,7 @@ var player = polyvObject('#plv_4c056f31eeb7bbfc95cf0fffd96abc98_4').videoPlayer(
     <%
 
           set rsnew=Server.CreateObject("ADODB.Recordset")
-          sqlnew="select top 6 * from [prod] where Passed=true and (classid=23 or classid=22 or classid=21 or classid=20) "
+          sqlnew="select top 3 * from [prod] where Passed=true and (classid=23 or classid=22 or classid=21 or classid=20) "
 
           sqlnew=sqlnew+" order by ioid desc,oid desc,prod_id desc"
 
