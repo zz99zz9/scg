@@ -98,7 +98,7 @@ var _hmt = _hmt || [];
           <ul class="dropdown-menu">
             <li><a href="housing.asp?">在售项目</a></li>
             <li><a href="housing.asp?s=n">待售项目</a></li>
-            <li><a href="housingbrand.asp">代表项目</a></li>
+          <!--  <li><a href="housingbrand.asp">代表项目</a></li>-->
           </ul>
         </li>
         <li class="dropdown XGli"><a href="services.asp" class="dropdown-toggle s_link" data-toggle="dropdown">服务咨询</a>
@@ -142,7 +142,7 @@ var _hmt = _hmt || [];
     <ul class="pc-menu pc-menu3">
     <li class="li31"><a href="housing.asp?lx=11">在售项目</a></li>
     <li class="li32"><a href="housing.asp?lx=7">待售项目</a></li>
-    <li class="li33"><a href="housingbrand.asp">代表项目</a></li>
+   <!-- <li class="li33"><a href="housingbrand.asp">代表项目</a></li>-->
     </ul>
 </div>
 <div class="pc-nav">

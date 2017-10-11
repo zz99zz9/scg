@@ -64,7 +64,7 @@
 </ul>
            <!--移动端悬浮客服-->
            
-           <ul class="bslidebar hidden-lg hidden-md hidden-sm"><a href="tel:4009016788">400 901 6788</a><a href="javascript:feedback()" class="right">在线客服</a></ul>
+           <ul class="bslidebar hidden-lg hidden-md hidden-sm"><a href="tel:4009016788">400 901 6788</a><a href="javascript:feedback()" class="right">来访预约</a></ul>
       	 <!--在线咨询弹窗-->
       	 <div class="fbpop"><span class="popclose pico b_h pclose"></span>
       	 <form>

@@ -110,6 +110,8 @@ var player = polyvObject('#plv_4c056f31eeb7bbfc95cf0fffd96abc98_4').videoPlayer(
     <!--<img src="xgwl/img/index/ed3.jpg"/>-->
     </div>
 </div>
+<!--特别推荐-->
+ <!--#include file="inc/recommended.asp"-->
 <!--代表项目-->
 <div class="container part2">
 	<div class="tit"><img src="xgwl/img/tit/1.png"><!--<i class="pico pico-tit"></i>代表项目<span class="en">/KEY PROJECTS</span>--><a class="more hidden-xs" href="housing.asp">更多 <em class="more-arr">&gt;</em></a></div>
