@@ -28,20 +28,9 @@ ul.list1 li .tjbtn{margin-top:0 !important;}
              <div class="pic"><img src="<%=rstj("defaultpicurl")%>" /><a class="bgmask2 tra" href="housingview.asp?id=<%=rstj("articleid")%>">
              <p class="xgbtn tjbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></p></a></div>
              <a class="ellipsis tit" href="housingview.asp?id=<%=rstj("articleid")%>"><%=rstj("entitle")%>&nbsp;<%=rstj("title")%></a>
-         <span class="ellipsis2 txt"><%=rstj("Product_Id")%></span>
+        
      <span class="address"><i class="pico pico-addressb"></i><%=rstj("bigclassname")%>，<%=rstj("smallclassname")%><br><div class="ellipsis" title="<%=rstj("qt")%>"><%x1=split(rstj("qt"),"|")%><%=x1(0)%></div></span>
-     <div class="row row2">
-     <%mystr=split(rstj("ctdid"),",")
-       for i=0 to ubound(mystr)
-       if i<4 and mystr(i)<>"" then
-       %>
-       <span class="col-xs-4 "><em class="trait"><%call Showtd(mystr(i))%></em></span>
-     <% end if
-      next
-       %>
-
-
- </div>
+ <span class="ellipsis2 txt"><%=rstj("Product_Id")%></span>
  <div class="row">
  <div class="price col-xs-12"><%if rstj("clxid")=997 then%><em class="tit fc-red">$<%=rstj("jgjj")%></em>万起（约<%=formatNumber((rstj("jgjj")*6.8871),0,-1)%>万人民币）<%end if%></div>
  </div>
