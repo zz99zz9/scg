@@ -29,7 +29,7 @@ ul.list1 li .tjbtn{margin-top:0 !important;}
              <p class="xgbtn tjbtn"><span>查看详情</span><em class="more-arr tra">&gt;</em></p></a></div>
              <a class="ellipsis tit" href="housingview.asp?id=<%=rstj("articleid")%>"><%=rstj("entitle")%>&nbsp;<%=rstj("title")%></a>
         
-     <span class="address"><i class="pico pico-addressb"></i><%=rstj("bigclassname")%>，<%=rstj("smallclassname")%><br><div class="ellipsis" title="<%=rstj("qt")%>"><%x1=split(rstj("qt"),"|")%><%=x1(0)%></div></span>
+     <span class="address"><i class="pico pico-addressb"></i><%=rstj("bigclassname")%>，<%=rstj("smallclassname")%></span>
  <span class="ellipsis2 txt"><%=rstj("Product_Id")%></span>
  <div class="row">
  <div class="price col-xs-12"><%if rstj("clxid")=997 then%><em class="tit fc-red">$<%=rstj("jgjj")%></em>万起（约<%=formatNumber((rstj("jgjj")*6.8871),0,-1)%>万人民币）<%end if%></div>
