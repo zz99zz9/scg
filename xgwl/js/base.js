@@ -85,8 +85,8 @@ function showpop(){
           $(".fbpop").fadeIn();
           $(".mask").fadeIn();
       }else{
-          $(".fbpop .tit").html("在线提问");
-          $(".fbpop .topline").html("问题：");
+          $(".fbpop .tit").html("来访预约");
+          $(".fbpop .topline").html("备注：");
           $(".fbpop .hdid").val("0");
 $(".fbpop").fadeIn();
       $(".mask").fadeIn();
