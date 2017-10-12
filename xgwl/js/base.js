@@ -66,7 +66,7 @@ function showpop(){
 		$('.pop').fadeOut();
 		});
   $(document).ready(function(){
-      console.log("最后更新日期2017.9.29 by 任刚");
+      console.log("最后更新日期2017.10.12 by 任刚");
       $(".slidebar li").addClass("on");
       setTimeout("$('.slidebar li').removeClass('on')",5000);
 

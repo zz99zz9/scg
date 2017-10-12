@@ -67,7 +67,7 @@ $(".vtel").blur(function(){
     checkwrint2(this);
 });
 $(".vtel").focus(function(){
-    $(this).next(".err").html("参考格式：+86 21 60737686");//名称不能为空
+  //  $(this).next(".err").html("参考格式：+86 21 60737686");//名称不能为空
 });
 $(".vmail").blur(function(){
     checkwrint3(this);
