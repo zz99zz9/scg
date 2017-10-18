@@ -148,12 +148,12 @@ var _hmt = _hmt || [];
 <div class="pc-nav">
     <ul class="pc-menu pc-menu5">
     
-    <li class="li42"><a href="services2.asp">政策消息</a></li>
+    <li class="li42"><a href="services2.asp">留学置业</a></li>
     <li class="li43"><a href="services3.asp">财税问答</a></li>
         <li class="li44"><a href="services4.asp">贷款咨询</a></li>
         <li class="li45"><a href="services5.asp">移民知识</a></li>
         <!--<li class="li46"><a href="javascript:feedback()">在线提问</a></li>-->
-        <li class="li52"><a href="services6.asp">购置流程</a></li>
+        <li class="li52"><a href="services6.asp">政策消息</a></li>
     </ul>
 </div>
 <div class="pc-nav">
@@ -162,7 +162,7 @@ var _hmt = _hmt || [];
     <li class="li51"><a href="news.asp?c=16">活动信息</a></li>
     <li class="li42"><a href="news.asp?c=24">美国生活志</a></li>
     <li class="li52"><a href="news.asp?c=17">投资要闻</a></li>
-    <li class="li53"><a href="news.asp?c=18">留学置业</a></li>
+    <li class="li53"><a href="news.asp?c=18">购置流程</a></li>
     <li class="li54"><a href="news.asp?c=19">海外置业</a></li>
 
     </ul>
