@@ -56,7 +56,7 @@ elseif  cid=17 then
               elseif  cid=19 then
                             xlname="行业资料"
                                elseif  cid=24 then
-                         xlname="曼哈顿生活"
+                         xlname="美国生活志"
                             else
                             xlname="全部新闻"
                             end if%>
