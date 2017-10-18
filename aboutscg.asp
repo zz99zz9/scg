@@ -50,7 +50,7 @@ tdkid=2
         <div class="col-md-6 wow bounceInLeft"><img src="xgwl/img/2/pic2.jpg"></div>
     <div class="col-md-6 text">
     <span class="cntit">上海建工美洲公司</span>
-    <span class="entit">Shanghai Construction America Group (SCGA)</span>
+    <span class="entit">Shanghai Construction Group America (SCGA)</span>
     <p class="abouttxt"><% call sHowInfo(2)%></p>
     <a href="http://www.scgamerica.com/" target="_blank" class="fc-red weblink"><i class="pico pico-link"></i>访问官网</a>
 </div>
