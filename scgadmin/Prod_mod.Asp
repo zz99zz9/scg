@@ -352,7 +352,7 @@ rs.close
 <div class="col-lg-offset-2 col-lg-7">
 <button class="btn btn-danger save" type="button" style="margin:15px auto;">保存</button>
 <input id="action" value="mod" type="hidden">
-<input id="classid" value="<%=oRs("classid")%>" type="hidden">
+<input id="classid" value="<%=oRs("classid")%>" type="text">
 <input id="pid" value="<%=oRs("prod_id")%>" type="hidden">
 </div>
   </div>
