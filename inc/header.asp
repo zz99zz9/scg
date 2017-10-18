@@ -97,7 +97,7 @@ var _hmt = _hmt || [];
         <li class="dropdown XGli"><a href="housing.asp" class="dropdown-toggle s_link" data-toggle="dropdown">项目介绍</a>
           <ul class="dropdown-menu">
             <li><a href="housing.asp?">在售项目</a></li>
-           <!-- <li><a href="housing.asp?s=n">待售项目</a></li>-->
+           <!-- <li><a href="housing.asp?s=n">待售项目</a></li> -->
             <li><a href="housingbrand.asp">代表项目</a></li>
           </ul>
         </li>
