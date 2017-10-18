@@ -48,9 +48,9 @@ tdkid=19
         <div class="laddress">
             <div class="tit">上海建工海外地产中心欢迎您的到来</div>
              <div class="txt"><i class="pico pico-addressg"></i><span class="txtt">地址：</span>中国上海市小木桥路681号上海外经大厦25层  <a href="javascript:map(1)" class="hidden-xs">[地图]</a></div>
-             <div class="txt"><i class="pico pico-telg"></i><span class="txtt">电话：</span>86-21-6073 7686</div>
+            <!--  <div class="txt"><i class="pico pico-telg"></i><span class="txtt">电话：</span>86-21-6073 7686</div>
 
-             <!-- <div class="txt"><i class="pico pico-faxg"></i><span class="txtt">传真：</span>86-21-6195 2778</div>
+             <div class="txt"><i class="pico pico-faxg"></i><span class="txtt">传真：</span>86-21-6195 2778</div>
                <div class="txt"><i class="pico pico-mailg"></i><span class="txtt">E-mail：</span> info@scgamerica.com</div>-->
                 <div class="txt"><i class="pico pico-tel2g"></i><span class="txtt">贵宾专线：</span><span class="b">400-901-6788</span> <img src="xgwl/img/cn.png">           <br class="hidden-lg hidden-md hidden-sm"> +1-212-789-0000 <img src="xgwl/img/en.png"></div>
                  <div class="txt"><i class="pico pico-time"></i><span class="txtt">工作时间：</span>周一到周五&nbsp;9：00～18：00&nbsp;(双休日看房需预约)</div>
