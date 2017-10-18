@@ -126,8 +126,8 @@ rs.close
 <li class="nav5-16"><a class="" href="Prod_list.Asp?Prod_Type=16">活动信息列表</a></li>
                           <li class="nav5-16a"><a class="" href="Prod_add.asp?Prod_Type=16">增添活动信息</a></li>
 
-<li class="nav5-24"><a class="" href="Prod_list.Asp?Prod_Type=24">曼哈顿生活列表</a></li>
-                          <li class="nav5-24a"><a class="" href="Prod_add.asp?Prod_Type=24">增添曼哈顿生活</a></li>
+<li class="nav5-24"><a class="" href="Prod_list.Asp?Prod_Type=24">美国生活志列表</a></li>
+                          <li class="nav5-24a"><a class="" href="Prod_add.asp?Prod_Type=24">增添美国生活志</a></li>
 <li class="nav5-17"><a class="" href="Prod_list.Asp?Prod_Type=17">投资要闻列表</a></li>
                           <li class="nav5-17a"><a class="" href="Prod_add.asp?Prod_Type=17">增添投资要闻</a></li>
 
