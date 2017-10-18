@@ -82,8 +82,8 @@
 <li class="nav4-12"><a class="" href="Prod_list.Asp?Prod_Type=12">财税问答列表</a></li>
                           <li class="nav4-12a"><a class="" href="Prod_add.asp?Prod_Type=12">增添财税问答</a></li>
 
-<li class="nav4-25"><a class="" href="Prod_list.Asp?Prod_Type=25">购置流程列表</a></li>
-                          <li class="nav4-25a"><a class="" href="Prod_add.asp?Prod_Type=25">增添购置流程</a></li>
+<li class="nav4-25"><a class="" href="Prod_list.Asp?Prod_Type=25">政策消息列表</a></li>
+                          <li class="nav4-25a"><a class="" href="Prod_add.asp?Prod_Type=25">增添政策消息</a></li>
 
 <li class="nav4-15"><a class="" href="Prod_list.Asp?Prod_Type=15">移民知识列表</a></li>
                           <li class="nav4-15a"><a class="" href="Prod_add.asp?Prod_Type=15">增添移民知识</a></li>
@@ -91,8 +91,8 @@
 
 <li class="nav4-11"><a class="" href="Prod_list.Asp?Prod_Type=11">贷款咨询列表</a></li>
                           <li class="nav4-11a"><a class="" href="Prod_add.asp?Prod_Type=11">增添贷款咨询</a></li>
-                          <li class="nav4-25"><a class="" href="Prod_list.Asp?Prod_Type=26">留学置业列表</a></li>
-                          <li class="nav4-25a"><a class="" href="Prod_add.asp?Prod_Type=26">增添留学置业</a></li>
+                          <li class="nav4-25"><a class="" href="Prod_list.Asp?Prod_Type=26">置业流程列表</a></li>
+                          <li class="nav4-25a"><a class="" href="Prod_add.asp?Prod_Type=26">增添置业流程</a></li>
 
 
                           <%set rs=Server.CreateObject("ADODB.Recordset")
@@ -132,11 +132,11 @@ rs.close
                           <li class="nav5-17a"><a class="" href="Prod_add.asp?Prod_Type=17">增添投资要闻</a></li>
 
 
-<li class="nav5-18"><a class="" href="Prod_list.Asp?Prod_Type=18">政策消息列表</a></li>
-                          <li class="nav5-18a"><a class="" href="Prod_add.asp?Prod_Type=18">增添政策消息</a></li>
+<li class="nav5-18"><a class="" href="Prod_list.Asp?Prod_Type=18">留学置业列表</a></li>
+                          <li class="nav5-18a"><a class="" href="Prod_add.asp?Prod_Type=18">增添留学置业</a></li>
 
-<li class="nav5-19"><a class="" href="Prod_list.Asp?Prod_Type=19">行业资料列表</a></li>
-                          <li class="nav5-19a"><a class="" href="Prod_add.asp?Prod_Type=19">增添行业资料</a></li>.
+<li class="nav5-19"><a class="" href="Prod_list.Asp?Prod_Type=19">海外置业列表</a></li>
+                          <li class="nav5-19a"><a class="" href="Prod_add.asp?Prod_Type=19">增添海外置业</a></li>.
 
                       </ul>
                   </li>
