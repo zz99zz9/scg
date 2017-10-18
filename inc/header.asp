@@ -144,7 +144,7 @@ var _hmt = _hmt || [];
 <div class="pc-nav">
     <ul class="pc-menu pc-menu3">
     <li class="li31"><a href="housing.asp?lx=11">在售项目</a></li>
-    <li class="li32"><a href="housing.asp?lx=7">待售项目</a></li>
+    <!--<li class="li32"><a href="housing.asp?lx=7">待售项目</a></li>-->
     <li class="li33"><a href="housingbrand.asp">代表项目</a></li>
     </ul>
 </div>
