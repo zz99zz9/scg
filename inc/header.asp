@@ -4,12 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+
 <script>
 var url=location.href;
 //http://scgoverseas.com/
 if(url=='http://scgoverseas.com/'){
 location.href='http://www.scgoverseas.com/';
 }
+
 </script>
 <%dim skey
 skey=request.QueryString("key")
@@ -40,12 +42,13 @@ t=nk&"-"&t
 d=nk&"-"&d
 k=nk&"-"&k
 end if
+
     if (lx<>"" and lx<>0) or (lb<>"" and lb<>0) or (fj<>"" and fj<>0) or key<>"" or lx<>0 then
 a=showNamef("class_fj",fj,"CID","Cname")
 b=showNamef("class_lx",lx,"CID","Cname")
 c=showNamef("class_lb",lb,"CID","Cname")
-        t=a+b+c+key&"美国纽约房产,美国洛杉矶房产"
-        k=a+b+c+key&"美国纽约房产,美国洛杉矶房产"
+        t=a+b+c+key&"美国房产，"&a+b+c+key&"购买，美国房地产投资"
+        k=a+b+c+key&"美国房产，"&a+b+c+key&"购买，美国房地产投资"
         d="最新最全的"&a+b+c+key&"房产信息，尽在上海建工海外房产网，SCG海外地产中心是您海外房产投资的第一选择。"
     end if
 end if
@@ -104,11 +107,11 @@ var _hmt = _hmt || [];
         <li class="dropdown XGli"><a href="services.asp" class="dropdown-toggle s_link" data-toggle="dropdown">服务咨询</a>
           <ul class="dropdown-menu">
             <!--<li><a href="services1.asp">尚鉴尊享会</a></li>-->
-            <li><a href="services2.asp">政策消息</a></li>
+            <li><a href="services2.asp">购置流程</a></li>
             <li><a href="services3.asp">财税问答</a></li>
             <li><a href="services4.asp">贷款咨询</a></li>
             <li><a href="services5.asp">移民知识</a></li>
-            <li><a href="services6.asp">购置流程</a></li>
+            <li><a href="services6.asp">留学置业</a></li>
           </ul>
         </li>
         <li class="dropdown XGli"><a href="news.asp" class="dropdown-toggle s_link" data-toggle="dropdown">新闻资讯</a>
@@ -117,8 +120,8 @@ var _hmt = _hmt || [];
             <li><a href="news.asp?c=24">美国生活志</a></li>
             <li><a href="news.asp?c=17">投资要闻</a></li>
 
-            <li><a href="news.asp?c=18">留学置业</a></li>
-            <li><a href="news.asp?c=19">海外置业</a></li>
+            <li><a href="news.asp?c=18">政策消息</a></li>
+            <li><a href="news.asp?c=19">行业资料</a></li>
           </ul>
         </li>
                 <li class="dropdown XGli"><a href="visit.asp" class="dropdown-toggle s_link" data-toggle="dropdown">联系我们</a>
@@ -141,19 +144,19 @@ var _hmt = _hmt || [];
 <div class="pc-nav">
     <ul class="pc-menu pc-menu3">
     <li class="li31"><a href="housing.asp?lx=11">在售项目</a></li>
-    <!--<li class="li32"><a href="housing.asp?lx=7">待售项目</a></li>-->
+    <li class="li32"><a href="housing.asp?lx=7">待售项目</a></li>
     <li class="li33"><a href="housingbrand.asp">代表项目</a></li>
     </ul>
 </div>
 <div class="pc-nav">
     <ul class="pc-menu pc-menu5">
     
-    <li class="li42"><a href="services2.asp">留学置业</a></li>
+    <li class="li42"><a href="services2.asp">购置流程</a></li>
     <li class="li43"><a href="services3.asp">财税问答</a></li>
         <li class="li44"><a href="services4.asp">贷款咨询</a></li>
         <li class="li45"><a href="services5.asp">移民知识</a></li>
         <!--<li class="li46"><a href="javascript:feedback()">在线提问</a></li>-->
-        <li class="li52"><a href="services6.asp">政策消息</a></li>
+        <li class="li52"><a href="services6.asp">留学置业</a></li>
     </ul>
 </div>
 <div class="pc-nav">
@@ -162,8 +165,8 @@ var _hmt = _hmt || [];
     <li class="li51"><a href="news.asp?c=16">活动信息</a></li>
     <li class="li42"><a href="news.asp?c=24">美国生活志</a></li>
     <li class="li52"><a href="news.asp?c=17">投资要闻</a></li>
-    <li class="li53"><a href="news.asp?c=18">购置流程</a></li>
-    <li class="li54"><a href="news.asp?c=19">海外置业</a></li>
+    <li class="li53"><a href="news.asp?c=18">政策消息</a></li>
+    <li class="li54"><a href="news.asp?c=19">行业资料</a></li>
 
     </ul>
 </div>
