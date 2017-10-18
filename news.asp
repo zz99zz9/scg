@@ -52,9 +52,9 @@ xlname="活动信息"
 elseif  cid=17 then
        xlname="投资要闻"
        elseif  cid=18 then
-              xlname="政策消息"
+              xlname="留学置业"
               elseif  cid=19 then
-                            xlname="行业资料"
+                            xlname="海外置业"
                                elseif  cid=24 then
                          xlname="美国生活志"
                             else
