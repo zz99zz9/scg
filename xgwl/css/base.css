@@ -110,7 +110,7 @@ a:hover .sbr-qr{bottom:25px;display:block;visibility:visible;filter:Alpha(opacit
 /**************************/
 /*       右边客服通用       */
 /**************************/
-.slidebar{width:34px;position:fixed;bottom:120px;right:50px;}
+.slidebar{width:34px;position:fixed;bottom:120px;right:50px;z-index:5;}
 .slidebar li{position:relative;}
 .slidebar li .sbr-qr{border-radius:4px;padding:19px;background:#fff;border:1px solid #e6e6e6;display:block;visibility:hidden;position:absolute;top:0;left:-162px;filter:Alpha(opacity=0);opacity:0;}
  .slidebar li:hover .sbr-qr{left:-132px;display:block;visibility:visible;filter:Alpha(opacity=100);opacity:1;}
