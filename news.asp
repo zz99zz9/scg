@@ -43,7 +43,7 @@ rsnew.Open sqlnew,conn,1,1%>
 <div class="ubar">
 <div class="container">
 <a href="#" class="fc-red">SCG</a> <em class="more-arr">&gt;</em> <a href="news.asp">新闻资讯</a>
-<ul class="menu"><a href="news.asp?c=16" <%call ison(cid,16)%>>活动信息</a><a href="news.asp?c=24" <%call ison(cid,24)%>>美国生活志</a><a href="news.asp?c=17" <%call ison(cid,17)%>>投资要闻</a><a href="news.asp?c=18" <%call ison(cid,18)%>>留学置业</a><a href="news.asp?c=19" <%call ison(cid,19)%>>海外置业</a></ul>
+<ul class="menu"><a href="news.asp?c=16" <%call ison(cid,16)%>>活动信息</a><a href="news.asp?c=24" <%call ison(cid,24)%>>美国生活志</a><a href="news.asp?c=17" <%call ison(cid,17)%>>海外置业</a><a href="news.asp?c=18" <%call ison(cid,18)%>>留学置业</a><a href="news.asp?c=19" <%call ison(cid,19)%>>投资要闻</a></ul>
 </div>
 </div>
 <!--公司介绍1-->

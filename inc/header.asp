@@ -118,10 +118,9 @@ var _hmt = _hmt || [];
           <ul class="dropdown-menu">
             <li><a href="news.asp?c=16">活动信息</a></li>
             <li><a href="news.asp?c=24">美国生活志</a></li>
-            <li><a href="news.asp?c=17">投资要闻</a></li>
-
+            <li><a href="news.asp?c=17">海外置业</a></li>
             <li><a href="news.asp?c=18">留学置业</a></li>
-            <li><a href="news.asp?c=19">海外置业</a></li>
+             <li><a href="news.asp?c=19">投资要闻</a></li>
           </ul>
         </li>
                 <li class="dropdown XGli"><a href="visit.asp" class="dropdown-toggle s_link" data-toggle="dropdown">联系我们</a>
@@ -164,9 +163,9 @@ var _hmt = _hmt || [];
 
     <li class="li51"><a href="news.asp?c=16">活动信息</a></li>
     <li class="li42"><a href="news.asp?c=24">美国生活志</a></li>
-    <li class="li52"><a href="news.asp?c=17">投资要闻</a></li>
+    <li class="li52"><a href="news.asp?c=17">海外置业</a></li>
     <li class="li53"><a href="news.asp?c=18">留学置业</a></li>
-    <li class="li54"><a href="news.asp?c=19">海外置业</a></li>
+    <li class="li54"><a href="news.asp?c=19">投资要闻</a></li>
 
     </ul>
 </div>
