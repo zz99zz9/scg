@@ -1,6 +1,6 @@
-body{background:url(../img/index/bg.jpg) top center no-repeat #fff;}
+﻿body{background:#fff;}
 .part1{padding:0;background-color:#fff;position:relative;margin-bottom:70px;}
-.part1 .ed1{width:772px;float:left;padding:0;margin:0;position:relative;}/*height:515px;*/
+.part1 .ed1{width:772px;float:left;padding:0;margin:0;position:relative;}/*height:515px;url(../img/index/bg.jpg) top center no-repeat */
 .part1 .ed2{width:457px;float:right;padding:0;margin:0;margin-bottom:1px;position:relative;}
 .part1 .ed3{width:457px;float:right;padding:0;margin:0;position:relative;}/*height:257px;*/
 .part1 .ed1 img{width:772px;}
