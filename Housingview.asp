@@ -73,7 +73,7 @@ do while not i=4%>
                      <span class="linfo"><%=rrs("Product_Id")%></span></div>
                       <%if rrs("clxid")=11 then%>
        <%if rrs("clbid")<>8 then%> <div class="fjgmj ml40">
-       <%if rrs("jgjj")>1 then%> <div class="col-md-5 r-line col-xs-6"><span class="fc-red">$<%if rrs("jgjj")<1 then%>0<%end if%>总价<%=rrs("jgjj")%>万起</span><em class="fc-red">约<%=rrs("jgzj")%>万人民币<em class="fz13p fc-gray">(首付10%)</em></em></div><%end if%><div class="col-md-7 pl20 col-xs-6"><%=rrs("mj1")%>～<%=rrs("mj2")%><span class="fz15">㎡ 套内面积</span><em>居室：<%=rrs("hx")%></em></div>
+       <%if rrs("jgjj")>1 then%> <div class="col-md-5 r-line col-xs-6"><span class="fc-red">$<%if rrs("jgjj")<1 then%>0<%end if%>总价<%=rrs("jgjj")%>万起</span><em style="color:#bf0000;">约<%=rrs("jgzj")%>万人民币<i class="fz13p fc-gray">(首付10%)</i></em></div><%end if%><div class="col-md-7 pl20 col-xs-6"><%=rrs("mj1")%>～<%=rrs("mj2")%><span class="fz15">㎡ 套内面积</span><em>居室：<%=rrs("hx")%></em></div>
 </div><%end if%><!--javascript:document.getElementById('f7').scrollIntoView()||javascript:jsqpop()-->
 <%if rrs("clbid")<>8 then%><div class="ftools ml40"><a href="#f7" class="tra topLink"><i class="pico pico-jsq"></i>房贷计算器</a><a href="services4.asp"><i class="pico pico-gwb"></i>贷款助手</a></div><%end if%>
 <%end if%>
