@@ -47,9 +47,9 @@ end if
 a=showNamef("class_fj",fj,"CID","Cname")
 b=showNamef("class_lx",lx,"CID","Cname")
 c=showNamef("class_lb",lb,"CID","Cname")
-        t=a+b+c+key&"美国房产，"&a+b+c+key&"购买，美国房地产投资"
-        k=a+b+c+key&"美国房产，"&a+b+c+key&"购买，美国房地产投资"
-        d="最新最全的"&a+b+c+key&"房产信息，尽在上海建工海外房产网，SCG海外地产中心是您海外房产投资的第一选择。"
+        t=a+b+c+key&"美国房产，"&a+b+c+key&"购买，美国房地产投资。在售纽约曼哈顿MiMA留学公寓,洛杉矶perla留学公寓"
+        k=a+b+c+key&"美国房产，"&a+b+c+key&"购买，美国房地产投资。纽约曼哈顿MiMA留学公寓,洛杉矶perla留学公寓"
+        d="最新最全的"&a+b+c+key&"房产信息，尽在上海建工海外房产网，SCG海外地产中心是您海外房产投资的第一选择。最新最全的在售纽约曼哈顿MiMA留学公寓,洛杉矶perla留学公寓，尽在上海建工海外房产网，SCG海外地产中心是您海外房产投资的第一选择。"
     end if
 end if
 if title<>"" then
