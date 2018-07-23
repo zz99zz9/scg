@@ -128,15 +128,15 @@ rs.close
 
 <li class="nav5-24"><a class="" href="Prod_list.Asp?Prod_Type=24">美国生活志列表</a></li>
                           <li class="nav5-24a"><a class="" href="Prod_add.asp?Prod_Type=24">增添美国生活志</a></li>
-<li class="nav5-17"><a class="" href="Prod_list.Asp?Prod_Type=19">投资要闻列表</a></li>
-                          <li class="nav5-17a"><a class="" href="Prod_add.asp?Prod_Type=19">增添投资要闻</a></li>
+<li class="nav5-19"><a class="" href="Prod_list.Asp?Prod_Type=19">投资要闻列表</a></li>
+                          <li class="nav5-19a"><a class="" href="Prod_add.asp?Prod_Type=19">增添投资要闻</a></li>
 
 
 <li class="nav5-18"><a class="" href="Prod_list.Asp?Prod_Type=18">留学置业列表</a></li>
                           <li class="nav5-18a"><a class="" href="Prod_add.asp?Prod_Type=18">增添留学置业</a></li>
 
-<li class="nav5-19"><a class="" href="Prod_list.Asp?Prod_Type=17">海外置业列表</a></li>
-                          <li class="nav5-19a"><a class="" href="Prod_add.asp?Prod_Type=17">增添海外置业</a></li>.
+<li class="nav5-17"><a class="" href="Prod_list.Asp?Prod_Type=17">海外置业列表</a></li>
+                          <li class="nav5-17a"><a class="" href="Prod_add.asp?Prod_Type=17">增添海外置业</a></li>.
 
                       </ul>
                   </li>
