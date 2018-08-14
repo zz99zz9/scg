@@ -21,7 +21,7 @@ tdkid=2
 </div>
 </div>
 <!--公司介绍1-->
-<div class="part1" id="f1">
+<div class="part1 hidden" id="f1">
     <div class="container ">
     <div class="row">
     <div class="col-md-6 text">
@@ -44,7 +44,7 @@ tdkid=2
 </div>
 </div>
 <!--公司介绍2-->
-<div class="part2 " id="f2">
+<div class="part2 hidden" id="f2">
     <div class="container ">
     <div class="row">
         <div class="col-md-6 wow bounceInLeft"><img src="xgwl/img/2/pic2.jpg"></div>

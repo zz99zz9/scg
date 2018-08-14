@@ -31,17 +31,17 @@
            <!---->
 </div>
             <div class="footer-r col-md-5 ">
-                <ul class="faddress TAB_CLICK" id=".fadd"><li class="li3 hand on">上海建工海外地产中心</li><li class="li2 hand">上海建工美洲公司</li><li class="li1 hand">上海建工集团</li></ul>
+                <!--<ul class="faddress TAB_CLICK" id=".fadd"><li class="li3 hand on">上海建工海外地产中心</li><li class="li2 hand">上海建工美洲公司</li><li class="li1 hand">上海建工集团</li></ul>-->
  <div class="fadd fadd3">上海市徐汇区小木桥路681号25楼 <a href="javascript:map(1)" class="hidden-xs">[地图]</a><br>
                                        电话：400 901 6788<br>
                                     <a href="visit.asp">进一步了解 &gt;</a>
                                     </div>
-                        <div class="fadd fadd2">Times Square Plaza, 1500 Broadway Suite 3300, New York, NY 10036<a href="#"></a><br>
+                        <!--<div class="fadd fadd2">Times Square Plaza, 1500 Broadway Suite 3300, New York, NY 10036<a href="#"></a><br>
                              电话：+1 212 789 0000<br>
                           <a href="http://www.scgamerica.com/" target="_blank">进一步了解 &gt;</a></div>
                     <div class="fadd fadd1">上海市虹口区东大名路666号  <a href="javascript:map(2)" class="hidden-xs">[地图]</a><br>
                        电话：+86-21-5588 5959<br>
- <a href="http://www.scg.com.cn/" target="_blank">进一步了解 &gt;</a></div>
+ <a href="http://www.scg.com.cn/" target="_blank">进一步了解 &gt;</a></div>-->
 </div>
             </div>
         </div>
