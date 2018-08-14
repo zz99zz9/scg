@@ -50,11 +50,11 @@ rsnew.Open sqlnew,conn,1,1%>
 <%if cid=16 then
 xlname="活动信息"
 elseif  cid=17 then
-       xlname="投资要闻"
+       xlname="海外置业"
        elseif  cid=18 then
               xlname="留学置业"
               elseif  cid=19 then
-                            xlname="海外置业"
+                            xlname="投资要闻"
                                elseif  cid=24 then
                          xlname="美国生活志"
                             else

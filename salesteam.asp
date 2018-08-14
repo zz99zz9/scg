@@ -1,4 +1,4 @@
-<!--#include file="inc/conn.asp"-->
+﻿<!--#include file="inc/conn.asp"-->
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
@@ -50,7 +50,7 @@ tdkid=18
 </div>
 </div>
 </li>
- <li class="col-md-6"><div class="sinfo">
+ <!--<li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p10.jpg"></div>
    <div class="text col-md-7">
     <p class="tit">吴佳佳 <span class="fftimes">Jia Jia Wu</span></p>
@@ -60,7 +60,7 @@ tdkid=18
                   </p>
     <a href="javascript:feedback()" class="xgbtn4"><i class="pico pico-user"></i>立即咨询</a>
 </div></div>
-</li>
+</li>-->
  <li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p7.jpg"></div>
    <div class="text col-md-7">
@@ -72,7 +72,7 @@ tdkid=18
     <a href="javascript:feedback()" class="xgbtn4"><i class="pico pico-user"></i>立即咨询</a>
 </div></div>
 </li>
-<li class=" col-md-6"><div class="sinfo">
+ <!--<li class=" col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p3.jpg"></div>
    <div class="text col-md-7">
     <p class="tit">常姗姗 <span class="fftimes">Cassie Chang</span></p>
@@ -83,8 +83,8 @@ tdkid=18
     <a href="javascript:feedback()" class="xgbtn4"><i class="pico pico-user"></i>立即咨询</a>
 </div>
 </div>
-</li>
-<li class="col-md-6"><div class="sinfo">
+</li>-->
+ <!--<li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p4.jpg"></div>
    <div class="text col-md-7">
     <p class="tit">古小静 <span class="fftimes">Galina Kurenkova</span></p>
@@ -95,7 +95,7 @@ tdkid=18
     <a href="javascript:feedback()" class="xgbtn4"><i class="pico pico-user"></i>立即咨询</a>
 </div></div>
 
-</li>
+</li>-->
 
    <!-- <li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p9.jpg"></div>
@@ -109,7 +109,7 @@ tdkid=18
 </div></div>
 
 </li>-->
- <li class="col-md-6"><div class="sinfo">
+ <!-- <li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p8.jpg"></div>
    <div class="text col-md-7">
     <p class="tit">顾辰佳 <span class="fftimes">Renee Gu</span></p>
@@ -120,7 +120,7 @@ tdkid=18
     <a href="javascript:feedback()" class="xgbtn4"><i class="pico pico-user"></i>立即咨询</a>
 </div></div>
 
-</li>
+</li>-->
     <li class="col-md-6"><div class="sinfo">
    <div class="pic col-md-5"><img src="xgwl/img/6/p6.jpg"></div>
    <div class="text col-md-7">
