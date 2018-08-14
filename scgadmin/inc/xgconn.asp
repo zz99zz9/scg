@@ -1,5 +1,5 @@
 <%
-db="/%#Data$%Ba#se%%/%#Data$%Ba#se%%scg.mdb"
+db="/%#Data$%Ba#se%%/%#Data$%Ba#se%%scg.asa"
 Set conn = Server.CreateObject("ADODB.Connection")
 connstr="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Server.MapPath(""&db&"")
 
