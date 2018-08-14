@@ -21,7 +21,7 @@ IsSqlDataBase=0                '定义数据库类别，0为Access数据库，1�
 if IsSqlDataBase=0 then            
 '''''''''''''''''''''''''''access数据库'''''''''''''''''''''''
 dim db
-db="%#Data$%Ba#se%%/%#Data$%Ba#se%%scg.asa"
+db="%#Data$%Ba#se%%/%#Data$%Ba#se%%scg.mdb"
 connstr="Provider=Microsoft.Jet.OLEDB.4.0;data source="&Server.MapPath(db)
 
 else
