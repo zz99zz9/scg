@@ -36,20 +36,12 @@
                                        电话：400 901 6788<br>
                                     <a href="visit.asp">进一步了解 &gt;</a>
                                     </div>
-<<<<<<< HEAD
                         <!--<div class="fadd fadd2">Times Square Plaza, 1500 Broadway Suite 3300, New York, NY 10036<a href="#"></a><br>
-=======
-                        <div class="fadd fadd2"><!--Times Square Plaza, 1500 Broadway Suite 3300, New York, NY 10036<a href="#"></a><br>
->>>>>>> b5e0875bc8cfafffb14ce1826d0752e64a85b837
                              电话：+1 212 789 0000<br>
                           <a href="http://www.scgamerica.com/" target="_blank">进一步了解 &gt;</a>--></div>
                     <div class="fadd fadd1"><!--上海市虹口区东大名路666号  <a href="javascript:map(2)" class="hidden-xs">[地图]</a><br>
                        电话：+86-21-5588 5959<br>
-<<<<<<< HEAD
  <a href="http://www.scg.com.cn/" target="_blank">进一步了解 &gt;</a></div>-->
-=======
- <a href="http://www.scg.com.cn/" target="_blank">进一步了解 &gt;</a>--></div>
->>>>>>> b5e0875bc8cfafffb14ce1826d0752e64a85b837
 </div>
             </div>
         </div>
