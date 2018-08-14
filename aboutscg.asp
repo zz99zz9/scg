@@ -1,4 +1,4 @@
-<!--#include file="inc/conn.asp"-->
+﻿<!--#include file="inc/conn.asp"-->
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
@@ -28,7 +28,7 @@ tdkid=2
     <span class="cntit">上海建工集团</span>
     <span class="entit">Shanghai Construction Group (SCG)</span>
     <p class="abouttxt"><% call sHowInfo(1)%></p>
-    <a href="http://www.scg.com.cn/" target="_blank" class="fc-red weblink"><i class="pico pico-link"></i>访问官网</a>
+    <!--<a href="http://www.scg.com.cn/" target="_blank" class="fc-red weblink"><i class="pico pico-link"></i>访问官网</a>-->
 </div>
     <div class="col-md-6 wow bounceInRight" style="padding-top:50px;"><script src="//player.polyv.net/script/polyvplayer.min.js"></script>
                                             	<div id="plv_4c056f31ee0d762dbcfbbe7c264e9cd5_4">
@@ -52,7 +52,7 @@ tdkid=2
     <span class="cntit">上海建工美洲公司</span>
     <span class="entit">Shanghai Construction Group America (SCGA)</span>
     <p class="abouttxt"><% call sHowInfo(2)%></p>
-    <a href="http://www.scgamerica.com/" target="_blank" class="fc-red weblink"><i class="pico pico-link"></i>访问官网</a>
+    <!--<a href="http://www.scgamerica.com/" target="_blank" class="fc-red weblink"><i class="pico pico-link"></i>访问官网</a>-->
 </div>
 
     </div>
