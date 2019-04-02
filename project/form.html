@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" href="http://www.scgoverseas.com/icon.ico" type="image/x-icon">
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.js"></script>
+</script>
+
+<title>海外房产置业意向提交</title>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?542481775d21fbdf98bf4edd76cda65d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+
+<body>
+
+<div id="tracker">.</div>
+<script>
+ 
+//以下内容不能改
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return r[2]; return "";
+}
+
+//表单的编号
+var formid = getUrlParam('fid');
+ 
+function chVal(){
+  var xx = getUrlParam('fch');
+  if(xx==""){
+     xx = getUrlParam('hmsr');
+     if(xx==""){
+        xx = getUrlParam('utm_source');
+     }
+  }
+ 
+  return xx;
+}
+ 
+var p = chVal();
+var c = (p=="")?$.cookie("_fch"):p;
+ 
+if(p==""){}else{
+   $.cookie('_fch', p, { expires: 7, path: '/' });
+}
+ 
+var framurl = "https://jinshuju.net/f/"+formid+"?x_field_1="+c+"&background=white&banner=show&embedded=true";
+ 
+var furl = "<iframe id=\"goldendata_form_"+formid+"\" src=\""+framurl+"\" width=\"100%\" frameborder=\"0\" allowtransparency=\"true\" height=\"783\"></iframe>";
+ 
+$("#tracker").html(furl);
+ 
+</script>
+
+</body>
+</html>
