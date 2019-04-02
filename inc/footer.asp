@@ -52,7 +52,7 @@
       <ul class="fnav hidden-xs"><a href="aboutscg.asp" class="s_link2">关于公司</a><a href="housing.asp" class="s_link2">项目介绍</a><a href="services.asp" class="s_link2">服务咨询</a><a href="news.asp" class="s_link2">新闻资讯</a><a href="visit.asp" class="s_link2">联系我们</a><a href="#" class="s_link2">加入我们</a><a href="privacy.asp" class="s_link2">隐私政策</a><a href="#" class="s_link2">技术支持<div class="jszc">忠睿（上海）文化传播有限公司，专业服务于大型高端涉外客户，为客户提供最佳的美国地产投资解决方案。多年来，忠睿（上海）文化传播有限公司始终秉持“和谐为本，追求卓越”的服务宗旨，逐步发展形成了多元化的一站式服务体系。忠睿（上海）文化传播有限公司协助并服务于美国房产项目的宣传推广。</div></a><a href="sitemap.asp" class="s_link2">网站地图</a></ul>
       <div class="c clearfix"></div>
       <div class="fcopyright">Copyright © 2014-2018 SCG Overseas. All Rights Reserved. 上海建工海外地产中心版权所有  沪ICP备：16048257号-2 <div style="width:300px;margin:0 auto; padding:20px 0;">
-     <a target="_blank" href=" " style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">< img src="/xgwl/img/99.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31010402005450号</p ></a >
+     <a target="_blank" href="#" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/xgwl/img/99.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31010402005450号</p ></a >
     </div></div></div>
       	 <!--悬浮客服-->
 
