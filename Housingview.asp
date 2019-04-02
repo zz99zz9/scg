@@ -35,7 +35,7 @@ SiteCont=rrs("Description")
 <div class="part1">
     <div class="container ">
     <div class="row"><!--javascript:document.getElementById('f1').scrollIntoView()javascript:document.getElementById('f3').scrollIntoView()-->
-        <ul class="ftab hidden-xs"><a class="flogo"><img src="<%=rrs("DefaultPicUrl2")%>"></a><a href="#f1" class="tra topLink" >概述</a><a href="#f2" class="tra topLink">推荐户型</a><a href="#f3" class="tra topLink">项目特色</a><a class="tra topLink" href="#f4">设施服务</a><a href="#f5" class="tra topLink">位置信息</a><a href="#f6" class="tra topLink">项目图片</a></ul>
+        <ul class="ftab hidden-xs"><a class="flogo"><img src="<%=rrs("DefaultPicUrl2")%>"></a><a href="#f1" class="tra topLink" >概述</a><%if rrs("clbid")<>8 then%><a href="#f2" class="tra topLink">推荐户型</a><a href="#f3" class="tra topLink">项目特色</a><a class="tra topLink" href="#f4">设施服务</a><a href="#f5" class="tra topLink">位置信息</a><%end if%><a href="#f6" class="tra topLink">项目图片</a></ul>
     </div>
 </div>
 </div>
