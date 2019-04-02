@@ -63,7 +63,7 @@
       	 <li class="pico pico-rbar2 hand" onclick="window.location.href='tel:400-901-6788'"> <span class="sbr-400 tra"><i class="r-arr-b"></i>400-901-6788</span></li>
       	 <li onclick="feedback()" class="pico pico-rbar3 b_h"></li>
       	<!--推广审核--> <li class="pico pico-rbar4 b_h" onclick="window.open('http://weibo.com/u/5964312962')"></li>
-          <li id="gotop" href="javascript:void(0)" class="pico pico-rbar4 b_h"></li>
+          <li id="gotop" href="javascript:void(0)" class="pico b_h" style=""><img src="xgwl/img/top.png"></li>
 </ul>
            <!--移动端悬浮客服-->
            
