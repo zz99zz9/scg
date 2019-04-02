@@ -13,7 +13,6 @@ else
 	for each frm in upload.forms("-1")
 	'	response.Write frm & "=" & upload.forms(frm) & "<br />"
 	next
-	
 	set file = upload.Files("file1")
 	if file.isfile then
 		result = file.saveToFile(savepath,0,true)
